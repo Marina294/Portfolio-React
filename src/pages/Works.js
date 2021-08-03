@@ -20,15 +20,16 @@ const WorksStyle = styled.div`
   }
   .works__searchBar {
     position: relative;
-    width: 300px;
+    width: 600px;
     margin-top: 5rem;
+    margin: auto;
   }
   .works__searchBar input {
     width: 100%;
-    font-size: 2rem;
-    padding: 0.8rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
     color: var(--black);
-    border-radius: 6px;
+    border-radius: 100px;
     outline: none;
     border: none;
   }
@@ -71,7 +72,7 @@ export default function Works() {
     <WorksStyle>
       <div className="container">
         <SectionTitle heading="Works" />
-        {/* <div className="works__searchBar">
+        <div className="works__searchBar">
           <form>
             <input
               type="text"
@@ -81,7 +82,7 @@ export default function Works() {
             />
             <MdSearch className="searchIcon" />
           </form>
-        </div> */}
+        </div>
         <div className="works__allItems">
           {worksData.map((item) => (
             <WorksItem

@@ -28,12 +28,14 @@ const WorkSectionStyle = styled.div`
     width: 50px;
     background: var(--deep-dark);
     z-index: 10;
-    left: auto;
-    right: 60;
     top: 0;
     transform: translateY(50%);
     color: var(--gray-1);
     border-radius: 100px;
+    margin: auto;
+  }
+  .swiper-button-next {
+    margin: auto;
   }
   .swiper-button-prev::after,
   .swiper-button-next::after {

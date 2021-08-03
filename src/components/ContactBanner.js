@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdMailOutline } from 'react-icons/md';
 import { ImLinkedin, ImGithub } from 'react-icons/im';
-import ContactInfoItem from './ContactInfoItem';
-import PText from './PText';
+// import { MdMailOutline } from 'react-icons/md';
+// import ContactInfoItem from './ContactInfoItem';
+// import PText from './PText';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
