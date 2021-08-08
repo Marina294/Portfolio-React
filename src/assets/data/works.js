@@ -11,10 +11,10 @@ const works = [
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Calculator - Clone apple',
     desc:
       'An app to help people to get an overview of how they can make the city beautiful.',
-    link: 'https://www.linkedin.com/in/marina-yamamoto-558276128/',
+    link: 'https://calculator-clone-apple.netlify.app/',
     img: DrawingTimeImg,
   },
   {
