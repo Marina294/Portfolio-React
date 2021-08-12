@@ -5,24 +5,22 @@ const works = [
   {
     id: uuidv4(),
     name: 'Drawing Time!',
-    desc: 'An application to Draw illustration. Desktop Only.',
+    desc: 'An app to Draw illustration. Desktop Only.',
     link: 'https://drawing-time.netlify.app/',
     img: DrawingTimeImg,
   },
   {
     id: uuidv4(),
     name: 'Calculator - Clone apple',
-    desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
+    desc: 'An app for calculation. Responsive, MacOS and iOS clone.',
     link: 'https://calculator-clone-apple.netlify.app/',
     img: DrawingTimeImg,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
-    desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    link: 'https://www.linkedin.com/in/marina-yamamoto-558276128/',
+    name: 'Rock Paper Meow',
+    desc: 'Rock paper scissors with cat. Responsive design.',
+    link: 'https://rock-paper-meow.netlify.app/',
     img: DrawingTimeImg,
   },
   {
