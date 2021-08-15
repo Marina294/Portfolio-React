@@ -70,7 +70,7 @@ export default function WorksSection() {
         <div className="works__allItems">
           <Swiper
             spaceBetween={40}
-            slidesPerView={3}
+            slidesPerView={1}
             navigation
             breakpoints={{
               425: {
