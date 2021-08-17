@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { ImGithub } from 'react-icons/im';
 import WorkImg from '../assets/images/projectImg.png';
 
 const WorkItemStyles = styled.div`
@@ -35,6 +36,26 @@ const WorkItemStyles = styled.div`
       height: 350px;
     }
   }
+  table {
+    justify-content: flex-end;
+  }
+  tr {
+    justify-content: flex-end;
+  }
+  td {
+    font-size: 1.5rem;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .sns-icon {
+    color: var(--white);
+    margin: 1.3rem 1rem 1.3rem 0rem;
+    display: inline-block;
+    align-items: cente;
+  }
+  svg {
+    width: 3rem;
+  }
 `;
 
 export default function WorkItem({
@@ -42,6 +63,7 @@ export default function WorkItem({
   title = 'Work Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   link = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  gitLink = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
     <WorkItemStyles className="workItem__img">
@@ -56,6 +78,25 @@ export default function WorkItem({
       <div className="workItem__info">
         <h3 className="workItem__title">{title}</h3>
         <p className="workItem__desc">{desc}</p>
+        <table className="workItem__gitLink">
+          <tr>
+            <td>
+              <a
+                className="sns-icon"
+                href={gitLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImGithub />
+              </a>
+            </td>
+            <td>
+              <a href={gitLink} target="_blank" rel="noreferrer">
+                Check my code
+              </a>
+            </td>
+          </tr>
+        </table>
       </div>
     </WorkItemStyles>
   );

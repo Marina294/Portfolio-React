@@ -93,6 +93,7 @@ export default function WorksSection() {
                     title={work.name}
                     desc={work.desc}
                     link={work.link}
+                    gitLink={work.gitLink}
                   />
                 </SwiperSlide>
               );
