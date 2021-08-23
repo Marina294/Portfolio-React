@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ImGithub } from 'react-icons/im';
 import WorkImg from '../assets/images/projectImg.png';
