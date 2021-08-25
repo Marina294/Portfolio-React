@@ -34,6 +34,9 @@ const WorkItemStyles = styled.div`
     .workItem__img {
       height: 350px;
     }
+    .workItem__desc {
+      font-size: 1.6rem;
+    }
   }
   table {
     justify-content: flex-end;
