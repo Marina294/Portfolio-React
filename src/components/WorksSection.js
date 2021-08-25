@@ -30,7 +30,7 @@ const WorkSectionStyle = styled.div`
     z-index: 10;
     top: 0;
     transform: translateY(50%);
-    color: var(--gray-1);
+    color: var(--white);
     border-radius: 100px;
     margin: auto;
   }

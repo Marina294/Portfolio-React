@@ -28,7 +28,7 @@ const WorksStyle = styled.div`
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem 2rem;
-    color: var(--black);
+    color: var(--gray-1);
     border-radius: 100px;
     outline: none;
     border: none;
@@ -39,7 +39,7 @@ const WorksStyle = styled.div`
     right: 1rem;
   }
   .works__searchBar .searchIcon path {
-    color: var(--deep-dark);
+    color: var(--gray-1);
   }
   @media only screen and (max-width: 768px) {
     .works__searchBar,

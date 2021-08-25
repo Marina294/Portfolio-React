@@ -1,12 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { MdComputer, MdImportContacts, MdCode } from 'react-icons/md';
 import PText from '../components/PText';
-// import Button from '../components/Button';
 import AboutImg from '../assets/images/about.jpg';
-// import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
-// import SectionTitle from '../components/SectionTitle';
 import SkillsSection from '../components/SkillsSection';
 
 const AboutPageStyles = styled.div`

@@ -13,7 +13,7 @@ const ItemStyles = styled.div`
   .skillsItem__title {
     margin-top: 2rem;
     font-size: 2.5rem;
-    font-family: 'Montserrat SemiBold';
+    font-family: 'Urbanist';
   }
 
   .para {

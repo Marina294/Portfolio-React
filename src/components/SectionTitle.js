@@ -4,11 +4,13 @@ import styled from 'styled-components';
 const SectionTitleStyle = styled.div`
   text-align: center;
   p {
-    font-family: 'RobotoMono Regular';
+    font-family: 'Caveat';
+    font-weight: 400;
     font-size: 2rem;
   }
   h2 {
-    font-family: 'Montserrat Bold';
+    font-family: 'Caveat';
+    font-weight: 700;
     font-size: 6rem;
     margin-top: 2rem;
     margin-bottom: 6rem;

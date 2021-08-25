@@ -34,9 +34,6 @@ const AboutSectionStyles = styled.div`
     .aboutSection {
       flex: 4;
     }
-    // .aboutSection__right {
-    //   flex: 3;
-    // }
   }
   @media only screen and (max-width: 768px) {
     .container {
@@ -49,9 +46,6 @@ const AboutSectionStyles = styled.div`
     .aboutSection__right {
       margin-top: 3rem;
     }
-    // aboutImg {
-    //   width: 10%;
-    // }
     .section-title {
       text-align: center;
     }

@@ -17,7 +17,7 @@ const WorkItemStyles = styled.div`
   }
   .workItem__info {
     margin-top: 1rem;
-    background-color: var(--deep-dark);
+    background-color: var(--white);
     padding: 1rem;
     border-radius: 12px;
   }
@@ -26,7 +26,7 @@ const WorkItemStyles = styled.div`
   }
   .workItem__desc {
     font-size: 1.8rem;
-    font-family: 'RobotoMono Regular';
+    font-family: 'Urbanist';
     line-height: 3rem;
     margin-top: 1rem;
   }
@@ -48,6 +48,7 @@ const WorkItemStyles = styled.div`
   }
   .sns-icon {
     color: var(--white);
+    height: 2.5rem;
     margin: 1.3rem 1rem 1.3rem 0rem;
     display: inline-block;
     align-items: cente;

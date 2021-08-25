@@ -16,24 +16,21 @@ const NavStyles = styled.nav`
     margin: 0 auto;
     width: 90%;
     text-align: center;
+
     li {
       display: inline-block;
       border-radius: 8px;
-      transition: 0.3s ease background-color;
-      &:hover {
-        background-color: var(--deep-dark);
-      }
     }
     a {
       display: inline-block;
-      font-family: 'RobotoMono Regular';
+      font-family: 'Urbanist';
       padding: 1rem 2rem;
       font-size: 2rem;
       color: var(--gray-1);
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: var(--deep-dark);
     }
   }
   .mobile-menu-icon {
@@ -62,11 +59,12 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: var(--white);
       padding: 2rem;
       width: 90%;
       max-width: 300px;
-      border-radius: 12px;
+      border-radius: 1rem;
+      box-shadow: 0 8px 10px 0px rgba(150, 150, 150, 0.1);
       position: absolute;
       right: 1rem;
       top: var(--top);
@@ -148,7 +146,6 @@ export default function NavMenu() {
         <li>
           <NavLink
             to="/contact"
-            // href="#contact"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}

@@ -7,10 +7,9 @@ import { ImLinkedin, ImGithub } from 'react-icons/im';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
-  background-color: var(--deep-dark);
+  background-color: var(--white);
   .contactBanner__wrapper {
-    background-color: var(--deep-dark);
-    // border-radius: 12px;
+    background-color: var(--white);
     padding: 5rem 0rem;
     text-align: center;
   }
@@ -23,15 +22,14 @@ const ContactBannerStyles = styled.div`
     margin-bottom: 4.5rem;
   }
   .sns-icon {
-    color: var(--white);
-    // background-color: var(--gray-2);
     padding: 1.8rem;
-    // display: flex;
     align-items: center;
-    // border-radius: 50%;
   }
   svg {
     width: 3rem;
+  }
+  h3 {
+    font-family: Caveat;
   }
   @media only screen and (max-width: 768px) {
     .contactBanner__heading {
@@ -50,18 +48,10 @@ export default function ContactBanner() {
       <div className="container">
         <div className="contactBanner__wrapper">
           <h3 className="contactBanner__heading">CONTACT</h3>
-          {/* <ContactInfoItem
-            icon={<MdMailOutline />}
-            text="marina.yamamoto8@gmail.com"
-          /> */}
-          {/* <a className="icon">
-            <MdMailOutline />
-          </a> */}
           <p className="contactBanner__p">marina.yamamoto8@gmail.com</p>
           <a
             className="sns-icon"
             href="https://www.linkedin.com/in/marina-yamamoto-558276128"
-            // eslint-disable-next-line react/jsx-no-target-blank
             target="_blank"
             rel="noreferrer"
           >
@@ -70,7 +60,6 @@ export default function ContactBanner() {
           <a
             className="sns-icon"
             href="https://github.com/Marina294"
-            // eslint-disable-next-line react/jsx-no-target-blank
             target="_blank"
             rel="noreferrer"
           >
