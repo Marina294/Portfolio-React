@@ -35,7 +35,7 @@ const WorkItemStyles = styled.div`
       height: 350px;
     }
     .workItem__desc {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
     }
   }
   table {
