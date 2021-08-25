@@ -26,7 +26,7 @@ const WorkSectionStyle = styled.div`
     position: absolute;
     height: 50px;
     width: 50px;
-    background: var(--deep-dark);
+    background: var(--additional);
     z-index: 10;
     top: 0;
     transform: translateY(50%);

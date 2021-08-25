@@ -18,7 +18,7 @@ const AboutItemStyles = styled.div`
     left: 18rem;
   }
   .item {
-    background-color: var(--deep-dark);
+    background-color: var(--additional);
     padding: 1rem;
     border-radius: 8px;
   }

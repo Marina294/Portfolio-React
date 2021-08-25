@@ -10,7 +10,7 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: var(--bg);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,7 +30,7 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      color: var(--deep-dark);
+      color: var(--additional);
     }
   }
   .mobile-menu-icon {
