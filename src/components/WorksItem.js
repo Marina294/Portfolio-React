@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImGithub } from 'react-icons/im';
-import WorkImg from '../assets/images/projectImg.png';
+import WorkImg from '../assets/images/drawing.jpg';
 
 const WorkItemStyles = styled.div`
   .worItem__img {
@@ -78,23 +78,25 @@ export default function WorkItem({
         <h3 className="workItem__title">{title}</h3>
         <p className="workItem__desc">{desc}</p>
         <table className="workItem__gitLink">
-          <tr>
-            <td>
-              <a
-                className="sns-icon"
-                href={gitLink}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImGithub />
-              </a>
-            </td>
-            <td>
-              <a href={gitLink} target="_blank" rel="noreferrer">
-                Check my code
-              </a>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  className="sns-icon"
+                  href={gitLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <ImGithub />
+                </a>
+              </td>
+              <td>
+                <a href={gitLink} target="_blank" rel="noreferrer">
+                  Check my code
+                </a>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </WorkItemStyles>
