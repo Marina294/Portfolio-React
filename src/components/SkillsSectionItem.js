@@ -14,6 +14,7 @@ const ItemStyles = styled.div`
     margin-top: 2rem;
     font-size: 2.5rem;
     font-family: 'Urbanist';
+    font-weight: 600;
   }
 
   .para {

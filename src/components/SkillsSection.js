@@ -32,7 +32,7 @@ export default function SkillsSection() {
           <SkillsSectionItem
             icon={<MdComputer />}
             title="Web design"
-            desc="I do ui design for websites, marketing e-mail and web advertising."
+            desc="I do UI design for websites, marketing e-mail and web advertising."
             tools="[Figma, Sketch, Adobe XD]"
           />
           <SkillsSectionItem
