@@ -1,11 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-// import RobotoMonoRegular from '../assets/fonts/RobotoMono-Regular.ttf';
-// import MontserratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
-// import MontserratBold from '../assets/fonts/Montserrat-Bold.ttf';
-
-// import KarlaBold from '../assets/fonts/Karla-Bold.ttf';
-// import KarlaSemiBold from '../assets/fonts/Karla-SemiBold.ttf';
-// import KarlaRegular from '../assets/fonts/Karla-Regular.ttf';
 
 import CaveatBold from '../assets/fonts/Caveat-Bold.ttf';
 import CaveatSemiBold from '../assets/fonts/Caveat-SemiBold.ttf';

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
+import { ImLinkedin, ImGithub } from 'react-icons/im';
 
 const NavStyles = styled.nav`
   position: fixed;
@@ -153,6 +154,26 @@ export default function NavMenu() {
           >
             CONTACT
           </NavLink>
+        </li>
+        <li>
+          <div>
+            <a
+              className="sns-icon"
+              href="https://www.linkedin.com/in/marina-yamamoto-558276128"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImLinkedin />
+            </a>
+            <a
+              className="sns-icon"
+              href="https://github.com/Marina294"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImGithub />
+            </a>
+          </div>
         </li>
       </ul>
     </NavStyles>

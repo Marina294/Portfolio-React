@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ImLinkedin, ImGithub } from 'react-icons/im';
+// import { ImLinkedin, ImGithub } from 'react-icons/im';
+import { ImLinkedin } from 'react-icons/im';
 import SectionTitle from './SectionTitle';
 
 const ContactSectionStyle = styled.div`
@@ -8,8 +9,6 @@ const ContactSectionStyle = styled.div`
   height: 100vh;
   min-height: 100px;
   .contactBanner__wrapper {
-    // border-radius: 12px;
-    // padding: 5rem 0rem;
     text-align: center;
   }
   .contactBanner__heading {
@@ -23,9 +22,7 @@ const ContactSectionStyle = styled.div`
   .sns-icon {
     color: var(--white);
     padding: 1.8rem;
-    // display: flex;
     align-items: center;
-    // border-radius: 50%;
   }
   svg {
     width: 3rem;
@@ -56,14 +53,14 @@ export default function ContactSection() {
           >
             <ImLinkedin />
           </a>
-          <a
+          {/* <a
             className="sns-icon"
             href="https://github.com/Marina294"
             target="_blank"
             rel="noreferrer"
           >
             <ImGithub />
-          </a>
+          </a> */}
         </div>
       </div>
     </ContactSectionStyle>

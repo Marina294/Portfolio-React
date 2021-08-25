@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ImLinkedin, ImGithub } from 'react-icons/im';
-// import { MdMailOutline } from 'react-icons/md';
-// import ContactInfoItem from './ContactInfoItem';
-// import PText from './PText';
+// import { ImLinkedin, ImGithub } from 'react-icons/im';
+import { ImLinkedin } from 'react-icons/im';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
@@ -57,14 +55,14 @@ export default function ContactBanner() {
           >
             <ImLinkedin />
           </a>
-          <a
+          {/* <a
             className="sns-icon"
             href="https://github.com/Marina294"
             target="_blank"
             rel="noreferrer"
           >
             <ImGithub />
-          </a>
+          </a> */}
         </div>
       </div>
     </ContactBannerStyles>
