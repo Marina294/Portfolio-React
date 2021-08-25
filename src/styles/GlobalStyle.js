@@ -14,6 +14,8 @@ const GlobalStyles = createGlobalStyle`
       color: rgba(93, 83, 74, 0.8);
       background-color: rgba(165, 147, 239, 0.4);
     }
+    -webkit-tap-highlight-color:rgba(165, 147, 239, 0.4);
+    tap-highlight-color:rgba(165, 147, 239, 0.4);
 
   }
   :root{
