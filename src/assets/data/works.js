@@ -9,7 +9,8 @@ const works = [
   {
     id: uuidv4(),
     name: 'Drawing Time!',
-    desc: 'An app to draw illustration. Made by Canvas, Desktop Only.',
+    desc:
+      'An app to draw illustration. You can change Pen size and color, also easy to erase. Made by Canvas, Desktop Only.',
     link: 'https://drawing-time.netlify.app/',
     img: DrawingTimeImg,
     gitLink: 'https://github.com/Marina294/Drawing-APP',
