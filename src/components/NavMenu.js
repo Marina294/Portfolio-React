@@ -26,7 +26,7 @@ const NavStyles = styled.nav`
       display: inline-block;
       font-family: 'Urbanist';
       padding: 1rem 2rem;
-      font-size: 2rem;
+      font-size: 1.7rem;
       color: var(--gray-1);
       outline: none;
     }
