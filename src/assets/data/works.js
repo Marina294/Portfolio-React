@@ -8,29 +8,12 @@ import CheckWorldTimeImg from '../images/clock.jpg';
 const works = [
   {
     id: uuidv4(),
-    name: 'Drawing Time!',
+    name: 'Check World Time',
     desc:
-      'An app to draw illustration. You can change Pen size and color, also easy to erase. Made by Canvas, Desktop Only.',
-    link: 'https://drawing-time.netlify.app/',
-    img: DrawingTimeImg,
-    gitLink: 'https://github.com/Marina294/Drawing-APP',
-  },
-  {
-    id: uuidv4(),
-    name: 'apple Calculator',
-    desc:
-      'An app for calculation. It will change to iOS and MacOS design by responsive.',
-    link: 'https://calculator-clone-apple.netlify.app/',
-    img: CalculatorImg,
-    gitLink: 'https://github.com/Marina294/Calculator-app',
-  },
-  {
-    id: uuidv4(),
-    name: 'Rock Paper Meow',
-    desc: 'Rock paper scissors game with cat paws. Responsive design.',
-    link: 'https://rock-paper-meow.netlify.app/',
-    img: RockPaperMeowImg,
-    gitLink: 'https://github.com/Marina294/Rock-Paper-Scissors-app',
+      'A world clcok app. Search city name or time zone. You can move the list sort and change background every time. Responsive design.',
+    link: 'https://check-world-time.netlify.app/',
+    img: CheckWorldTimeImg,
+    gitLink: 'https://github.com/Marina294/World-clock-react',
   },
   {
     id: uuidv4(),
@@ -43,12 +26,29 @@ const works = [
   },
   {
     id: uuidv4(),
-    name: 'Check World Time',
+    name: 'Rock Paper Meow',
+    desc: 'Rock paper scissors game with cat paws. Responsive design.',
+    link: 'https://rock-paper-meow.netlify.app/',
+    img: RockPaperMeowImg,
+    gitLink: 'https://github.com/Marina294/Rock-Paper-Scissors-app',
+  },
+  {
+    id: uuidv4(),
+    name: 'apple Calculator',
     desc:
-      'A world clcok app. Search city name or time zone. You can move the list sort and change background every time. Responsive design.',
-    link: 'https://check-world-time.netlify.app/',
-    img: CheckWorldTimeImg,
-    gitLink: 'https://github.com/Marina294/World-clock-react',
+      'An app for calculation. It will change to iOS and MacOS design by responsive.',
+    link: 'https://calculator-clone-apple.netlify.app/',
+    img: CalculatorImg,
+    gitLink: 'https://github.com/Marina294/Calculator-app',
+  },
+  {
+    id: uuidv4(),
+    name: 'Drawing Time!',
+    desc:
+      'An app to draw illustration. You can change Pen size and color, also easy to erase. Made by Canvas, Desktop Only.',
+    link: 'https://drawing-time.netlify.app/',
+    img: DrawingTimeImg,
+    gitLink: 'https://github.com/Marina294/Drawing-APP',
   },
 ];
 
