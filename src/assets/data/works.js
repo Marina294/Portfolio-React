@@ -26,20 +26,20 @@ const works = [
   },
   {
     id: uuidv4(),
+    name: 'Rock Paper Meow',
+    desc: 'Rock paper scissors game with cat paws. Responsive design.',
+    link: 'https://rock-paper-meow.netlify.app/',
+    img: RockPaperMeowImg,
+    gitLink: 'https://github.com/Marina294/Rock-Paper-Scissors-app',
+  },
+  {
+    id: uuidv4(),
     name: 'apple Calculator',
     desc:
       'An app for calculation. It will change to iOS and MacOS design by responsive.',
     link: 'https://calculator-clone-apple.netlify.app/',
     img: CalculatorImg,
     gitLink: 'https://github.com/Marina294/Calculator-app',
-  },
-  {
-    id: uuidv4(),
-    name: 'Rock Paper Meow',
-    desc: 'Rock paper scissors game with cat paws. Responsive design.',
-    link: 'https://rock-paper-meow.netlify.app/',
-    img: RockPaperMeowImg,
-    gitLink: 'https://github.com/Marina294/Rock-Paper-Scissors-app',
   },
   {
     id: uuidv4(),
@@ -51,5 +51,5 @@ const works = [
     gitLink: 'https://github.com/Marina294/Drawing-APP',
   },
 ];
-// test
+
 export default works;
