@@ -12,11 +12,7 @@ const ItemStyles = styled.div`
   }
   .skillsItem__title {
     margin-top: 2rem;
-    font-size: 2.5rem;
-    font-family: 'Urbanist';
-    font-weight: 600;
   }
-
   .para {
     margin-top: 2rem;
     margin-bottom: 0;
@@ -25,14 +21,14 @@ const ItemStyles = styled.div`
 
 export default function SkillsSectionItem({
   icon = <MdDesktopMac />,
-  title = 'Web Design',
+  title = 'skill title',
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
   tools = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
 }) {
   return (
     <ItemStyles className="skillsItem">
       <div className="skillsItem__icon">{icon}</div>
-      <div className="skillsItem__title">{title}</div>
+      <h3 className="skillsItem__title">{title}</h3>
       <PText>{desc}</PText>
       <PText>
         <span>{tools}</span>

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ImGithub } from 'react-icons/im';
 import WorkImg from '../assets/images/drawing.jpg';
 
 const WorkItemStyles = styled.div`
@@ -31,9 +30,6 @@ const WorkItemStyles = styled.div`
     font-family: 'Urbanist';
     line-height: 3rem;
     margin-top: 1rem;
-  }
-  .workItem__gitLink {
-    color: var(--gray-2);
   }
   .workItem__link {
     color: var(--gray-2);
@@ -71,7 +67,6 @@ export default function WorkItem({
   title = 'Work Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
   link = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-  gitLink = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
     <WorkItemStyles className="workItem__img">
@@ -86,32 +81,6 @@ export default function WorkItem({
       <div className="workItem__info">
         <h3 className="workItem__title">{title}</h3>
         <p className="workItem__desc">{desc}</p>
-        <table className="workItem__gitLink">
-          <tbody>
-            <tr>
-              <td>
-                <a
-                  className="sns-icon"
-                  href={gitLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ImGithub style={{ fill: 'var(--gray-2)' }} />
-                </a>
-              </td>
-              <td>
-                <a
-                  className="workItem__link"
-                  href={gitLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Check my code
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </WorkItemStyles>
   );

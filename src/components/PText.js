@@ -4,11 +4,8 @@ import styled from 'styled-components';
 const PStyle = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
-  line-height: 1.7em;
-  @media only screen and (max-width: 768px) {
-    font-size: 1.7rem;
+  // margin-top: 5rem;
+  // margin-bottom: 5rem;
   }
 `;
 

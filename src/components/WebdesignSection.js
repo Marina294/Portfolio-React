@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-// import AboutImg from '../assets/images/about.jpg';
 
-const AboutSectionStyles = styled.div`
+const WebdesignSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
     display: flex;
@@ -18,10 +17,6 @@ const AboutSectionStyles = styled.div`
   }
   .section-title {
     text-align: center;
-  }
-  .ptext__allItems {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
   .para {
     margin-top: 2rem;
@@ -55,6 +50,7 @@ const AboutSectionStyles = styled.div`
     }
     .para {
       margin: 0 auto;
+      margin-top: 2rem;
     }
     .aboutSection__buttons {
       flex-direction: column;
@@ -68,27 +64,26 @@ const AboutSectionStyles = styled.div`
   }
 `;
 
-export default function AboutSection() {
+export default function webdesignSection() {
   return (
-    <AboutSectionStyles>
+    <WebdesignSectionStyles>
       <div className="container">
         <div className="aboutSection">
-          <SectionTitle heading="About Me" />
-          <div className="ptext__allItems">
-            <PText>
-              2 years experience in web design in IT and fintech companies. +9
-              years experience in graphic design and art direction for print.
-              Worked with marketing team and developer team for specify exact
-              time. flexibly in projects, including design, planning and
-              management.
-            </PText>
-          </div>
+          <SectionTitle heading="Web Design" />
+          <h2 className="contactBanner__heading">Web Design</h2>
+          <PText>
+            2 years experience in web design in IT and fintech companies. +9
+            years experience in graphic design and art direction for print.
+            Worked with marketing team and developer team for specify exact
+            time. flexibly in projects, including design, planning and
+            management.
+          </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Read More" btnLink="/about" outline />
             <Button btnText="My Works" btnLink="/works" />
           </div>
         </div>
       </div>
-    </AboutSectionStyles>
+    </WebdesignSectionStyles>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { ImLinkedin, ImGithub } from 'react-icons/im';
 import { ImLinkedin } from 'react-icons/im';
 
 const ContactBannerStyles = styled.div`
@@ -45,7 +44,7 @@ export default function ContactBanner() {
     <ContactBannerStyles>
       <div className="container">
         <div className="contactBanner__wrapper">
-          <h3 className="contactBanner__heading">CONTACT</h3>
+          <h3 className="contactBanner__heading">Contact Me</h3>
           <p className="contactBanner__p">marina.yamamoto8@gmail.com</p>
           <a
             className="sns-icon"

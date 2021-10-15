@@ -6,6 +6,7 @@ import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Design from './pages/Design';
 import Works from './pages/Works';
 
 // Nav bar
@@ -18,6 +19,9 @@ export default function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/design">
+            <Design />
           </Route>
           <Route path="/works">
             <Works />

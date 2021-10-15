@@ -23,7 +23,7 @@ const HeroStyles = styled.div`
     }
     .hero__name {
       font-family: 'Caveat';
-      font-weight: 700;
+      font-weight: 500;
       font-size: 7rem;
       color: var(--gray-1);
     }

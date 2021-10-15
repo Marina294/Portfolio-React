@@ -30,7 +30,6 @@ const AboutPageStyles = styled.div`
     }
   }
   .about__heading {
-    font-size: 3.6rem;
     margin-bottom: 3rem;
   }
   .about__info {
@@ -67,10 +66,7 @@ const AboutPageStyles = styled.div`
       gap: 5rem;
     }
     .about__subheading {
-      font-size: 1.8rem;
-    }
-    .about__heading {
-      font-size: 2.8rem;
+      font-size: 1.9rem;
     }
     .about__info__heading {
       font-size: 3rem;
@@ -92,7 +88,7 @@ export default function About() {
         <div className="container">
           <div className="top-section">
             <div className="left">
-              <h2 className="about__heading">Marina Yamamoto</h2>
+              <h1 className="about__heading">Marina Yamamoto</h1>
               <p className="about__subheading">Graphic / Web Designer</p>
               <div className="about__info">
                 <PText>

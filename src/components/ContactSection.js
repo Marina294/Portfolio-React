@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { ImLinkedin, ImGithub } from 'react-icons/im';
 import { ImLinkedin } from 'react-icons/im';
 import SectionTitle from './SectionTitle';
 
@@ -42,7 +41,7 @@ export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className="container">
-        <SectionTitle heading="contact" />
+        <SectionTitle heading="Contact Me" />
         <div className="contactBanner__wrapper">
           <p className="contactBanner__p">marina.yamamoto8@gmail.com</p>
           <a
@@ -53,14 +52,6 @@ export default function ContactSection() {
           >
             <ImLinkedin />
           </a>
-          {/* <a
-            className="sns-icon"
-            href="https://github.com/Marina294"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ImGithub />
-          </a> */}
         </div>
       </div>
     </ContactSectionStyle>
