@@ -146,7 +146,7 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
-            to="/works"
+            to="/dev"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}

@@ -85,7 +85,7 @@ export default function AboutSection() {
           </div>
           <div className="aboutSection__buttons">
             <Button btnText="Read More" btnLink="/about" outline />
-            <Button btnText="My Works" btnLink="/works" />
+            <Button btnText="Check My Design" btnLink="/design" />
           </div>
         </div>
       </div>

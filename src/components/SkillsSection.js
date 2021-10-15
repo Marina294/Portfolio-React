@@ -8,7 +8,7 @@ const SkillsItemsStyles = styled.div`
   padding: 10rem 0;
   .skills__allItems {
     display: flex;
-    gap: 10rem;
+    gap: 7rem;
     justify-content: space-between;
     margin-top: 5rem;
   }

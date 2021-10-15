@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import WorkImg from '../assets/images/drawing.jpg';
 
-const WorkItemStyles = styled.div`
+const DesignItemStyles = styled.div`
   .workItem__img {
     width: 100%;
     height: 400px;
@@ -10,7 +10,7 @@ const WorkItemStyles = styled.div`
     overflow: hidden;
     display: inline-block;
     border: 3px solid var(--gray-2);
-    box-shadow: 5px 10px #888888;
+    // box-shadow: 5px 10px #888888;
     img {
       height: 100%;
     }
@@ -69,7 +69,7 @@ export default function WorkItem({
   link = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
-    <WorkItemStyles className="workItem__img">
+    <DesignItemStyles className="workItem__img">
       <a
         href={link}
         rel="noreferrer"
@@ -82,6 +82,6 @@ export default function WorkItem({
         <h3 className="workItem__title">{title}</h3>
         <p className="workItem__desc">{desc}</p>
       </div>
-    </WorkItemStyles>
+    </DesignItemStyles>
   );
 }

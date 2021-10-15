@@ -7,7 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Design from './pages/Design';
-import Works from './pages/Works';
+import Dev from './pages/Dev';
 
 // Nav bar
 export default function App() {
@@ -23,8 +23,8 @@ export default function App() {
           <Route path="/design">
             <Design />
           </Route>
-          <Route path="/works">
-            <Works />
+          <Route path="/dev">
+            <Dev />
           </Route>
           <Route path="/contact">
             <Contact />

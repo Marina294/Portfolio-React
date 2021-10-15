@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ImGithub } from 'react-icons/im';
 import WorkImg from '../assets/images/drawing.jpg';
 
-const WorkItemStyles = styled.div`
+const DevItemStyles = styled.div`
   .workItem__img {
     width: 100%;
     height: 400px;
@@ -66,7 +66,7 @@ const WorkItemStyles = styled.div`
   }
 `;
 
-export default function WorkItem({
+export default function DevItem({
   img = WorkImg,
   title = 'Work Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
@@ -74,7 +74,7 @@ export default function WorkItem({
   gitLink = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
-    <WorkItemStyles className="workItem__img">
+    <DevItemStyles className="workItem__img">
       <a
         href={link}
         rel="noreferrer"
@@ -113,6 +113,6 @@ export default function WorkItem({
           </tbody>
         </table>
       </div>
-    </WorkItemStyles>
+    </DevItemStyles>
   );
 }

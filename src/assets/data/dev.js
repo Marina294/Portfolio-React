@@ -5,7 +5,7 @@ import RockPaperMeowImg from '../images/rock.jpg';
 import WhatTOCookTodayImg from '../images/cook.jpg';
 import CheckWorldTimeImg from '../images/clock.jpg';
 
-const works = [
+const dev = [
   {
     id: uuidv4(),
     name: 'Check World Time',
@@ -52,4 +52,4 @@ const works = [
   },
 ];
 
-export default works;
+export default dev;

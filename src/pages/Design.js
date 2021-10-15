@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import DesignInfo from '../assets/data/design';
@@ -14,7 +14,7 @@ const DesignStyle = styled.div`
   }
   .works__allItems {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
   }
@@ -51,16 +51,16 @@ const DesignStyle = styled.div`
 `;
 
 export default function Design() {
-  const [searchText] = useState('');
-  const [worksData, setDesignData] = useState(DesignInfo);
-  useEffect(() => {
-    if (searchText === '') return;
-    setDesignData(() =>
-      DesignInfo.filter((item) =>
-        item.name.toLowerCase().match(searchText.toLowerCase())
-      )
-    );
-  }, [searchText]);
+  // const [searchText] = useState('');
+  const [worksData] = useState(DesignInfo);
+  // useEffect(() => {
+  //   if (searchText === '') return;
+  //   setDesignData(() =>
+  //     DesignInfo.filter((item) =>
+  //       item.name.toLowerCase().match(searchText.toLowerCase())
+  //     )
+  //   );
+  // }, [searchText]);
   // const handleChange = (e) => {
   //   e.preventDefault();
   //   setSearchText(e.target.value);

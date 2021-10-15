@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/md';
 import SectionTitle from '../components/SectionTitle';
-import WorksInfo from '../assets/data/works';
-import WorksItem from '../components/WorksItem';
+import DevInfo from '../assets/data/dev';
+import DevItem from '../components/DevItem';
 
-const WorksStyle = styled.div`
+const DevStyle = styled.div`
   padding: 10rem 0;
   img {
     width: 100%;
@@ -50,13 +50,13 @@ const WorksStyle = styled.div`
   }
 `;
 
-export default function Works() {
+export default function Dev() {
   const [searchText, setSearchText] = useState('');
-  const [worksData, setWorksData] = useState(WorksInfo);
+  const [devData, setDevData] = useState(DevInfo);
   useEffect(() => {
     if (searchText === '') return;
-    setWorksData(() =>
-      WorksInfo.filter((item) =>
+    setDevData(() =>
+      DevInfo.filter((item) =>
         item.name.toLowerCase().match(searchText.toLowerCase())
       )
     );
@@ -65,13 +65,13 @@ export default function Works() {
     e.preventDefault();
     setSearchText(e.target.value);
     if (!e.target.value.length > 0) {
-      setWorksData(WorksInfo);
+      setDevData(DevInfo);
     }
   };
   return (
-    <WorksStyle>
+    <DevStyle>
       <div className="container">
-        <SectionTitle heading="Works" />
+        <SectionTitle heading="Development" />
         <div className="works__searchBar">
           <form>
             <input
@@ -84,8 +84,8 @@ export default function Works() {
           </form>
         </div>
         <div className="works__allItems">
-          {worksData.map((item) => (
-            <WorksItem
+          {devData.map((item) => (
+            <DevItem
               key={item.id}
               title={item.name}
               desc={item.desc}
@@ -96,6 +96,6 @@ export default function Works() {
           ))}
         </div>
       </div>
-    </WorksStyle>
+    </DevStyle>
   );
 }

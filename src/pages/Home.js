@@ -3,7 +3,7 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import DesignSection from '../components/DesignSection';
-import WorksSection from '../components/WorksSection';
+import DevSection from '../components/DevSection';
 import ContactBanner from '../components/ContactBanner';
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <DesignSection />
-      <WorksSection />
+      <DevSection />
       <ContactBanner />
     </div>
   );

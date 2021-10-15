@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import WorksItem from './WorksItem';
+import DevItem from './DevItem';
 import SectionTitle from './SectionTitle';
 import 'swiper/swiper-bundle.min.css';
-import works from '../assets/data/works';
+import works from '../assets/data/dev';
 import Button from './Button';
 
 SwiperCore.use([Navigation]);
 
-const WorkSectionStyle = styled.div`
+const DevSectionStyle = styled.div`
   padding: 10rem 0;
   .works__allItems {
     display: flex;
@@ -66,23 +66,23 @@ const WorkSectionStyle = styled.div`
 
 export default function WorksSection() {
   return (
-    <WorkSectionStyle>
+    <DevSectionStyle>
       <div className="container">
-        <SectionTitle heading="Works" />
+        <SectionTitle heading="Development" />
         <div className="works__allItems">
           <Swiper
-            spaceBetween={40}
+            spaceBetween={20}
             slidesPerView={1}
             navigation
             breakpoints={{
               425: {
-                slidesPerView: 1,
-              },
-              768: {
                 slidesPerView: 2,
               },
-              1200: {
+              768: {
                 slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
               },
             }}
           >
@@ -90,7 +90,7 @@ export default function WorksSection() {
               if (index >= 5) return;
               return (
                 <SwiperSlide key={work.id}>
-                  <WorksItem
+                  <DevItem
                     img={work.img}
                     title={work.name}
                     desc={work.desc}
@@ -104,8 +104,8 @@ export default function WorksSection() {
         </div>
       </div>
       <div className="worksSection__button">
-        <Button btnText="Go To Works List" btnLink="/works" />
+        <Button btnText="Check Dev List" btnLink="/dev" />
       </div>
-    </WorkSectionStyle>
+    </DevSectionStyle>
   );
 }
