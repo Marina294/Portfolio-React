@@ -4,7 +4,7 @@ import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 
-const WebdesignSectionStyles = styled.div`
+const OnlineadsSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
     display: flex;
@@ -64,13 +64,13 @@ const WebdesignSectionStyles = styled.div`
   }
 `;
 
-export default function webdesignSection() {
+export default function OnlineadsSection() {
   return (
-    <WebdesignSectionStyles>
+    <OnlineadsSectionStyles>
       <div id="webDesign" className="container">
         <div className="aboutSection">
-          <SectionTitle heading="Web Design" />
-          <h2 className="contactBanner__heading">Web Design</h2>
+          <SectionTitle heading="Online ads" />
+          <h2 className="contactBanner__heading">Online ads</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9
             years experience in graphic design and art direction for print.
@@ -84,6 +84,6 @@ export default function webdesignSection() {
           </div>
         </div>
       </div>
-    </WebdesignSectionStyles>
+    </OnlineadsSectionStyles>
   );
 }
