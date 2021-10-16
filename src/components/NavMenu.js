@@ -31,7 +31,8 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      color: var(--additional);
+      color: var(--gray-2);
+      font-weight: 600;
     }
   }
   .mobile-menu-icon {
@@ -174,7 +175,7 @@ export default function NavMenu() {
               target="_blank"
               rel="noreferrer"
             >
-              <ImLinkedin />
+              <ImLinkedin style={{ fill: 'var(--additional)' }} />
             </a>
             <a
               className="sns-icon"
@@ -182,7 +183,7 @@ export default function NavMenu() {
               target="_blank"
               rel="noreferrer"
             >
-              <ImGithub />
+              <ImGithub style={{ fill: 'var(--additional)' }} />
             </a>
           </div>
         </li>

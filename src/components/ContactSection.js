@@ -50,7 +50,7 @@ export default function ContactSection() {
             target="_blank"
             rel="noreferrer"
           >
-            <ImLinkedin />
+            <ImLinkedin style={{ fill: 'var(--additional)' }} />
           </a>
         </div>
       </div>

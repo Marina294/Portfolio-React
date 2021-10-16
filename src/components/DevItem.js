@@ -17,6 +17,7 @@ const DevItemStyles = styled.div`
     }
   }
   .workItem__title {
+    color: var(--additional);
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -27,16 +28,14 @@ const DevItemStyles = styled.div`
     border-radius: 12px;
   }
   .workItem__desc {
-    font-size: 1.8rem;
-    font-family: 'Urbanist';
     line-height: 3rem;
     margin-top: 1rem;
   }
   .workItem__gitLink {
-    color: var(--gray-2);
+    color: var(--gray-1);
   }
   .workItem__link {
-    color: var(--gray-2);
+    color: var(--gray-1);
     font-weight: 600;
   }
   @media only screen and (max-width: 768px) {
@@ -84,7 +83,14 @@ export default function DevItem({
         <img src={img} alt="work img" />
       </a>
       <div className="workItem__info">
-        <h3 className="workItem__title">{title}</h3>
+        <a
+          href={link}
+          rel="noreferrer"
+          target="_blank"
+          className="workItem__link"
+        >
+          <h3 className="workItem__title">{title}</h3>
+        </a>
         <p className="workItem__desc">{desc}</p>
         <table className="workItem__gitLink">
           <tbody>
@@ -96,7 +102,7 @@ export default function DevItem({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <ImGithub style={{ fill: 'var(--gray-2)' }} />
+                  <ImGithub style={{ fill: 'var(--gray-1)' }} />
                 </a>
               </td>
               <td>

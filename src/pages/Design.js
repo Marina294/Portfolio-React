@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { HashLink } from 'react-router-hash-link';
+// import { HashLink } from 'react-router-hash-link';
 import SectionTitle from '../components/SectionTitle';
 import DesignInfo from '../assets/data/design';
 import DesignItem from '../components/DesignItem';
-import WebdesignSection from '../components/WebdesignSection';
-import OnlineadsSection from '../components/OnlineadsSection';
-import DesignSection2 from '../components/DesignSection2';
+import WebDesignSection from '../components/WebDesignSection';
+import OnlineAdsSection from '../components/OnlineAdsSection';
+import CatalogueDesignSection from '../components/CatalogueDesignSection';
+// import DesignSection2 from '../components/DesignSection2';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
@@ -20,6 +21,7 @@ const DesignStyle = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
+    text-align: center;
   }
 `;
 export default function Design() {
@@ -39,15 +41,9 @@ export default function Design() {
           ))}
         </div>
       </div>
-      <WebdesignSection />
-      <OnlineadsSection />
-      <DesignSection2 />
-      <div>
-        Hello
-        <HashLink to="/Design#webDesign">
-          fugaページのidがpiyoの要素に移動できる例
-        </HashLink>
-      </div>
+      <WebDesignSection />
+      <OnlineAdsSection />
+      <CatalogueDesignSection />
     </DesignStyle>
   );
 }

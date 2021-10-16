@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
+import SectionTitle from './SectionTitle';
 
-const WebDesignSectionStyles = styled.div`
+const ArtDirectionSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
     display: flex;
@@ -63,12 +64,12 @@ const WebDesignSectionStyles = styled.div`
   }
 `;
 
-export default function webDesignSection() {
+export default function ArtDirectionSection() {
   return (
-    <WebDesignSectionStyles id="webDesign">
-      <div className="container">
+    <ArtDirectionSectionStyles id="artDirection">
+      <div id="webDesign" className="container">
         <div className="aboutSection">
-          {/* <SectionTitle heading="Web Design" /> */}
+          <SectionTitle heading="Web Design" />
           <h2 className="contactBanner__heading">Web Design</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9
@@ -83,6 +84,6 @@ export default function webDesignSection() {
           </div>
         </div>
       </div>
-    </WebDesignSectionStyles>
+    </ArtDirectionSectionStyles>
   );
 }

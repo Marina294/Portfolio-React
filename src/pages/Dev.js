@@ -71,7 +71,7 @@ export default function Dev() {
   return (
     <DevStyle>
       <div className="container">
-        <SectionTitle heading="Development" />
+        <SectionTitle heading="Dev Works" />
         <div className="works__searchBar">
           <form>
             <input

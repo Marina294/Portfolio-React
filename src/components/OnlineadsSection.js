@@ -66,11 +66,11 @@ const OnlineadsSectionStyles = styled.div`
 
 export default function OnlineadsSection() {
   return (
-    <OnlineadsSectionStyles>
+    <OnlineadsSectionStyles id="onlineAds">
       <div id="webDesign" className="container">
         <div className="aboutSection">
           <SectionTitle heading="Online ads" />
-          <h2 className="contactBanner__heading">Online ads</h2>
+          <h2 className="contactBanner__heading">Online Ads</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9
             years experience in graphic design and art direction for print.

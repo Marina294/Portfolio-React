@@ -22,7 +22,6 @@ const DesignStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     margin-top: 5rem;
   }
 `;
@@ -31,7 +30,7 @@ export default function Design() {
   return (
     <DesignStyle>
       <div className="container">
-        <SectionTitle heading="Design" />
+        <SectionTitle heading="Design Works" />
         <div className="works__allItems">
           {worksData.map((item) => (
             <DesignItem
@@ -44,7 +43,7 @@ export default function Design() {
         </div>
       </div>
       <div className="worksSection__button">
-        <Button btnText="Check Design List" btnLink="/design" />
+        <Button btnText="Check All Design" btnLink="/design" />
       </div>
     </DesignStyle>
   );

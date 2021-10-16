@@ -52,7 +52,7 @@ export default function ContactBanner() {
             target="_blank"
             rel="noreferrer"
           >
-            <ImLinkedin />
+            <ImLinkedin style={{ fill: 'var(--additional)' }} />
           </a>
           {/* <a
             className="sns-icon"

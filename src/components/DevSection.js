@@ -68,7 +68,7 @@ export default function WorksSection() {
   return (
     <DevSectionStyle>
       <div className="container">
-        <SectionTitle heading="Development" />
+        <SectionTitle heading="Dev Works" />
         <div className="works__allItems">
           <Swiper
             spaceBetween={20}
@@ -104,7 +104,7 @@ export default function WorksSection() {
         </div>
       </div>
       <div className="worksSection__button">
-        <Button btnText="Check Dev List" btnLink="/dev" />
+        <Button btnText="Check All Dev" btnLink="/dev" />
       </div>
     </DevSectionStyle>
   );

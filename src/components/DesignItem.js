@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
-import WorkImg from '../assets/images/drawing.jpg';
+import DrawingTimeImg from '../assets/images/drawing.jpg';
 
 const DesignItemStyles = styled.div`
   .workItem__img {
@@ -11,17 +11,18 @@ const DesignItemStyles = styled.div`
     overflow: hidden;
     display: inline-block;
     border: 3px solid var(--gray-2);
-    // box-shadow: 5px 10px #888888;
-    img {
+    .img {
       height: 100%;
     }
   }
   .workItem__title {
+    color: var(--additional);
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .workItem__info {
     margin-top: 1rem;
+    text-align: center;
     background-color: var(--white);
     padding: 1rem;
     border-radius: 12px;
@@ -63,25 +64,15 @@ const DesignItemStyles = styled.div`
   }
 `;
 
-export default function WorkItem({
-  img = WorkImg,
-  title = 'Work Name',
-  // link = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-}) {
+export default function WorkItem() {
   return (
     <DesignItemStyles className="workItem__img">
       <HashLink to="/Design#webDesign">
-        <img src={img} alt="work img" />
+        <img className="img" src={DrawingTimeImg} alt="work img" />
+        <div className="workItem__info">
+          <h3 className="workItem__title">Web Design</h3>
+        </div>
       </HashLink>
-      <div className="workItem__info">
-        <h3 className="workItem__title">{title}</h3>
-      </div>
-      <div>
-        Hello
-        <HashLink to="/Design#webDesign">
-          fugaページのidがpiyoの要素に移動できる例
-        </HashLink>
-      </div>
     </DesignItemStyles>
   );
 }
