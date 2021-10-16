@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from '../components/PText';
+import PText from './PText';
 import AboutImg from '../assets/images/about.jpg';
-import ContactBanner from '../components/ContactBanner';
-import SkillsSection from '../components/SkillsSection';
 
-const AboutPageStyles = styled.div`
-  padding: 12rem 0;
+const OnlineAdsSectionStyles = styled.div`
+  padding: 10rem 0;
 
-  .top-section {
+  .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: flex-start;
+    text-align: center;
   }
+  // .top-section {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   gap: 2rem;
+  // }
   .left {
     flex: 2;
   }
@@ -81,14 +85,14 @@ const AboutPageStyles = styled.div`
   }
 `;
 
-export default function About() {
+export default function OnlineAdsSection() {
   return (
     <>
-      <AboutPageStyles>
+      <OnlineAdsSectionStyles id="onlineAds">
         <div className="container">
           <div className="top-section">
             <div className="left">
-              <h1 className="about__heading">Marina Yamamoto</h1>
+              <h2 className="webSection__heading">Online Ads</h2>
               <p className="about__subheading">Graphic / Web Designer</p>
               <div className="about__info">
                 <PText>
@@ -97,24 +101,16 @@ export default function About() {
                   pages, company branding. I have also worked in an advertising
                   agency, producing banners for various clients, focusing on
                   in-feed advertising.
-                  <br /> <br />I have +9 years of experience in graphic design
-                  direction in print industry. I was in charge of planning and
-                  producing advertisements, magazines, and general promotional
-                  materials.
-                  <br /> <br />I worked with marketing team and developer team
-                  specify exact time. flexibly in projects, including design,
-                  planning and management.
                 </PText>
               </div>
             </div>
             <div className="right">
-              <img src={AboutImg} alt="Marina Yamamoto" />
+              <img src={AboutImg} alt="Design work" />
+              {/* <img src={AboutImg} alt="Design work" /> */}
             </div>
           </div>
         </div>
-        <SkillsSection />
-        <ContactBanner />
-      </AboutPageStyles>
+      </OnlineAdsSectionStyles>
     </>
   );
 }

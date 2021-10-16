@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import DesignInfo from '../assets/data/design';
 import DesignItem from '../components/DesignItem';
-// import OnlineAdsSection from '../components/OnlineAdsSection';
-// import CatalogDesignSection from '../components/CatalogDesignSection';
-// import ArtDirection from '../components/ArtDirectionSection';
+import WebDesignSection from '../components/WebDesignSection';
+import OnlineAdsSection from '../components/OnlineAdsSection';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
@@ -39,9 +38,8 @@ export default function Design() {
           ))}
         </div>
       </div>
-      {/* <OnlineAdsSection />
-      <CatalogDesignSection />
-      <ArtDirection /> */}
+      <WebDesignSection />
+      <OnlineAdsSection />
     </DesignStyle>
   );
 }
