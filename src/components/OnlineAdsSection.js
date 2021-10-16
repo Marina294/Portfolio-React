@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import AboutImg from '../assets/images/about.jpg';
+import WorkImg1 from '../assets/images/rock.jpg';
 
 const OnlineAdsSectionStyles = styled.div`
   padding: 10rem 0;
@@ -64,7 +64,7 @@ const OnlineAdsSectionStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10rem 0;
+    // padding: 5rem 0;
     .top-section {
       flex-direction: column;
       gap: 5rem;
@@ -105,7 +105,7 @@ export default function OnlineAdsSection() {
               </div>
             </div>
             <div className="right">
-              <img src={AboutImg} alt="Design work" />
+              <img src={WorkImg1} alt="Design work" />
               {/* <img src={AboutImg} alt="Design work" /> */}
             </div>
           </div>
