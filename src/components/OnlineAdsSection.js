@@ -64,7 +64,7 @@ const OnlineAdsSectionStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    // padding: 5rem 0;
+    padding: 5rem 0;
     .top-section {
       flex-direction: column;
       gap: 5rem;
