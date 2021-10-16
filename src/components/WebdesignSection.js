@@ -68,7 +68,6 @@ export default function WebDesignSection() {
     <WebDesignSectionStyles id="webDesign">
       <div className="container">
         <div className="aboutSection">
-          {/* <SectionTitle heading="Web Design" /> */}
           <h2 className="contactBanner__heading">Web Design</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9

@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import { HashLink } from 'react-router-hash-link';
 import SectionTitle from '../components/SectionTitle';
 import DesignInfo from '../assets/data/design';
 import DesignItem from '../components/DesignItem';
-import WebDesignSection from '../components/WebDesignSection';
 import OnlineAdsSection from '../components/OnlineAdsSection';
 import CatalogDesignSection from '../components/CatalogDesignSection';
 import ArtDirection from '../components/ArtDirectionSection';
@@ -41,7 +39,6 @@ export default function Design() {
           ))}
         </div>
       </div>
-      <WebDesignSection />
       <OnlineAdsSection />
       <CatalogDesignSection />
       <ArtDirection />
