@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
-import DesignSection3 from '../components/DesignSection';
+import DesignSection from '../components/DesignSection';
 import DevSection from '../components/DevSection';
 import ContactBanner from '../components/ContactBanner';
 
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <DesignSection3 />
+      <DesignSection />
       <DevSection />
       <ContactBanner />
     </div>
