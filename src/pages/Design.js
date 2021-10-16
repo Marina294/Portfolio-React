@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import DesignInfo from '../assets/data/design';
 import DesignItem from '../components/DesignItem';
-import OnlineAdsSection from '../components/OnlineAdsSection';
-import CatalogDesignSection from '../components/CatalogDesignSection';
-import ArtDirection from '../components/ArtDirectionSection';
+// import OnlineAdsSection from '../components/OnlineAdsSection';
+// import CatalogDesignSection from '../components/CatalogDesignSection';
+// import ArtDirection from '../components/ArtDirectionSection';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
