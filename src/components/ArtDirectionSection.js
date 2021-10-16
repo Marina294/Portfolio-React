@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
-import SectionTitle from './SectionTitle';
 
 const ArtDirectionSectionStyles = styled.div`
   padding: 10rem 0;
