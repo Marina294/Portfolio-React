@@ -39,9 +39,9 @@ export default function Design() {
           ))}
         </div>
       </div>
-      <OnlineAdsSection />
+      {/* <OnlineAdsSection />
       <CatalogDesignSection />
-      <ArtDirection />
+      <ArtDirection /> */}
     </DesignStyle>
   );
 }
