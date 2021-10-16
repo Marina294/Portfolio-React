@@ -63,7 +63,7 @@ const WebDesignSectionStyles = styled.div`
   }
 `;
 
-export default function webDesignSection() {
+export default function WebDesignSection() {
   return (
     <WebDesignSectionStyles id="webDesign">
       <div className="container">
