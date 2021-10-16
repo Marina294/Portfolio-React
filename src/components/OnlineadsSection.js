@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
-import SectionTitle from './SectionTitle';
 
 const OnlineadsSectionStyles = styled.div`
   padding: 10rem 0;
@@ -69,7 +68,6 @@ export default function OnlineadsSection() {
     <OnlineadsSectionStyles id="onlineAds">
       <div id="webDesign" className="container">
         <div className="aboutSection">
-          <SectionTitle heading="Online ads" />
           <h2 className="contactBanner__heading">Online Ads</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9
