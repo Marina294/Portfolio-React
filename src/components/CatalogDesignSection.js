@@ -4,7 +4,7 @@ import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 
-const CatalogueDesignSectionStyles = styled.div`
+const CatalogDesignSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
     display: flex;
@@ -64,12 +64,12 @@ const CatalogueDesignSectionStyles = styled.div`
   }
 `;
 
-export default function OnlineadsSection() {
+export default function CatalogDesignSection() {
   return (
-    <CatalogueDesignSectionStyles id="catalogueDesign">
+    <CatalogDesignSectionStyles id="catalogDesign">
       <div className="container">
         <div className="aboutSection">
-          <SectionTitle heading="Online ads" />
+          <SectionTitle heading="Catalog Design" />
           <h2 className="contactBanner__heading">Online Ads</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9
@@ -84,6 +84,6 @@ export default function OnlineadsSection() {
           </div>
         </div>
       </div>
-    </CatalogueDesignSectionStyles>
+    </CatalogDesignSectionStyles>
   );
 }

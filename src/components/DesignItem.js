@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
-import DrawingTimeImg from '../assets/images/drawing.jpg';
+import WorkImg from '../assets/images/drawing.jpg';
 
 const DesignItemStyles = styled.div`
   .workItem__img {
@@ -64,13 +64,17 @@ const DesignItemStyles = styled.div`
   }
 `;
 
-export default function WorkItem() {
+export default function WorkItem({
+  img = WorkImg,
+  title = 'Work Name',
+  link = 'link',
+}) {
   return (
     <DesignItemStyles className="workItem__img">
-      <HashLink to="/Design#webDesign">
-        <img className="img" src={DrawingTimeImg} alt="work img" />
+      <HashLink to={link}>
+        <img src={img} alt="work img" />
         <div className="workItem__info">
-          <h3 className="workItem__title">Web Design</h3>
+          <h3 className="workItem__title">{title}</h3>
         </div>
       </HashLink>
     </DesignItemStyles>

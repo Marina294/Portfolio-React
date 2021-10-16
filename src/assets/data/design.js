@@ -14,19 +14,19 @@ const design = [
   {
     id: uuidv4(),
     name: 'Online Ads',
-    link: 'https://whattocooktoday.netlify.app/',
+    link: '/Design#onlineAds',
     img: WhatTOCookTodayImg,
   },
   {
     id: uuidv4(),
-    name: 'Catalogue Design',
-    link: 'https://rock-paper-meow.netlify.app/',
+    name: 'Catalog Design',
+    link: '/Design#catalogDesign',
     img: RockPaperMeowImg,
   },
   {
     id: uuidv4(),
     name: 'Art Direction',
-    link: 'https://calculator-clone-apple.netlify.app/',
+    link: '/Design#artDirection',
     img: CalculatorImg,
   },
 ];

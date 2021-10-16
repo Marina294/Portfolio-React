@@ -69,8 +69,8 @@ export default function ArtDirectionSection() {
     <ArtDirectionSectionStyles id="artDirection">
       <div id="webDesign" className="container">
         <div className="aboutSection">
-          <SectionTitle heading="Web Design" />
-          <h2 className="contactBanner__heading">Web Design</h2>
+          <SectionTitle heading="Art Direction" />
+          <h2 className="contactBanner__heading">Art Direction</h2>
           <PText>
             2 years experience in web design in IT and fintech companies. +9
             years experience in graphic design and art direction for print.

@@ -6,8 +6,8 @@ import DesignInfo from '../assets/data/design';
 import DesignItem from '../components/DesignItem';
 import WebDesignSection from '../components/WebDesignSection';
 import OnlineAdsSection from '../components/OnlineAdsSection';
-import CatalogueDesignSection from '../components/CatalogueDesignSection';
-// import DesignSection2 from '../components/DesignSection2';
+import CatalogDesignSection from '../components/CatalogDesignSection';
+import ArtDirection from '../components/ArtDirectionSection';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
@@ -21,7 +21,7 @@ const DesignStyle = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
-    text-align: center;
+    text-align
   }
 `;
 export default function Design() {
@@ -29,7 +29,7 @@ export default function Design() {
   return (
     <DesignStyle>
       <div className="container">
-        <SectionTitle heading="Design" />
+        <SectionTitle heading="Design Works" />
         <div className="works__allItems">
           {worksData.map((item) => (
             <DesignItem
@@ -43,7 +43,8 @@ export default function Design() {
       </div>
       <WebDesignSection />
       <OnlineAdsSection />
-      <CatalogueDesignSection />
+      <CatalogDesignSection />
+      <ArtDirection />
     </DesignStyle>
   );
 }
