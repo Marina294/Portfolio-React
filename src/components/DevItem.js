@@ -42,26 +42,22 @@ const DevItemStyles = styled.div`
     color: var(--gray-1);
     font-weight: 600;
   }
-  table {
-    justify-content: flex-end;
-  }
-  tr {
-    justify-content: flex-end;
-  }
+  // table {
+  //   justify-content: flex-end;
+  // }
+  // tr {
+  //   justify-content: flex-end;
+  // }
   td {
-    font-size: 1.5rem;
-    text-align: right;
-    justify-content: flex-end;
+    font-size: 1.4rem;
+    // text-align: right;
+    // justify-content: flex-end;
   }
   .sns-icon {
     height: 2.5rem;
     margin: 1.3rem 1rem 1.3rem 0rem;
     display: inline-block;
     align-items: cente;
-    @media only screen and (max-width: 768px) {
-      .sns-icon {
-        margin: 0rem 0rem 0rem 0rem;
-      }
     }
   }
 `;

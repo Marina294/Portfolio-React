@@ -11,7 +11,7 @@ const FooterStyle = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .copyright {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 `;

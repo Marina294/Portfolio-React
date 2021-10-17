@@ -31,7 +31,7 @@ const NavStyles = styled.nav`
       outline: none;
     }
     .active {
-      color: var(--gray-2);
+      color: var(--additional);
       font-weight: 600;
     }
   }
