@@ -4,8 +4,6 @@ import styled from 'styled-components';
 const PStyle = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  // margin-top: 5rem;
-  // margin-bottom: 5rem;
   }
 `;
 

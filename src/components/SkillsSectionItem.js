@@ -11,6 +11,7 @@ const ItemStyles = styled.div`
     }
   }
   .skillsItem__title {
+    font-weight: 600;
     margin-top: 2rem;
   }
   .para {
@@ -28,7 +29,7 @@ export default function SkillsSectionItem({
   return (
     <ItemStyles className="skillsItem">
       <div className="skillsItem__icon">{icon}</div>
-      <h3 className="skillsItem__title">{title}</h3>
+      <h4 className="skillsItem__title">{title}</h4>
       <PText>{desc}</PText>
       <PText>
         <span>{tools}</span>

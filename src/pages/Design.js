@@ -18,7 +18,6 @@ const DesignStyle = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
-    text-align
   }
 `;
 export default function Design() {

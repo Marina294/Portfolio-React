@@ -55,35 +55,44 @@ const Typography = createGlobalStyle`
     font-weight: 400;
     color: var(--gray-1);
   }
-  h3,h4,h5,h6{
+  h4,h5,h6{
     font-family: 'Urbanist';
-    font-weight: 700;
   }
-  h1,h2{
+  h1,h2,h3{
     font-family: Caveat;
+    font-weight: 500;
   }
   h1 {
-    font-weight: 500;
-    font-size: 6.5rem;
+    font-size: 5.3rem;
   }
+  h2{
+    font-size: 4.6rem;
+  }
+  h3{
+    font-size: 2.6rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+
   @media only screen and (max-width: 768px) {
     text-align: center;
     h1 {
       font-size: 4.5rem;
     }
-  }
-  h2{
-    font-size: 3.8rem;
-    margin-bottom: 4rem;
-  }
-  h3{
-    font-size: 2.2rem;
-    font-family: 'Urbanist';
-    font-weight: 600;
+    h2 {
+      font-size: 3.8rem;
+    }
+    h3{
+      font-size: 2rem;
+    }
+    h4{
+      font-size: 1.8rem;
+    }
   }
   p{
-    font-size: 1.8rem;
-    line-height: 1.65em;
+    font-size: 1.6rem;
+    line-height: 1.6em;
     letter-spacing: 0.05rem;
     @media only screen and (max-width: 768px) {
       font-size: 1.7rem;

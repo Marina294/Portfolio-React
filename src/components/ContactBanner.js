@@ -15,7 +15,7 @@ const ContactBannerStyles = styled.div`
     margin-bottom: 4rem;
   }
   .contactBanner__p {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 4.5rem;
   }
   .sns-icon {

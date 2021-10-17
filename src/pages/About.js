@@ -21,7 +21,6 @@ const AboutPageStyles = styled.div`
     flex: 1;
   }
   .about__subheading {
-    font-size: 2.2rem;
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
@@ -89,7 +88,7 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <h1 className="about__heading">Marina Yamamoto</h1>
-              <p className="about__subheading">Graphic / Web Designer</p>
+              <h4 className="about__subheading">Graphic / Web Designer</h4>
               <div className="about__info">
                 <PText>
                   I have 2 years of experience in web design in a fintech

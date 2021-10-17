@@ -7,11 +7,11 @@ const FooterStyle = styled.div`
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   @media only screen and (max-width: 768px) {
     .copyright {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <FooterStyle>
       <div className="copyright">
-        <p>© 2021 - Marina Yamamoto</p>
+        <div>© 2021 - Marina Yamamoto</div>
       </div>
     </FooterStyle>
   );

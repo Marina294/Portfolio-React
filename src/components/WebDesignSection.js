@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import AboutImg from '../assets/images/about.jpg';
+import DesignInfo from '../assets/data/webdesign';
+import DesignItem from './WebDesignItem';
 
-const WebDesignSectionStyles = styled.div`
+const WebStyles = styled.div`
   padding: 10rem 0;
-
   .container {
     display: flex;
     align-items: center;
@@ -25,7 +25,6 @@ const WebDesignSectionStyles = styled.div`
     flex: 1;
   }
   .about__subheading {
-    font-size: 2.2rem;
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
@@ -48,9 +47,8 @@ const WebDesignSectionStyles = styled.div`
   .about__info__item {
     margin-bottom: 10rem;
   }
-  .about__info__heading {
-    font-size: 3.6rem;
-    text-transform: uppercase;
+  .webSection__heading {
+    margin-bottom: 3rem;
   }
 
   .skills__allItems {
@@ -64,16 +62,10 @@ const WebDesignSectionStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10rem 0;
+    padding: 5rem 0;
     .top-section {
       flex-direction: column;
       gap: 5rem;
-    }
-    .about__subheading {
-      font-size: 1.9rem;
-    }
-    .about__info__heading {
-      font-size: 3rem;
     }
     .skills__allItems {
       flex-direction: column;
@@ -85,32 +77,31 @@ const WebDesignSectionStyles = styled.div`
   }
 `;
 
-export default function WebDesignSection() {
+export default function Web() {
+  const [worksData] = useState(DesignInfo);
   return (
-    <>
-      <WebDesignSectionStyles id="webDesign">
-        <div className="container">
-          <div className="top-section">
-            <div className="left">
-              <h2 className="webSection__heading">Web Design</h2>
-              <p className="about__subheading">Graphic / Web Designer</p>
-              <div className="about__info">
-                <PText>
-                  I have 2 years of experience in web design in a fintech
-                  company. I was in charge of creating websites and landing
-                  pages, company branding. I have also worked in an advertising
-                  agency, producing banners for various clients, focusing on
-                  in-feed advertising.
-                </PText>
-              </div>
-            </div>
-            <div className="right">
-              <img src={AboutImg} alt="Design work" />
-              {/* <img src={AboutImg} alt="Design work" /> */}
+    <WebStyles id="webDesign">
+      <div className="container">
+        <div className="top-section">
+          <div className="left">
+            <h2 className="webSection__heading">Web Design</h2>
+            <h4 className="about__subheading">Graphic / Web Designer</h4>
+            <div className="about__info">
+              <PText>
+                I have 2 years of experience in web design in a fintech websites
+                and landing pages, company I have also also also worked also
+                worked in an advertising agency, producing banners banners
+                banners for various clients, focusing on in-feed advertising.
+              </PText>
             </div>
           </div>
+          <div className="works__allItems">
+            {worksData.map((item) => (
+              <DesignItem key={item.id} img={item.img} />
+            ))}
+          </div>
         </div>
-      </WebDesignSectionStyles>
-    </>
+      </div>
+    </WebStyles>
   );
 }

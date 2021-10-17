@@ -10,13 +10,13 @@ const DevItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    border: 3px solid var(--gray-2);
     box-shadow: 5px 10px #888888;
     img {
       height: 100%;
     }
   }
   .workItem__title {
+    font-weight: 600;
     color: var(--additional);
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -28,7 +28,6 @@ const DevItemStyles = styled.div`
     border-radius: 12px;
   }
   .workItem__desc {
-    line-height: 3rem;
     margin-top: 1rem;
   }
   .workItem__gitLink {
@@ -41,9 +40,6 @@ const DevItemStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .workItem__img {
       height: 350px;
-    }
-    .workItem__desc {
-      font-size: 1.7rem;
     }
   }
   table {
@@ -89,7 +85,7 @@ export default function DevItem({
           target="_blank"
           className="workItem__link"
         >
-          <h3 className="workItem__title">{title}</h3>
+          <h4 className="workItem__title">{title}</h4>
         </a>
         <p className="workItem__desc">{desc}</p>
         <table className="workItem__gitLink">

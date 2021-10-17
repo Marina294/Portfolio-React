@@ -25,8 +25,20 @@ const design = [
   },
   {
     id: uuidv4(),
-    name: 'Art Direction',
-    link: '/Design#artDirection',
+    name: 'Magazine Design',
+    link: '/Design#magazineDesign',
+    img: CalculatorImg,
+  },
+  {
+    id: uuidv4(),
+    name: 'Train Ads',
+    link: '/Design#trainAds',
+    img: CalculatorImg,
+  },
+  {
+    id: uuidv4(),
+    name: 'Event Goods',
+    link: '/Design#eventGoods',
     img: CalculatorImg,
   },
 ];

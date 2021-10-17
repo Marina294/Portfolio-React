@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HashLink } from 'react-router-hash-link';
 import WorkImg from '../assets/images/drawing.jpg';
 
-const DesignItemStyles = styled.div`
+const WebDesignItemStyles = styled.div`
   .workItem__img {
     width: 100%;
     height: 400px;
@@ -17,12 +16,21 @@ const DesignItemStyles = styled.div`
   }
   .workItem__title {
     color: var(--additional);
-    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .workItem__info {
     margin-top: 1rem;
     text-align: center;
+    background-color: var(--white);
+    padding: 1rem;
     border-radius: 12px;
+  }
+  .workItem__desc {
+    font-size: 1.8rem;
+    font-family: 'Urbanist';
+    line-height: 3rem;
+    margin-top: 1rem;
   }
   .workItem__link {
     color: var(--gray-2);
@@ -38,19 +46,10 @@ const DesignItemStyles = styled.div`
   }
 `;
 
-export default function WorkItem({
-  img = WorkImg,
-  title = 'Work Name',
-  link = 'link',
-}) {
+export default function WorkItem({ img = WorkImg }) {
   return (
-    <DesignItemStyles className="workItem__img">
-      <HashLink to={link}>
-        <img src={img} alt="work img" />
-        <div className="workItem__info">
-          <h4 className="workItem__title">{title}</h4>
-        </div>
-      </HashLink>
-    </DesignItemStyles>
+    <WebDesignItemStyles className="workItem__img">
+      <img src={img} alt="work img" />
+    </WebDesignItemStyles>
   );
 }
