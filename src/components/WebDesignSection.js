@@ -38,11 +38,12 @@ const WebStyles = styled.div`
   .about__info {
     margin-bottom: 4rem;
     .para {
-      max-width: 100%;
+      max-width: 600px;
     }
   }
-  .about__info__items {
-    margin-top: 15rem;
+  .works__infoDetail {
+    font-size: 1.4rem;
+    line-height: 1.8em;
   }
   .about__info__item {
     margin-bottom: 10rem;
@@ -85,14 +86,19 @@ export default function Web() {
         <div className="top-section">
           <div className="left">
             <h2 className="webSection__heading">Web Design</h2>
-            <h4 className="about__subheading">Graphic / Web Designer</h4>
+            <h4 className="about__subheading">
+              Renewal the Corprate website / Company Branding
+            </h4>
             <div className="about__info">
               <PText>
-                I have 2 years of experience in web design in a fintech websites
-                and landing pages, company I have also also also worked also
-                worked in an advertising agency, producing banners banners
-                banners for various clients, focusing on in-feed advertising.
+                Renewal of the corporate website. I am in charge of page
+                composition, composition, corporate color proposals, and
+                illustration production.
               </PText>
+              <div className="works__infoDetail">
+                <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
+                Concept, Design
+              </div>
             </div>
           </div>
           <div className="works__allItems">

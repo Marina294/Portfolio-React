@@ -37,26 +37,6 @@ const AboutPageStyles = styled.div`
       max-width: 100%;
     }
   }
-  .about__info__items {
-    margin-top: 15rem;
-  }
-  .about__info__item {
-    margin-bottom: 10rem;
-  }
-  .about__info__heading {
-    font-size: 3.6rem;
-    text-transform: uppercase;
-  }
-
-  .skills__allItems {
-    display: flex;
-    gap: 10rem;
-    justify-content: space-between;
-    margin-top: 5rem;
-  }
-  .skillsContainer {
-    padding-top: 15rem;
-  }
 
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
@@ -69,13 +49,6 @@ const AboutPageStyles = styled.div`
     }
     .about__info__heading {
       font-size: 3rem;
-    }
-    .skills__allItems {
-      flex-direction: column;
-      max-width: 350px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      gap: 5rem;
     }
   }
 `;
