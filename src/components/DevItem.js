@@ -14,6 +14,11 @@ const DevItemStyles = styled.div`
     img {
       height: 100%;
     }
+    @media only screen and (max-width: 768px) {
+      .workItem__img {
+        height: 350px;
+      }
+    }
   }
   .workItem__title {
     font-weight: 600;
@@ -37,11 +42,6 @@ const DevItemStyles = styled.div`
     color: var(--gray-1);
     font-weight: 600;
   }
-  @media only screen and (max-width: 768px) {
-    .workItem__img {
-      height: 350px;
-    }
-  }
   table {
     justify-content: flex-end;
   }
@@ -58,6 +58,11 @@ const DevItemStyles = styled.div`
     margin: 1.3rem 1rem 1.3rem 0rem;
     display: inline-block;
     align-items: cente;
+    @media only screen and (max-width: 768px) {
+      .sns-icon {
+        margin: 0rem 0rem 0rem 0rem;
+      }
+    }
   }
 `;
 

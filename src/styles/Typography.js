@@ -69,7 +69,7 @@ const Typography = createGlobalStyle`
     font-size: 4.6rem;
   }
   h3{
-    font-size: 2.6rem;
+    font-size: 3.8rem;
   }
   h4{
     font-size: 2rem;
@@ -84,7 +84,7 @@ const Typography = createGlobalStyle`
       font-size: 3.8rem;
     }
     h3{
-      font-size: 2.2rem;
+      font-size: 3rem;
     }
     h4{
       font-size: 2rem;

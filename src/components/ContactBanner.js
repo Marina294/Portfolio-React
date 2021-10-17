@@ -11,7 +11,6 @@ const ContactBannerStyles = styled.div`
     text-align: center;
   }
   .contactBanner__heading {
-    font-size: 3.8rem;
     margin-bottom: 4rem;
   }
   .contactBanner__p {
@@ -25,13 +24,7 @@ const ContactBannerStyles = styled.div`
   svg {
     width: 3rem;
   }
-  h3 {
-    font-family: Caveat;
-  }
   @media only screen and (max-width: 768px) {
-    .contactBanner__heading {
-      font-size: 2.8rem;
-    }
     .contactBanner__p {
       font-size: 1.8rem;
       margin-bottom: 4.5rem;
