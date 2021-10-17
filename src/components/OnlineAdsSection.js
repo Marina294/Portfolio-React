@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import DesignInfo from '../assets/data/webdesign';
+import DesignInfo from '../assets/data/onlineads';
 import DesignItem from './WebDesignItem';
 
 const OnlineAdsStyles = styled.div`
@@ -47,10 +47,23 @@ const OnlineAdsStyles = styled.div`
   }
   .works__allItems {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 2rem;
+    grid-column: 1fr 3fr;
+    grid-gap: 10px;
     margin-top: 5rem;
   }
+
+  // .works__allItems {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  //   gap: 2rem;
+  //   margin-top: 5rem;
+  // }
+  // .works__allItems {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, minmax(100px, 1fr));
+  //   gap: 2rem;
+  //   margin-top: 5rem;
+  // }
   
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
@@ -68,7 +81,7 @@ export default function OnlineAds() {
       <div className="container">
         <div className="top-section">
           <div className="left">
-            <h2 className="webSection__heading">Web Design</h2>
+            <h2 className="webSection__heading">Online Ads</h2>
             <h4 className="works__subheading">
               Renewal the Corprate website / Company Branding
             </h4>
