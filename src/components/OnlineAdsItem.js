@@ -9,6 +9,7 @@ const WebDesignItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
+    border: 3px solid var(--gray-2);
     .img {
       height: 100%;
     }

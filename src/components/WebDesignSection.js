@@ -4,7 +4,7 @@ import PText from './PText';
 import DesignInfo from '../assets/data/webdesign';
 import DesignItem from './WebDesignItem';
 
-const WebStyles = styled.div`
+const WebDesignStyles = styled.div`
   padding: 10rem 0;
   .container {
     display: flex;
@@ -18,13 +18,7 @@ const WebStyles = styled.div`
   //   justify-content: center;
   //   gap: 2rem;
   // }
-  .left {
-    flex: 2;
-  }
-  .right {
-    flex: 1;
-  }
-  .about__subheading {
+  .works__subheading {
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
@@ -32,10 +26,10 @@ const WebStyles = styled.div`
       border-radius: 8px;
     }
   }
-  .about__heading {
+  .works__heading {
     margin-bottom: 1rem;
   }
-  .about__info {
+  .works__info {
     margin-bottom: 4rem;
     .para {
       max-width: 600px;
@@ -45,51 +39,40 @@ const WebStyles = styled.div`
     font-size: 1.4rem;
     line-height: 1.8em;
   }
-  .about__info__item {
+  .works__info__item {
     margin-bottom: 10rem;
   }
   .webSection__heading {
     margin-bottom: 3rem;
   }
-
-  .skills__allItems {
-    display: flex;
-    gap: 10rem;
-    justify-content: space-between;
+  .works__allItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
     margin-top: 5rem;
   }
-  .skillsContainer {
-    padding-top: 15rem;
-  }
-
+  
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
-    .top-section {
-      flex-direction: column;
-      gap: 5rem;
-    }
-    .skills__allItems {
-      flex-direction: column;
-      max-width: 350px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      gap: 5rem;
+    // .top-section {
+    //   flex-direction: column;
+    //   gap: 5rem;
     }
   }
 `;
 
-export default function Web() {
+export default function WebDesign() {
   const [worksData] = useState(DesignInfo);
   return (
-    <WebStyles id="webDesign">
+    <WebDesignStyles id="webDesign">
       <div className="container">
         <div className="top-section">
           <div className="left">
             <h2 className="webSection__heading">Web Design</h2>
-            <h4 className="about__subheading">
+            <h4 className="works__subheading">
               Renewal the Corprate website / Company Branding
             </h4>
-            <div className="about__info">
+            <div className="works__info">
               <PText>
                 Renewal of the corporate website. I am in charge of page
                 composition, composition, corporate color proposals, and
@@ -108,6 +91,6 @@ export default function Web() {
           </div>
         </div>
       </div>
-    </WebStyles>
+    </WebDesignStyles>
   );
 }

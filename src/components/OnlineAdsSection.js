@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/rock.jpg';
+import DesignInfo from '../assets/data/webdesign';
+import DesignItem from './WebDesignItem';
 
-const OnlineAdsSectionStyles = styled.div`
+const OnlineAdsStyles = styled.div`
   padding: 10rem 0;
-
   .container {
     display: flex;
     align-items: center;
@@ -18,14 +18,7 @@ const OnlineAdsSectionStyles = styled.div`
   //   justify-content: center;
   //   gap: 2rem;
   // }
-  .left {
-    flex: 2;
-  }
-  .right {
-    flex: 1;
-  }
-  .about__subheading {
-    font-size: 2.2rem;
+  .works__subheading {
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
@@ -33,84 +26,71 @@ const OnlineAdsSectionStyles = styled.div`
       border-radius: 8px;
     }
   }
-  .about__heading {
+  .works__heading {
     margin-bottom: 1rem;
   }
-  .about__info {
+  .works__info {
     margin-bottom: 4rem;
     .para {
-      max-width: 100%;
+      max-width: 600px;
     }
   }
-  .about__info__items {
-    margin-top: 15rem;
+  .works__infoDetail {
+    font-size: 1.4rem;
+    line-height: 1.8em;
   }
-  .about__info__item {
+  .works__info__item {
     margin-bottom: 10rem;
   }
-  .about__info__heading {
-    font-size: 3.6rem;
-    text-transform: uppercase;
+  .webSection__heading {
+    margin-bottom: 3rem;
   }
-
-  .skills__allItems {
-    display: flex;
-    gap: 10rem;
-    justify-content: space-between;
+  .works__allItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
     margin-top: 5rem;
   }
-  .skillsContainer {
-    padding-top: 15rem;
-  }
-
+  
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
-    .top-section {
-      flex-direction: column;
-      gap: 5rem;
-    }
-    .about__subheading {
-      font-size: 1.9rem;
-    }
-    .about__info__heading {
-      font-size: 3rem;
-    }
-    .skills__allItems {
-      flex-direction: column;
-      max-width: 350px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      gap: 5rem;
+    // .top-section {
+    //   flex-direction: column;
+    //   gap: 5rem;
     }
   }
 `;
 
-export default function OnlineAdsSection() {
+export default function OnlineAds() {
+  const [worksData] = useState(DesignInfo);
   return (
-    <>
-      <OnlineAdsSectionStyles id="onlineAds">
-        <div className="container">
-          <div className="top-section">
-            <div className="left">
-              <h2 className="webSection__heading">Online Ads</h2>
-              <p className="about__subheading">Graphic / Web Designer</p>
-              <div className="about__info">
-                <PText>
-                  I have 2 years of experience in web design in a fintech
-                  company. I was in charge of creating websites and landing
-                  pages, company branding. I have also worked in an advertising
-                  agency, producing banners for various clients, focusing on
-                  in-feed advertising.
-                </PText>
+    <OnlineAdsStyles id="onlineAds">
+      <div className="container">
+        <div className="top-section">
+          <div className="left">
+            <h2 className="webSection__heading">Web Design</h2>
+            <h4 className="works__subheading">
+              Renewal the Corprate website / Company Branding
+            </h4>
+            <div className="works__info">
+              <PText>
+                Renewal of the corporate website. I am in charge of page
+                composition, composition, corporate color proposals, and
+                illustration production.
+              </PText>
+              <div className="works__infoDetail">
+                <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
+                Concept, Design
               </div>
             </div>
-            <div className="right">
-              <img src={WorkImg1} alt="Design work" />
-              {/* <img src={AboutImg} alt="Design work" /> */}
-            </div>
+          </div>
+          <div className="works__allItems">
+            {worksData.map((item) => (
+              <DesignItem key={item.id} img={item.img} />
+            ))}
           </div>
         </div>
-      </OnlineAdsSectionStyles>
-    </>
+      </div>
+    </OnlineAdsStyles>
   );
 }

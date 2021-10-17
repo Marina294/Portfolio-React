@@ -29,7 +29,7 @@ const AboutPageStyles = styled.div`
     }
   }
   .about__heading {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .about__info {
     margin-bottom: 4rem;
