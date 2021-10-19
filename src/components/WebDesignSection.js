@@ -1,23 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import DesignInfo from '../assets/data/webdesign';
-import DesignItem from './WebDesignItem';
+import WorkImg from '../assets/images/drawing.jpg';
+// import DesignInfo from '../assets/data/webdesign';
+// import DesignItem from './WebDesignItem';
 
 const WebDesignStyles = styled.div`
   padding: 10rem 0;
   .container {
-    display: flex;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
   }
-  // .top-section {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   gap: 2rem;
-  // }
   .works__subheading {
     margin-bottom: 2rem;
     span {
@@ -46,28 +40,40 @@ const WebDesignStyles = styled.div`
     margin-bottom: 3rem;
   }
   .works__allItems {
-    display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-top: 5rem;
+    // display: flex;
+    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    // gap: 2rem;
+    // margin-top: 5rem;
   }
-  
+  .workItem__img {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      padding: 0.5rem;
+      width: 50%;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
-    // .top-section {
-    //   flex-direction: column;
-    //   gap: 5rem;
+    .workItem__img {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        padding: 0.5rem;
+        width: 100%;
+      }
     }
   }
 `;
 
-export default function WebDesign() {
-  const [worksData] = useState(DesignInfo);
+export default function WebDesign({ img = WorkImg }) {
+  // const [worksData] = useState(DesignInfo);
   return (
     <WebDesignStyles id="webDesign">
       <div className="container">
-        <div className="top-section">
-          <div className="left">
+        <div>
+          <div>
             <h2 className="webSection__heading">Web Design</h2>
             <h4 className="works__subheading">
               Renewal the Corprate website / Company Branding
@@ -84,10 +90,14 @@ export default function WebDesign() {
               </div>
             </div>
           </div>
-          <div className="works__allItems">
-            {worksData.map((item) => (
-              <DesignItem key={item.id} img={item.img} />
-            ))}
+          <div className="workItem__img">
+            <img src={img} alt="work img" />
+            <img src={img} alt="work img" />
+            <img src={img} alt="work img" />
+            <img src={img} alt="work img" />
+            {/* {worksData.map((item) => (
+              <DesignItem className="img" key={item.id} img={item.img} />
+            ))} */}
           </div>
         </div>
       </div>

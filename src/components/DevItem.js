@@ -49,6 +49,7 @@ const DevItemStyles = styled.div`
   }
   .workItem__gitLink {
     font-size: 1.4rem;
+    font-weight: 600;
   }
 `;
 
