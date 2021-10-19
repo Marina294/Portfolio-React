@@ -10,14 +10,6 @@ const WebDesignItemStyles = styled.div`
       width: 50%;
     }
   }
-  // @media only screen and (max-width: 768px) {
-  //   .workItem__img {
-  //     height: 350px;
-  //   }
-  //   .workItem__desc {
-  //     font-size: 1.7rem;
-  //   }
-  // }
 `;
 
 export default function WorkItem({ img = WorkImg }) {

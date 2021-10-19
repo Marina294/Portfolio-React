@@ -46,10 +46,11 @@ const WebDesignItemStyles = styled.div`
   }
 `;
 
-export default function WorkItem({ img = WorkImg }) {
+export default function WorkItem({ img = WorkImg, desc }) {
   return (
     <WebDesignItemStyles className="workItem__img">
       <img src={img} alt="work img" />
+      <p className="workItem__desc">{desc}</p>
     </WebDesignItemStyles>
   );
 }

@@ -8,6 +8,7 @@ const webdesign = [
   {
     id: uuidv4(),
     img: CheckWorldTimeImg,
+    desc: 'aadfsdfsdfsdfsd',
   },
   {
     id: uuidv4(),

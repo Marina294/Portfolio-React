@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-oa-1.jpg';
-import WorkImg2 from '../assets/images/w-oa-2.jpg';
-import WorkImg3 from '../assets/images/w-oa-3.jpg';
-import WorkImg4 from '../assets/images/w-oa-4.jpg';
+import WorkImg1 from '../assets/images/w-catalog1.jpg';
+import WorkImg2 from '../assets/images/w-catalog2.jpg';
+import WorkImg3 from '../assets/images/w-catalog3.jpg';
+import WorkImg4 from '../assets/images/w-catalog4.jpg';
 
-const OnlineAdsStyles = styled.div`
+const CatalogDesignStyles = styled.div`
   padding: 10rem 0;
   .container {
     align-items: center;
@@ -40,12 +40,6 @@ const OnlineAdsStyles = styled.div`
   .webSection__heading {
     margin-bottom: 3rem;
   }
-  .works__allItems {
-    // display: flex;
-    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    // gap: 2rem;
-    // margin-top: 5rem;
-  }
   .workItem__img {
     display: flex;
     flex-wrap: wrap;
@@ -70,34 +64,34 @@ const OnlineAdsStyles = styled.div`
   }
 `;
 
-export default function OnlineAds() {
+export default function CatalogDesign() {
   return (
-    <OnlineAdsStyles id="onlineAds">
+    <CatalogDesignStyles id="catalogDesign">
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Oneline Ads</h2>
-            <h4 className="works__subheading">
-              Online advertisements for Social media
-            </h4>
+            <h2 className="webSection__heading">Catalog Design</h2>
+            <h4 className="works__subheading">Product Catalogs</h4>
             <div className="works__info">
               <PText>
-                On Instagram and facebook. In charged of Design, art direction.
+                Renewal of the corporate website. I am in charge of page
+                composition, composition, corporate color proposals, and
+                illustration production.
               </PText>
               <div className="works__infoDetail">
-                <br /> Client: samsung, Rakuten, Rotte <br /> Date: 2018 <br />{' '}
-                Work: Design, art direction
+                <br /> Client: Mercedes-Benz, Fujitsu <br /> Date: 2013 <br />
+                Work: Design
               </div>
             </div>
           </div>
           <div className="workItem__img">
-            <img src={WorkImg1} alt="work img" />
             <img src={WorkImg2} alt="work img" />
-            <img src={WorkImg3} alt="work img" />
+            <img src={WorkImg1} alt="work img" />
             <img src={WorkImg4} alt="work img" />
+            <img src={WorkImg3} alt="work img" />
           </div>
         </div>
       </div>
-    </OnlineAdsStyles>
+    </CatalogDesignStyles>
   );
 }

@@ -1,27 +1,27 @@
 import { v4 as uuidv4 } from 'uuid';
 import CalculatorImg from '../images/calculator.jpg';
-import RockPaperMeowImg from '../images/rock.jpg';
-import WhatTOCookTodayImg from '../images/cook.jpg';
-import CheckWorldTimeImg from '../images/clock.jpg';
+import OnlineAdsImg from '../images/onlineads.jpg';
+import WebDesignImg from '../images/webdesign.jpg';
+import CatalogImg from '../images/catalogdesign.jpg';
 
 const design = [
   {
     id: uuidv4(),
-    name: 'Web Design',
-    link: '/Design#webDesign',
-    img: CheckWorldTimeImg,
+    name: 'Online Ads',
+    link: '/Design#onlineAds',
+    img: OnlineAdsImg,
   },
   {
     id: uuidv4(),
-    name: 'Online Ads',
-    link: '/Design#onlineAds',
-    img: WhatTOCookTodayImg,
+    name: 'Web Design',
+    link: '/Design#webDesign',
+    img: WebDesignImg,
   },
   {
     id: uuidv4(),
     name: 'Catalog Design',
     link: '/Design#catalogDesign',
-    img: RockPaperMeowImg,
+    img: CatalogImg,
   },
   {
     id: uuidv4(),

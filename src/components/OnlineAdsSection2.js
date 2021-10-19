@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-paidy-website1.jpg';
-import WorkImg2 from '../assets/images/w-paidy-website2.jpg';
+import DesignInfo from '../assets/data/onlineads';
+import DesignItem from './WebDesignItem';
 
-const WebDesignStyles = styled.div`
+const OnlineAdsStyles = styled.div`
   padding: 10rem 0;
   .container {
+    display: flex;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
   }
+  // .top-section {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   gap: 2rem;
+  // }
   .works__subheading {
     margin-bottom: 2rem;
     span {
@@ -39,42 +46,42 @@ const WebDesignStyles = styled.div`
     margin-bottom: 3rem;
   }
   .works__allItems {
-    // display: flex;
-    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    // gap: 2rem;
-    // margin-top: 5rem;
-  }
-  .workItem__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    img {
-      width: 45%;
-      margin-bottom: 5rem;
-      border: 0.5px solid var(--gray-2);
-    }
+    display: grid;
+    grid-column: 1fr 3fr;
+    grid-gap: 10px;
+    margin-top: 5rem;
   }
 
+  // .works__allItems {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  //   gap: 2rem;
+  //   margin-top: 5rem;
+  // }
+  // .works__allItems {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, minmax(100px, 1fr));
+  //   gap: 2rem;
+  //   margin-top: 5rem;
+  // }
+  
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
-    .workItem__img {
-      display: flex;
-      flex-wrap: wrap;
-      img {
-        padding: 0.5rem;
-        width: 100%;
-      }
+    // .top-section {
+    //   flex-direction: column;
+    //   gap: 5rem;
     }
   }
 `;
 
-export default function WebDesign() {
+export default function OnlineAds() {
+  const [worksData] = useState(DesignInfo);
   return (
-    <WebDesignStyles id="webDesign">
+    <OnlineAdsStyles id="onlineAds">
       <div className="container">
-        <div>
-          <div>
-            <h2 className="webSection__heading">Web Design</h2>
+        <div className="top-section">
+          <div className="left">
+            <h2 className="webSection__heading">Online Ads</h2>
             <h4 className="works__subheading">
               Renewal the Corprate website / Company Branding
             </h4>
@@ -90,12 +97,13 @@ export default function WebDesign() {
               </div>
             </div>
           </div>
-          <div className="workItem__img">
-            <img src={WorkImg1} alt="work img" />
-            <img src={WorkImg2} alt="work img" />
+          <div className="works__allItems">
+            {worksData.map((item) => (
+              <DesignItem key={item.id} img={item.img} desc={item.desc} />
+            ))}
           </div>
         </div>
       </div>
-    </WebDesignStyles>
+    </OnlineAdsStyles>
   );
 }
