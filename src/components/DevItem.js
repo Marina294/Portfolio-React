@@ -20,45 +20,35 @@ const DevItemStyles = styled.div`
       }
     }
   }
+  .workItem__link {
+    color: var(--gray-1);
+    font-weight: 600;
+  }
   .workItem__title {
     font-weight: 600;
     color: var(--additional);
-    margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .workItem__info {
     margin-top: 1rem;
     background-color: var(--white);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 12px;
   }
   .workItem__desc {
     margin-top: 1rem;
   }
+  .workItem__git {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  .git-icon {
+    width: 2.2rem;
+    margin-right: 1rem;
+  }
   .workItem__gitLink {
-    color: var(--gray-1);
-  }
-  .workItem__link {
-    color: var(--gray-1);
-    font-weight: 600;
-  }
-  // table {
-  //   justify-content: flex-end;
-  // }
-  // tr {
-  //   justify-content: flex-end;
-  // }
-  td {
     font-size: 1.4rem;
-    // text-align: right;
-    // justify-content: flex-end;
-  }
-  .sns-icon {
-    height: 2.5rem;
-    margin: 1.3rem 1rem 1.3rem 0rem;
-    display: inline-block;
-    align-items: cente;
-    }
   }
 `;
 
@@ -89,32 +79,24 @@ export default function DevItem({
           <h4 className="workItem__title">{title}</h4>
         </a>
         <p className="workItem__desc">{desc}</p>
-        <table className="workItem__gitLink">
-          <tbody>
-            <tr>
-              <td>
-                <a
-                  className="sns-icon"
-                  href={gitLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <ImGithub style={{ fill: 'var(--gray-1)' }} />
-                </a>
-              </td>
-              <td>
-                <a
-                  className="workItem__link"
-                  href={gitLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Check my code
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="workItem__git">
+          <a
+            className="git-icon"
+            href={gitLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ImGithub style={{ fill: 'var(--gray-1)' }} />
+          </a>
+          <a
+            className="workItem__gitLink"
+            href={gitLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Check my code
+          </a>
+        </div>
       </div>
     </DevItemStyles>
   );

@@ -46,7 +46,7 @@ const WebDesignStyles = styled.div`
     margin-bottom: 3rem;
   }
   .works__allItems {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
     margin-top: 5rem;
