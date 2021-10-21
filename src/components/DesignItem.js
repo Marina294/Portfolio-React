@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
-import WorkImg from '../assets/images/drawing.jpg';
+import WorkImg from '../assets/images/calculator.png';
 
 const DesignItemStyles = styled.div`
   .workItem__img {

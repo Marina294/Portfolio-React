@@ -33,7 +33,7 @@ const design = [
   {
     id: uuidv4(),
     name: 'Promotional materials',
-    link: '/Design#eventGoods',
+    link: '/Design#promotional',
     img: PromotionalImg,
   },
 ];

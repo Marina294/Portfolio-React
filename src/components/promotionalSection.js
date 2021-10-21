@@ -5,10 +5,10 @@ import WorkImg1 from '../assets/images/w-event1.jpg';
 import WorkImg2 from '../assets/images/w-event2.jpg';
 import WorkImg3 from '../assets/images/w-event3.jpg';
 import WorkImg4 from '../assets/images/w-event4.jpg';
-import WorkImg5 from '../assets/images/w-event5.jpg';
-import WorkImg6 from '../assets/images/w-event6.jpg';
+// import WorkImg5 from '../assets/images/w-event5.jpg';
+// import WorkImg6 from '../assets/images/w-event6.jpg';
 
-const EventGoodsStyles = styled.div`
+const PromotionalStyles = styled.div`
   padding: 5rem 0;
   .container {
     align-items: center;
@@ -72,9 +72,9 @@ const EventGoodsStyles = styled.div`
   }
 `;
 
-export default function EventGoods() {
+export default function Promotional() {
   return (
-    <EventGoodsStyles id="eventGoods">
+    <PromotionalStyles id="eventGoods">
       <div className="container">
         <div>
           <div>
@@ -100,11 +100,11 @@ export default function EventGoods() {
             <img src={WorkImg2} alt="work img" />
             <img src={WorkImg3} alt="work img" />
             <img src={WorkImg4} alt="work img" />
-            <img src={WorkImg5} alt="work img" />
-            <img src={WorkImg6} alt="work img" />
+            {/* <img src={WorkImg5} alt="work img" />
+            <img src={WorkImg6} alt="work img" /> */}
           </div>
         </div>
       </div>
-    </EventGoodsStyles>
+    </PromotionalStyles>
   );
 }
