@@ -7,7 +7,7 @@ import WorkImg3 from '../assets/images/w-oa-3.jpg';
 import WorkImg4 from '../assets/images/w-oa-4.jpg';
 
 const OnlineAdsStyles = styled.div`
-  padding: 10rem 0;
+  padding: 5rem 0;
   .container {
     align-items: center;
     justify-content: flex-start;
@@ -63,7 +63,7 @@ const OnlineAdsStyles = styled.div`
       display: flex;
       flex-wrap: wrap;
       img {
-        padding: 0.5rem;
+        margin-bottom: 2rem;
         width: 100%;
       }
     }
@@ -86,7 +86,7 @@ export default function OnlineAds() {
               </PText>
               <div className="works__infoDetail">
                 <br /> Client: samsung, Rakuten, Rotte <br /> Date: 2018 <br />{' '}
-                Work: Design, art direction
+                Work: Design
               </div>
             </div>
           </div>

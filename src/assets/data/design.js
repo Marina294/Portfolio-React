@@ -3,6 +3,7 @@ import CalculatorImg from '../images/calculator.jpg';
 import OnlineAdsImg from '../images/onlineads.jpg';
 import WebDesignImg from '../images/webdesign.jpg';
 import CatalogImg from '../images/catalogdesign.jpg';
+import MagazineImg from '../images/magazinedesign.jpg';
 
 const design = [
   {
@@ -27,7 +28,7 @@ const design = [
     id: uuidv4(),
     name: 'Magazine Design',
     link: '/Design#magazineDesign',
-    img: CalculatorImg,
+    img: MagazineImg,
   },
   {
     id: uuidv4(),

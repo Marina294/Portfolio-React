@@ -7,7 +7,7 @@ import WorkImg3 from '../assets/images/w-catalog3.jpg';
 import WorkImg4 from '../assets/images/w-catalog4.jpg';
 
 const CatalogDesignStyles = styled.div`
-  padding: 10rem 0;
+  padding: 5rem 0;
   .container {
     align-items: center;
     justify-content: flex-start;
@@ -17,7 +17,6 @@ const CatalogDesignStyles = styled.div`
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
-      padding: 0.5rem;
       border-radius: 8px;
     }
   }
@@ -29,6 +28,10 @@ const CatalogDesignStyles = styled.div`
     .para {
       max-width: 600px;
     }
+  }
+  .works__infoDetail-2line {
+    display: flex;
+    justify-content: space-around;
   }
   .works__infoDetail {
     font-size: 1.4rem;
@@ -50,14 +53,24 @@ const CatalogDesignStyles = styled.div`
       border: 0.5px solid var(--gray-2);
     }
   }
+  span {
+    font-weight: 600;
+  }
 
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
+    .works__infoDetail-2line {
+      display: block;
+      justify-content: space-around;
+    }
+    .works__infoDetail {
+      padding: 0rem;
+    }
     .workItem__img {
       display: flex;
       flex-wrap: wrap;
       img {
-        padding: 0.5rem;
+        margin-bottom: 2rem;
         width: 100%;
       }
     }
@@ -78,10 +91,28 @@ export default function CatalogDesign() {
                 composition, composition, corporate color proposals, and
                 illustration production.
               </PText>
-              <div className="works__infoDetail">
-                <br /> Client: Mercedes-Benz, Fujitsu <br /> Date: 2013 <br />
-                Work: Design
+              <div className="works__infoDetail-2line">
+                <div className="works__infoDetail">
+                  <br /> Client: Mercedes-Benz <br /> Date: 08/2013 <br />
+                  Work: Design
+                </div>
+                <div className="works__infoDetail">
+                  <br /> Client: Fujitsu <br /> Date: 07/2013 <br />
+                  Work: Design
+                </div>
               </div>
+              {/* <div className="works__infoDetail">
+                <br />
+                <span>Client:</span> Mercedes-Benz &nbsp;&nbsp;
+                <span>Date:</span> 2013 &nbsp;&nbsp;<span>Work:</span>
+                Design
+              </div>
+              <div className="works__infoDetail">
+                <br />
+                <span>Client:</span> Fujitsu &nbsp;&nbsp;<span>Date:</span> 2014
+                &nbsp;&nbsp;<span>Work:</span>
+                Design
+              </div> */}
             </div>
           </div>
           <div className="workItem__img">

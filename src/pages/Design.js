@@ -6,6 +6,7 @@ import DesignItem from '../components/DesignItem';
 import WebDesignSection from '../components/WebDesignSection';
 import OnlineAdsSection from '../components/OnlineAdsSection';
 import CatalogDesignSection from '../components/CatalogDesignSection';
+import MagazineDesignSection from '../components/MagazineDesignSection';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
@@ -26,7 +27,7 @@ export default function Design() {
   return (
     <DesignStyle>
       <div className="container">
-        <SectionTitle heading="Design Works" />
+        <SectionTitle heading="Design Works List" />
         <div className="works__allItems">
           {worksData.map((item) => (
             <DesignItem
@@ -41,6 +42,7 @@ export default function Design() {
       <OnlineAdsSection />
       <WebDesignSection />
       <CatalogDesignSection />
+      <MagazineDesignSection />
     </DesignStyle>
   );
 }
