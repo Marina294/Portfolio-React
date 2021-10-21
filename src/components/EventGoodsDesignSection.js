@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-paidy-website1.jpg';
-import WorkImg2 from '../assets/images/w-paidy-website2.jpg';
+import WorkImg1 from '../assets/images/w-event1.jpg';
+import WorkImg2 from '../assets/images/w-event2.jpg';
+import WorkImg3 from '../assets/images/w-event3.jpg';
+import WorkImg4 from '../assets/images/w-event4.jpg';
+import WorkImg5 from '../assets/images/w-event5.jpg';
+import WorkImg6 from '../assets/images/w-event6.jpg';
 
-const WebDesignStyles = styled.div`
+const EventGoodsStyles = styled.div`
   padding: 5rem 0;
   .container {
     align-items: center;
@@ -15,7 +19,6 @@ const WebDesignStyles = styled.div`
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
-      padding: 0.5rem;
       border-radius: 8px;
     }
   }
@@ -38,12 +41,6 @@ const WebDesignStyles = styled.div`
   .webSection__heading {
     margin-bottom: 3rem;
   }
-  .works__allItems {
-    // display: flex;
-    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    // gap: 2rem;
-    // margin-top: 5rem;
-  }
   .workItem__img {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +53,14 @@ const WebDesignStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 2.5rem 0;
+    padding: 5rem 0;
+    .works__infoDetail-2line {
+      display: block;
+      justify-content: space-around;
+    }
+    .works__infoDetail {
+      padding: 0rem;
+    }
     .workItem__img {
       display: flex;
       flex-wrap: wrap;
@@ -68,15 +72,15 @@ const WebDesignStyles = styled.div`
   }
 `;
 
-export default function WebDesign() {
+export default function EventGoods() {
   return (
-    <WebDesignStyles id="webDesign">
+    <EventGoodsStyles id="eventGoods">
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Web Design</h2>
+            <h2 className="webSection__heading">Promotional materials</h2>
             <h4 className="works__subheading">
-              Renewal the Corprate website / Company Branding
+              The Magazine Association of Nail Artists and Food Magazine
             </h4>
             <div className="works__info">
               <PText>
@@ -85,17 +89,22 @@ export default function WebDesign() {
                 illustration production.
               </PText>
               <div className="works__infoDetail">
-                <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
-                Concept, Design
+                <br /> Client: Japan Nailist Association
+                <br /> Date: 04/2017 <br />
+                Work: Art Direction, Design
               </div>
             </div>
           </div>
           <div className="workItem__img">
             <img src={WorkImg1} alt="work img" />
             <img src={WorkImg2} alt="work img" />
+            <img src={WorkImg3} alt="work img" />
+            <img src={WorkImg4} alt="work img" />
+            <img src={WorkImg5} alt="work img" />
+            <img src={WorkImg6} alt="work img" />
           </div>
         </div>
       </div>
-    </WebDesignStyles>
+    </EventGoodsStyles>
   );
 }

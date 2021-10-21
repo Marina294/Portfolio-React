@@ -25,7 +25,7 @@ const OnlineAdsStyles = styled.div`
     margin-bottom: 1rem;
   }
   .works__info {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     .para {
       max-width: 600px;
     }
