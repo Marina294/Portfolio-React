@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
-import CalculatorImg from '../images/calculator.jpg';
 import OnlineAdsImg from '../images/onlineads.jpg';
 import WebDesignImg from '../images/webdesign.jpg';
 import CatalogImg from '../images/catalogdesign.jpg';
 import MagazineImg from '../images/magazinedesign.jpg';
+import PromotionalImg from '../images/promotional.jpg';
 
 const design = [
   {
@@ -32,15 +32,9 @@ const design = [
   },
   {
     id: uuidv4(),
-    name: 'Train Ads',
-    link: '/Design#trainAds',
-    img: CalculatorImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Event Goods',
+    name: 'Promotional materials',
     link: '/Design#eventGoods',
-    img: CalculatorImg,
+    img: PromotionalImg,
   },
 ];
 

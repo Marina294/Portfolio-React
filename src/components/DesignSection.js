@@ -15,7 +15,7 @@ const DesignStyle = styled.div`
   .works__allItems {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 5rem;
+    gap: 2.5rem;
     margin-top: 5rem;
   }
   .worksSection__button {
