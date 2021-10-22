@@ -52,6 +52,10 @@ const AboutSectionStyles = styled.div`
     .section-title {
       text-align: center;
     }
+    .ptext__allItems {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
     .para {
       margin: 0 auto;
     }

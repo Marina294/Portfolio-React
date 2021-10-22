@@ -29,7 +29,7 @@ export default function Design() {
   return (
     <DesignStyle>
       <div className="container">
-        <SectionTitle heading="Design Works List" />
+        <SectionTitle heading="Design Works" />
         <div className="works__allItems">
           {worksData.map((item) => (
             <DesignItem

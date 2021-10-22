@@ -101,18 +101,6 @@ export default function CatalogDesign() {
                   Work: Design
                 </div>
               </div>
-              {/* <div className="works__infoDetail">
-                <br />
-                <span>Client:</span> Mercedes-Benz &nbsp;&nbsp;
-                <span>Date:</span> 2013 &nbsp;&nbsp;<span>Work:</span>
-                Design
-              </div>
-              <div className="works__infoDetail">
-                <br />
-                <span>Client:</span> Fujitsu &nbsp;&nbsp;<span>Date:</span> 2014
-                &nbsp;&nbsp;<span>Work:</span>
-                Design
-              </div> */}
             </div>
           </div>
           <div className="workItem__img">
