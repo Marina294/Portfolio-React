@@ -5,8 +5,6 @@ import WorkImg1 from '../assets/images/w-event1.jpg';
 import WorkImg2 from '../assets/images/w-event2.jpg';
 import WorkImg3 from '../assets/images/w-event3.jpg';
 import WorkImg4 from '../assets/images/w-event4.jpg';
-// import WorkImg5 from '../assets/images/w-event5.jpg';
-// import WorkImg6 from '../assets/images/w-event6.jpg';
 
 const PromotionalStyles = styled.div`
   padding: 5rem 0;
