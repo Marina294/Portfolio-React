@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
-import DrawingTimeImg from '../images/draw.png';
-import CalculatorImg from '../images/calculator.png';
-import RockPaperMeowImg from '../images/rockpapermeow.png';
-import WhatTOCookTodayImg from '../images/recipe.png';
-import CheckWorldTimeImg from '../images/world-clock.png';
+import DrawingTimeImg from '../images/dev-draw.png';
+import CalculatorImg from '../images/dev-calculator.png';
+import RockPaperMeowImg from '../images/dev-rockpapermeow.png';
+import WhatTOCookTodayImg from '../images/dev-recipe.png';
+import CheckWorldTimeImg from '../images/dev-world-clock.png';
 
 const dev = [
   {
