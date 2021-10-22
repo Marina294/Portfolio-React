@@ -34,6 +34,7 @@ const PromotionalStyles = styled.div`
   .works__infoDetail {
     font-size: 1.4rem;
     line-height: 1.8em;
+    margin-bottom: 2rem;
   }
   .works__info__item {
     margin-bottom: 10rem;
@@ -98,10 +99,15 @@ export default function Promotional() {
           <div className="workItem__img">
             <img src={WorkImg1} alt="work img" />
             <img src={WorkImg2} alt="work img" />
+          </div>
+          <div className="works__infoDetail">
+            <br /> Client: Japan Nailist Association
+            <br /> Date: 04/2017 <br />
+            Work: Art Direction, Design
+          </div>
+          <div className="workItem__img">
             <img src={WorkImg3} alt="work img" />
             <img src={WorkImg4} alt="work img" />
-            {/* <img src={WorkImg5} alt="work img" />
-            <img src={WorkImg6} alt="work img" /> */}
           </div>
         </div>
       </div>
