@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
-import OnlineAdsImg from '../images/l-onlineads.jpg';
-import WebDesignImg from '../images/l-webdesign.jpg';
-import CatalogImg from '../images/l-catalogdesign.jpg';
-import MagazineImg from '../images/l-magazinedesign.jpg';
-import PromotionalImg from '../images/l-promotional.jpg';
+import OnlineAdsImg from '../images/l-onlineads.webp';
+import WebDesignImg from '../images/l-webdesign.webp';
+import CatalogImg from '../images/l-catalogdesign.webp';
+import MagazineImg from '../images/l-magazinedesign.webp';
+import PromotionalImg from '../images/l-promotional.webp';
 
 const design = [
   {
