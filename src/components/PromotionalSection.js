@@ -6,7 +6,7 @@ import WorkImg2 from '../assets/images/w-event2.jpg';
 import WorkImg3 from '../assets/images/w-event3.jpg';
 import WorkImg4 from '../assets/images/w-event4.jpg';
 
-const WebDesignStyles = styled.div`
+const PromotionalSectionStyles = styled.div`
   padding: 5rem 0;
   .container {
     align-items: center;
@@ -70,9 +70,9 @@ const WebDesignStyles = styled.div`
   }
 `;
 
-export default function WebDesign() {
+export default function PromotionalSection() {
   return (
-    <WebDesignStyles id="promotional">
+    <PromotionalSectionStyles id="promotional">
       <div className="container">
         <div>
           <div>
@@ -108,6 +108,6 @@ export default function WebDesign() {
           </div>
         </div>
       </div>
-    </WebDesignStyles>
+    </PromotionalSectionStyles>
   );
 }
