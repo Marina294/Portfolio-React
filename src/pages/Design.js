@@ -7,7 +7,7 @@ import WebDesignSection from '../components/WebDesignSection';
 import OnlineAdsSection from '../components/OnlineAdsSection';
 import CatalogDesignSection from '../components/CatalogDesignSection';
 import MagazineDesignSection from '../components/MagazineDesignSection';
-// import PromotionalSection from '../components/PromotionalSection';
+import PromotionalSection from '../components/PromotionalSection';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
@@ -45,7 +45,7 @@ export default function Design() {
       <WebDesignSection />
       <CatalogDesignSection />
       <MagazineDesignSection />
-      {/* <PromotionalSection /> */}
+      <PromotionalSection />
     </DesignStyle>
   );
 }
