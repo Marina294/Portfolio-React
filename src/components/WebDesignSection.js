@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-paidy-website1.jpg';
-import WorkImg2 from '../assets/images/w-paidy-website2.jpg';
+import WorkImg1 from '../assets/images/w-paidy-website1.webp';
+import WorkImg2 from '../assets/images/w-paidy-website2.webp';
 
 const WebDesignStyles = styled.div`
   padding: 5rem 0;

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-magazine1.jpg';
-import WorkImg2 from '../assets/images/w-magazine2.jpg';
-import WorkImg3 from '../assets/images/w-magazine3.jpg';
-import WorkImg4 from '../assets/images/w-magazine4.jpg';
+import WorkImg1 from '../assets/images/w-magazine1.webp';
+import WorkImg2 from '../assets/images/w-magazine2.webp';
+import WorkImg3 from '../assets/images/w-magazine3.webp';
+import WorkImg4 from '../assets/images/w-magazine4.webp';
 
 const MagazineDesignStyles = styled.div`
   padding: 5rem 0;

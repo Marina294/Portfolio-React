@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-catalog1.jpg';
-import WorkImg2 from '../assets/images/w-catalog2.jpg';
-import WorkImg3 from '../assets/images/w-catalog3.jpg';
-import WorkImg4 from '../assets/images/w-catalog4.jpg';
+import WorkImg1 from '../assets/images/w-catalog1.webp';
+import WorkImg2 from '../assets/images/w-catalog2.webp';
+import WorkImg3 from '../assets/images/w-catalog3.webp';
+import WorkImg4 from '../assets/images/w-catalog4.webp';
 
 const CatalogDesignStyles = styled.div`
   padding: 5rem 0;

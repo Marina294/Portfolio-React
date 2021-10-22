@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImGithub } from 'react-icons/im';
-import WorkImg from '../assets/images/dev-calculator.png';
+import WorkImg from '../assets/images/dev-calculator.webp';
 
 const DevItemStyles = styled.div`
   .workItem__img {
