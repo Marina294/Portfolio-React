@@ -6,7 +6,7 @@ import WorkImg2 from '../assets/images/w-event2.jpg';
 import WorkImg3 from '../assets/images/w-event3.jpg';
 import WorkImg4 from '../assets/images/w-event4.jpg';
 
-const PromotionalStyles = styled.div`
+const PromotionalSectionStyles = styled.div`
   padding: 5rem 0;
   .container {
     align-items: center;
@@ -71,9 +71,9 @@ const PromotionalStyles = styled.div`
   }
 `;
 
-export default function Promotional() {
+export default function PromotionalSection() {
   return (
-    <PromotionalStyles id="promotional">
+    <PromotionalSectionStyles id="promotional">
       <div className="container">
         <div>
           <div>
@@ -109,6 +109,6 @@ export default function Promotional() {
           </div>
         </div>
       </div>
-    </PromotionalStyles>
+    </PromotionalSectionStyles>
   );
 }
