@@ -23,7 +23,6 @@ const WebDesignStyles = styled.div`
     margin-bottom: 1rem;
   }
   .works__info {
-    margin-bottom: 2rem;
     .para {
       max-width: 600px;
     }
@@ -31,6 +30,7 @@ const WebDesignStyles = styled.div`
   .works__infoDetail {
     font-size: 1.4rem;
     line-height: 1.8em;
+    margin-bottom: 2rem;
   }
   .works__info__item {
     margin-bottom: 10rem;
@@ -93,6 +93,16 @@ export default function WebDesign() {
           <div className="workItem__img">
             <img src={WorkImg1} alt="work img" />
             <img src={WorkImg2} alt="work img" />
+          </div>
+          <div>
+            <div className="works__infoDetail">
+              <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
+              Concept, Design
+            </div>
+            <div className="workItem__img">
+              <img src={WorkImg1} alt="work img" />
+              <img src={WorkImg2} alt="work img" />
+            </div>
           </div>
         </div>
       </div>
