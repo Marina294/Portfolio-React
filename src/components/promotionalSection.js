@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
-import WorkImg1 from '../assets/images/w-event1.jpg';
-import WorkImg2 from '../assets/images/w-event2.jpg';
-// import WorkImg3 from '../assets/images/w-event3.jpg';
-// import WorkImg4 from '../assets/images/w-event4.jpg';
+import WorkImg1 from '../assets/images/w-paidy-website1.jpg';
+import WorkImg2 from '../assets/images/w-paidy-website2.jpg';
 
-const PromotionalSectionStyles = styled.div`
+const WebDesignStyles = styled.div`
   padding: 5rem 0;
   .container {
     align-items: center;
@@ -17,6 +15,7 @@ const PromotionalSectionStyles = styled.div`
     margin-bottom: 2rem;
     span {
       background-color: var(--additional);
+      padding: 0.5rem;
       border-radius: 8px;
     }
   }
@@ -32,13 +31,18 @@ const PromotionalSectionStyles = styled.div`
   .works__infoDetail {
     font-size: 1.4rem;
     line-height: 1.8em;
-    margin-bottom: 2rem;
   }
   .works__info__item {
     margin-bottom: 10rem;
   }
   .webSection__heading {
     margin-bottom: 3rem;
+  }
+  .works__allItems {
+    // display: flex;
+    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    // gap: 2rem;
+    // margin-top: 5rem;
   }
   .workItem__img {
     display: flex;
@@ -52,14 +56,7 @@ const PromotionalSectionStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 5rem 0;
-    .works__infoDetail-2line {
-      display: block;
-      justify-content: space-around;
-    }
-    .works__infoDetail {
-      padding: 0rem;
-    }
+    padding: 2.5rem 0;
     .workItem__img {
       display: flex;
       flex-wrap: wrap;
@@ -71,15 +68,15 @@ const PromotionalSectionStyles = styled.div`
   }
 `;
 
-export default function PromotionalSection() {
+export default function WebDesign() {
   return (
-    <PromotionalSectionStyles id="promotional">
+    <WebDesignStyles id="webDesign">
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Promotional materials</h2>
+            <h2 className="webSection__heading">Web Design</h2>
             <h4 className="works__subheading">
-              The Magazine Association of Nail Artists and Food Magazine
+              Renewal the Corprate website / Company Branding
             </h4>
             <div className="works__info">
               <PText>
@@ -88,9 +85,8 @@ export default function PromotionalSection() {
                 illustration production.
               </PText>
               <div className="works__infoDetail">
-                <br /> Client: Japan Nailist Association
-                <br /> Date: 04/2017 <br />
-                Work: Art Direction, Design
+                <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
+                Concept, Design
               </div>
             </div>
           </div>
@@ -98,17 +94,8 @@ export default function PromotionalSection() {
             <img src={WorkImg1} alt="work img" />
             <img src={WorkImg2} alt="work img" />
           </div>
-          {/* <div className="works__infoDetail">
-            <br /> Client: Japan Nailist Association
-            <br /> Date: 04/2017 <br />
-            Work: Art Direction, Design
-          </div>
-          <div className="workItem__img">
-            <img src={WorkImg3} alt="work img" />
-            <img src={WorkImg4} alt="work img" />
-          </div> */}
         </div>
       </div>
-    </PromotionalSectionStyles>
+    </WebDesignStyles>
   );
 }
