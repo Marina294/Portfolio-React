@@ -61,6 +61,14 @@ const DevSectionStyle = styled.div`
         width: 100%;
       }
     }
+    .worksSection__button {
+      margin-top: 1rem;
+      .button-wrapper,
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 `;
 
@@ -102,9 +110,9 @@ export default function WorksSection() {
             })}
           </Swiper>
         </div>
-      </div>
-      <div className="worksSection__button">
-        <Button btnText="Check All Dev" btnLink="/dev" />
+        <div className="worksSection__button">
+          <Button btnText="Check All Dev" btnLink="/dev" />
+        </div>
       </div>
     </DevSectionStyle>
   );

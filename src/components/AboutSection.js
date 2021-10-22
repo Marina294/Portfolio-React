@@ -7,9 +7,7 @@ import SectionTitle from './SectionTitle';
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
   .container {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
     text-align: center;
   }
   .aboutSection {
@@ -45,9 +43,6 @@ const AboutSectionStyles = styled.div`
     }
     .aboutSection {
       width: 100%;
-    }
-    .aboutSection__right {
-      margin-top: 3rem;
     }
     .section-title {
       text-align: center;

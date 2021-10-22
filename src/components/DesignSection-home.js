@@ -41,7 +41,12 @@ const DesignStyle = styled.div`
       }
     }
     .worksSection__button {
-      margin-top: 3rem;
+      margin-top: 2rem;
+      .button-wrapper,
+      a {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 `;
@@ -63,9 +68,9 @@ export default function Design() {
             <img src={WorkImg8} alt="work img" />
           </div>
         </HashLink>
-      </div>
-      <div className="worksSection__button">
-        <Button btnText="Check All Design" btnLink="/design" />
+        <div className="worksSection__button">
+          <Button btnText="Check All Design" btnLink="/design" />
+        </div>
       </div>
     </DesignStyle>
   );
