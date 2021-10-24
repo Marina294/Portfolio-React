@@ -85,8 +85,8 @@ export default function OnlineAds() {
                 On Instagram and facebook. In charged of Design, art direction.
               </PText>
               <div className="works__infoDetail">
-                <br /> Client: samsung, Rakuten, Rotte <br /> Date: 2018 <br />{' '}
-                Work: Design
+                <br /> Client: samsung, Rakuten, Rotte <br /> Date: 2018 <br />
+                Work: Design <br /> Software: Photoshop, Illustorator
               </div>
             </div>
           </div>

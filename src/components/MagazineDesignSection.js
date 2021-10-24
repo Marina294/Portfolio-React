@@ -86,19 +86,19 @@ export default function MagazineDesign() {
             </h4>
             <div className="works__info">
               <PText>
-                Renewal of the corporate website. I am in charge of page
-                composition, composition, corporate color proposals, and
-                illustration production.
+                In charged of cover and pages design in the Nail artists
+                magazine. Designed page layout in food magazine.
               </PText>
               <div className="works__infoDetail-2line">
                 <div className="works__infoDetail">
                   <br /> Client: Japan Nailist Association
-                  <br /> Date: 04/2017 <br />
-                  Work: Art Direction, Design
+                  <br /> Date: 04/2017 <br /> Work: Art Direction, Design <br />
+                  Software: Photoshop, InDesign
                 </div>
                 <div className="works__infoDetail">
                   <br /> Client: Hitosara <br /> Date: 02/2014 <br />
-                  Work: Design
+                  Work: Design <br />
+                  Software: Photoshop, InDesign
                 </div>
               </div>
             </div>

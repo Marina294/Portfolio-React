@@ -80,13 +80,13 @@ export default function WebDesign() {
             </h4>
             <div className="works__info">
               <PText>
-                Renewal of the corporate website. I am in charge of page
-                composition, composition, corporate color proposals, and
-                illustration production.
+                Renewal of the corporate website. In charged of page
+                composition, corporate color proposals, illustration production.
+                And developed E-mail magazine template.
               </PText>
               <div className="works__infoDetail">
                 <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
-                Concept, Design
+                Concept, Design <br /> Software: Sketch, Abstract
               </div>
             </div>
           </div>

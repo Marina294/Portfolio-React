@@ -78,16 +78,19 @@ export default function PromotionalSection() {
           <div>
             <h2 className="webSection__heading">Promotional Materials</h2>
             <h4 className="works__subheading">
-              Renewal the Corprate website / Company Branding
+              Company Calender and Snow Festival Booth
             </h4>
             <div className="works__info">
               <PText>
-                Renewal of the corporate website. I am in charge of page
-                composition, composition, corporate color proposals, and
-                illustration production.
+                Company calendar for client distribution. Only corporate colors
+                are used, and the stand is made of real wood. The background
+                customs with each month, creating a playful design. Art directed
+                for a booth at Japan's largest snow festival, which over
+                2,700,000 visitors every year. I also designed the flyers and
+                cups.
               </PText>
               <div className="works__infoDetail">
-                <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
+                <br /> Client: Paidy Co., Ltd. <br /> Date: 11/2018 <br /> Work:
                 Concept, Design
               </div>
             </div>
@@ -98,8 +101,8 @@ export default function PromotionalSection() {
           </div>
           <div>
             <div className="works__infoDetail">
-              <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:
-              Concept, Design
+              <br /> Client: Paidy Co., Ltd. <br /> Date: 2/2019 <br /> Work:
+              Concept, Art direction
             </div>
             <div className="workItem__img">
               <img src={WorkImg3} alt="work img" />

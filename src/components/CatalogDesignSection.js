@@ -87,18 +87,16 @@ export default function CatalogDesign() {
             <h4 className="works__subheading">Product Catalogs</h4>
             <div className="works__info">
               <PText>
-                Renewal of the corporate website. I am in charge of page
-                composition, composition, corporate color proposals, and
-                illustration production.
+                In charged of page design and engaged with photo shooting.
               </PText>
               <div className="works__infoDetail-2line">
                 <div className="works__infoDetail">
                   <br /> Client: Mercedes-Benz <br /> Date: 08/2013 <br />
-                  Work: Design
+                  Work: Design <br /> Software: Photoshop, InDesign
                 </div>
                 <div className="works__infoDetail">
                   <br /> Client: Fujitsu <br /> Date: 07/2013 <br />
-                  Work: Design
+                  Work: Design <br /> software: Photoshop, Illustorator
                 </div>
               </div>
             </div>
