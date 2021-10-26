@@ -31,7 +31,7 @@ export default function Design() {
   return (
     <DesignStyle>
       <div className="container">
-        <SectionTitle heading="Design Works" />
+        <SectionTitle heading="Design Work" />
         <div className="works__allItems">
           {worksData.map((item) => (
             <DesignItem
@@ -44,7 +44,7 @@ export default function Design() {
         </div>
       </div>
       <div className="worksSection__button">
-        <Button btnText="Check All Design" btnLink="/design" />
+        <Button btnText="See More" btnLink="/design" />
       </div>
     </DesignStyle>
   );

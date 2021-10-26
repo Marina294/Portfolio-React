@@ -76,13 +76,14 @@ export default function OnlineAds() {
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Oneline Ads</h2>
+            <h2 className="webSection__heading">Online Ads</h2>
             <h4 className="works__subheading">
               Online advertisements for Social media
             </h4>
             <div className="works__info">
               <PText>
-                On Instagram and facebook. In charged of Design, art direction.
+                On Instagram and facebook. In charge of design, and art
+                direction.
               </PText>
               <div className="works__infoDetail">
                 <br /> Client: samsung, Rakuten, Rotte <br /> Date: 2018 <br />

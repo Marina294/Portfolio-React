@@ -76,13 +76,13 @@ export default function WebDesign() {
           <div>
             <h2 className="webSection__heading">Web Design</h2>
             <h4 className="works__subheading">
-              Renewal the Corprate website / Company Branding
+              Rebrand the Corprate website / Company Branding
             </h4>
             <div className="works__info">
               <PText>
-                Renewal of the corporate website. In charged of page
-                composition, corporate color proposals, illustration production.
-                And developed E-mail magazine template.
+                Rebrand the corporate website. In charge of page composition,
+                corporate color proposals, illustration production. Also
+                developed E-mail magazine templates.
               </PText>
               <div className="works__infoDetail">
                 <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:

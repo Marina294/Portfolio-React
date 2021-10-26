@@ -55,7 +55,7 @@ export default function Design() {
   return (
     <DesignStyle>
       <div className="container">
-        <SectionTitle heading="Design Works" />
+        <SectionTitle heading="Design Work" />
         <HashLink to="/Design">
           <div className="workItem__img">
             <img src={WorkImg1} alt="work img" />
@@ -69,7 +69,7 @@ export default function Design() {
           </div>
         </HashLink>
         <div className="worksSection__button">
-          <Button btnText="Check All Design" btnLink="/design" />
+          <Button btnText="See More" btnLink="/design" />
         </div>
       </div>
     </DesignStyle>

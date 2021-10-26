@@ -47,10 +47,10 @@ const DevItemStyles = styled.div`
     width: 2.2rem;
     margin-right: 1rem;
   }
-  .workItem__gitLink {
-    font-size: 1.4rem;
-    font-weight: 600;
-  }
+  // .workItem__gitLink {
+  //   font-size: 1.4rem;
+  //   font-weight: 600;
+  // }
 `;
 
 export default function DevItem({
@@ -88,14 +88,6 @@ export default function DevItem({
             rel="noreferrer"
           >
             <ImGithub style={{ fill: 'var(--gray-1)' }} />
-          </a>
-          <a
-            className="workItem__gitLink"
-            href={gitLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Check my code
           </a>
         </div>
       </div>

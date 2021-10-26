@@ -38,13 +38,14 @@ export default function SkillsSection() {
           <SkillsSectionItem
             icon={<MdImportContacts />}
             title="Graphic design"
-            desc="I also design print materials, Magazine, catalogue and promotional items."
+            desc="I design print materials, magazines, catalogue and promotional items."
             tools="[Photoshop, Illustrator, InDesign]"
           />
           <SkillsSectionItem
             icon={<MdCode />}
             title="Dev"
-            desc="I developed marketing e-mail template in a fintech company."
+            desc="I develop marketing marketing templates, web applications and e-commerce sites
+            "
             tools="[React, Javascript, HTML, CSS]"
           />
         </div>

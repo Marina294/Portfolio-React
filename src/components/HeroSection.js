@@ -65,7 +65,9 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero__heading">
             <span className="hero__name">Marina Yamamoto</span>
-            <span className="hero__title">Graphic/Web Designer</span>
+            <span className="hero__title">
+              Graphic Designer / Frontend Developer
+            </span>
           </h1>
           <div className="hero__scrollDown">
             <a className="hero__scrollDown">

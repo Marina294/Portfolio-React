@@ -61,21 +61,18 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <h1 className="about__heading">Marina Yamamoto</h1>
-              <h4 className="about__subheading">Graphic / Web Designer</h4>
+              <h4 className="about__subheading">
+                Graphic Designer / Frontend Developer
+              </h4>
               <div className="about__info">
                 <PText>
-                  I have 2 years of experience in web design in a fintech
-                  company. I was in charge of creating websites and landing
-                  pages, company branding. I have also worked in an advertising
-                  agency, producing banners for various clients, focusing on
-                  in-feed advertising.
-                  <br /> <br />I have +9 years of experience in graphic design
-                  direction in print industry. I was in charge of planning and
-                  producing advertisements, magazines, and general promotional
-                  materials.
-                  <br /> <br />I worked with marketing team and developer team
-                  specify exact time. flexibly in projects, including design,
-                  planning and management.
+                  Hello! I like take stary cat photos. I've worked as a graphic
+                  designer for 9+ years and currently working as a web designer
+                  and front end developer for 2+ years. I have experience
+                  collaborating with external teams such as marketing, product
+                  and management to plan, strategize and execute features.
+                  <br /> <br />I was in charge of planning and producing
+                  advertisements, magazines, and general promotional materials.
                 </PText>
               </div>
             </div>

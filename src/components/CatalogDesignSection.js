@@ -86,9 +86,7 @@ export default function CatalogDesign() {
             <h2 className="webSection__heading">Catalog Design</h2>
             <h4 className="works__subheading">Product Catalogs</h4>
             <div className="works__info">
-              <PText>
-                In charged of page design and engaged with photo shooting.
-              </PText>
+              <PText>Did photoshoot and designed product pages.</PText>
               <div className="works__infoDetail-2line">
                 <div className="works__infoDetail">
                   <br /> Client: Mercedes-Benz <br /> Date: 08/2013 <br />

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ImLinkedin } from 'react-icons/im';
+import { ImLinkedin, ImGithub } from 'react-icons/im';
 import SectionTitle from './SectionTitle';
 
 const ContactSectionStyle = styled.div`
@@ -51,6 +51,14 @@ export default function ContactSection() {
             rel="noreferrer"
           >
             <ImLinkedin style={{ fill: 'var(--additional)' }} />
+          </a>
+          <a
+            className="sns-icon"
+            href="https://github.com/Marina294"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ImGithub style={{ fill: 'var(--additional)' }} />
           </a>
         </div>
       </div>

@@ -83,8 +83,8 @@ export default function PromotionalSection() {
             <div className="works__info">
               <PText>
                 Company calendar for client distribution. Only corporate colors
-                are used, and the stand is made of real wood. The background can
-                custom with each month. <br /> Art directed for a booth at
+                are used, and the stand is made of real wood. And custom the
+                background based on month. <br /> Art directed for a booth at
                 Japan's largest snow festival, which over 2,700,000 visitors
                 every year. I also designed the flyers and cups.
               </PText>

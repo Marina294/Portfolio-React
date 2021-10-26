@@ -74,16 +74,21 @@ export default function AboutSection() {
           <SectionTitle heading="About Me" />
           <div className="ptext__allItems">
             <PText>
-              2 years experience in web design in IT and fintech companies. +9
+              {/* 2 years experience in web design in IT and fintech companies. +9
               years experience in graphic design and art direction for print.
               Worked with marketing team and developer team for specify exact
               time. flexibly in projects, including design, planning and
-              management.
+              management. */}
+              Hello! I like take stary cat photos. I've worked as a graphic
+              designer for 9+ years and currently working as a web designer and
+              front end developer for 2+ years. I have experience collaborating
+              with external teams such as marketing, product and management to
+              plan, strategize and execute features.
             </PText>
           </div>
           <div className="aboutSection__buttons">
             <Button btnText="Read More" btnLink="/about" outline />
-            <Button btnText="Check My Design" btnLink="/design" />
+            <Button btnText="Check My Designs" btnLink="/design" />
           </div>
         </div>
       </div>

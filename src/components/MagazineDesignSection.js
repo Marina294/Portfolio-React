@@ -86,7 +86,7 @@ export default function MagazineDesign() {
             </h4>
             <div className="works__info">
               <PText>
-                In charged of cover and pages design in the Nail artists
+                In charge of cover art and page design in the Nail artists
                 magazine. Designed page layout in food magazine.
               </PText>
               <div className="works__infoDetail-2line">

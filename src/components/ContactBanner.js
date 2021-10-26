@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ImLinkedin } from 'react-icons/im';
+import { ImLinkedin, ImGithub } from 'react-icons/im';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
@@ -47,14 +47,14 @@ export default function ContactBanner() {
           >
             <ImLinkedin style={{ fill: 'var(--additional)' }} />
           </a>
-          {/* <a
+          <a
             className="sns-icon"
             href="https://github.com/Marina294"
             target="_blank"
             rel="noreferrer"
           >
-            <ImGithub />
-          </a> */}
+            <ImGithub style={{ fill: 'var(--additional)' }} />
+          </a>
         </div>
       </div>
     </ContactBannerStyles>

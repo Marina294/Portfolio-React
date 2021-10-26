@@ -8,21 +8,30 @@ import CheckWorldTimeImg from '../images/dev-world-clock.webp';
 const dev = [
   {
     id: uuidv4(),
-    name: 'Check World Time',
+    name: 'Drawing Time!',
     desc:
-      'A world clcok app. Search city name or time zone. You can move the list sort and change background every time. Built with ReactJS.',
-    link: 'https://check-world-time.netlify.app/',
-    img: CheckWorldTimeImg,
-    gitLink: 'https://github.com/Marina294/World-clock-react',
+      'An app to draw illustration. You can change Pen size and color, also easy to erase. Built with Canvas, Desktop Only.',
+    link: 'https://drawing-time.netlify.app/',
+    img: DrawingTimeImg,
+    gitLink: 'https://github.com/Marina294/Drawing-APP',
   },
   {
     id: uuidv4(),
     name: 'What To Cook Today',
     desc:
-      'An app for searching food recipe. It Help ideas of your meal today. Built with ReactJS.',
+      'An app for searching food recipe. It Help ideas for your meal today. Built with ReactJS.',
     link: 'https://whattocooktoday.netlify.app/',
     img: WhatTOCookTodayImg,
     gitLink: 'https://github.com/Marina294/whatToCookToday',
+  },
+  {
+    id: uuidv4(),
+    name: 'Apple Calculator',
+    desc:
+      'An app for calculation. Responsive design based on apple iOS and MacOS. Built with ReactJS.',
+    link: 'https://calculator-clone-apple.netlify.app/',
+    img: CalculatorImg,
+    gitLink: 'https://github.com/Marina294/Calculator-app',
   },
   {
     id: uuidv4(),
@@ -34,21 +43,12 @@ const dev = [
   },
   {
     id: uuidv4(),
-    name: 'apple Calculator',
+    name: 'Check World Time',
     desc:
-      'An app for calculation. It will change to iOS and MacOS design by responsive. Built with ReactJS.',
-    link: 'https://calculator-clone-apple.netlify.app/',
-    img: CalculatorImg,
-    gitLink: 'https://github.com/Marina294/Calculator-app',
-  },
-  {
-    id: uuidv4(),
-    name: 'Drawing Time!',
-    desc:
-      'An app to draw illustration. You can change Pen size and color, also easy to erase. Built with Canvas, Desktop Only.',
-    link: 'https://drawing-time.netlify.app/',
-    img: DrawingTimeImg,
-    gitLink: 'https://github.com/Marina294/Drawing-APP',
+      'A world clcok app to search city name and time zones. Built with ReactJS.',
+    link: 'https://check-world-time.netlify.app/',
+    img: CheckWorldTimeImg,
+    gitLink: 'https://github.com/Marina294/World-clock-react',
   },
 ];
 

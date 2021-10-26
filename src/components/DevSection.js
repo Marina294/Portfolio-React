@@ -111,7 +111,7 @@ export default function WorksSection() {
           </Swiper>
         </div>
         <div className="worksSection__button">
-          <Button btnText="Check All Dev" btnLink="/dev" />
+          <Button btnText="See More" btnLink="/dev" />
         </div>
       </div>
     </DevSectionStyle>
