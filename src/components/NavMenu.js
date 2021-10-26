@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { ImLinkedin, ImGithub } from 'react-icons/im';
+import Button from './Button';
 
 const NavStyles = styled.nav`
   position: fixed;
@@ -49,6 +50,11 @@ const NavStyles = styled.nav`
   }
   .navItems .closeNavIcon {
     display: none;
+  }
+  .button {
+    font-size: 1.2rem;
+    margin-top: 0;
+    width: 13rem;
   }
   @media only screen and (max-width: 768px) {
     padding: 0;
@@ -184,6 +190,14 @@ export default function NavMenu() {
               rel="noreferrer"
             >
               <ImGithub style={{ fill: 'var(--additional)' }} />
+            </a>
+            <a>
+              <Button
+                className="nav-button"
+                btnText="Download CV"
+                btnLink="/about"
+                outline
+              />
             </a>
           </div>
         </li>

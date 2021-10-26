@@ -76,7 +76,7 @@ export default function WorksSection() {
   return (
     <DevSectionStyle>
       <div className="container">
-        <SectionTitle heading="Dev Works" />
+        <SectionTitle heading="Dev Work" />
         <div className="works__allItems">
           <Swiper
             spaceBetween={20}
