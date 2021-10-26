@@ -50,6 +50,7 @@ const HeroStyles = styled.div`
   .hero__img {
     width: 85%;
     align-items: start;
+    margin-top: 5rem;
     // filter: grayscale(100%) contrast(125%);
   }
   .hero__scrollDown {
@@ -89,6 +90,7 @@ const HeroStyles = styled.div`
     }
     .hero__img {
       width: 70%;
+      margin-top: 0;
     }
     .hero__scrollDown {
       svg {
