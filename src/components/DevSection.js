@@ -83,11 +83,11 @@ export default function WorksSection() {
             slidesPerView={1}
             navigation
             breakpoints={{
-              425: {
-                slidesPerView: 2,
+              600: {
+                slidesPerView: 1,
               },
               768: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
               1200: {
                 slidesPerView: 4,
