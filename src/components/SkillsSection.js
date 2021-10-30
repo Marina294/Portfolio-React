@@ -1,8 +1,8 @@
 import React from 'react';
 import { MdComputer, MdImportContacts, MdCode } from 'react-icons/md';
 import styled from 'styled-components';
-import SectionTitle from './SectionTitle';
-import SkillsSectionItem from './SkillsSectionItem';
+import SectionTitle from './common/SectionTitle';
+import SkillsItem from './SkillsItem';
 
 const SkillsItemsStyles = styled.div`
   padding: 10rem 0;
@@ -29,19 +29,19 @@ export default function SkillsSection() {
       <div className="container">
         <SectionTitle heading="Skills" />
         <div className="skills__allItems">
-          <SkillsSectionItem
+          <SkillsItem
             icon={<MdComputer />}
             title="Web design"
             desc="I do UI design for websites, marketing e-mail and web advertising."
             tools="[Figma, Sketch, Adobe XD]"
           />
-          <SkillsSectionItem
+          <SkillsItem
             icon={<MdImportContacts />}
             title="Graphic design"
             desc="I design print materials, magazines, catalogue and promotional items."
             tools="[Photoshop, Illustrator, InDesign]"
           />
-          <SkillsSectionItem
+          <SkillsItem
             icon={<MdCode />}
             title="Dev"
             desc="I develop marketing marketing templates, web applications and e-commerce sites

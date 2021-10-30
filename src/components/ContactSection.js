@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImLinkedin, ImGithub } from 'react-icons/im';
-import SectionTitle from './SectionTitle';
+import SectionTitle from './common/SectionTitle';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;

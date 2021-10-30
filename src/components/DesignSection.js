@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import SectionTitle from './SectionTitle';
+import SectionTitle from './common/SectionTitle';
 import DesignInfo from '../assets/data/design';
 import DesignItem from './DesignItem';
-import Button from './Button';
+import Button from './common/Button';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;

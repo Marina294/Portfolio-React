@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MdSearch } from 'react-icons/md';
-import SectionTitle from '../components/SectionTitle';
+import SectionTitle from '../components/common/SectionTitle';
 import DevInfo from '../assets/data/dev';
 import DevItem from '../components/DevItem';
 import ContactBanner from '../components/ContactBanner';

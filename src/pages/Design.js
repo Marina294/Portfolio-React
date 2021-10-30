@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import SectionTitle from '../components/SectionTitle';
+import SectionTitle from '../components/common/SectionTitle';
 import DesignInfo from '../assets/data/design';
 import DesignItem from '../components/DesignItem';
-import WebDesignSection from '../components/WebDesignSection';
-import OnlineAdsSection from '../components/OnlineAdsSection';
-import CatalogDesignSection from '../components/CatalogDesignSection';
-import MagazineDesignSection from '../components/MagazineDesignSection';
-import PromotionalSection from '../components/PromotionalSection';
+import WebDesignSection from '../components/designSection/WebDesignSection';
+import OnlineAdsSection from '../components/designSection/OnlineAdsSection';
+import CatalogDesignSection from '../components/designSection/CatalogDesignSection';
+import MagazineDesignSection from '../components/designSection/MagazineDesignSection';
+import PromotionalSection from '../components/designSection/PromotionalSection';
 import ContactBanner from '../components/ContactBanner';
 
 const DesignStyle = styled.div`

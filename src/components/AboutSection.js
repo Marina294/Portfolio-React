@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button';
-import PText from './PText';
-import SectionTitle from './SectionTitle';
+import Button from './common/Button';
+import PText from './common/PText';
+import SectionTitle from './common/SectionTitle';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;

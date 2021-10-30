@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import DevItem from './DevItem';
-import SectionTitle from './SectionTitle';
+import SectionTitle from './common/SectionTitle';
 import 'swiper/swiper-bundle.min.css';
 import works from '../assets/data/dev';
-import Button from './Button';
+import Button from './common/Button';
 
 SwiperCore.use([Navigation]);
 

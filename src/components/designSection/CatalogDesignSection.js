@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from './PText';
-import WorkImg1 from '../assets/images/w-magazine1.webp';
-import WorkImg2 from '../assets/images/w-magazine2.webp';
-import WorkImg3 from '../assets/images/w-magazine3.webp';
-import WorkImg4 from '../assets/images/w-magazine4.webp';
+import PText from '../common/PText';
+import WorkImg1 from '../../assets/images/w-catalog1.jpg';
+import WorkImg2 from '../../assets/images/w-catalog2.jpg';
+import WorkImg3 from '../../assets/images/w-catalog3.webp';
+import WorkImg4 from '../../assets/images/w-catalog4.webp';
 
-const MagazineDesignStyles = styled.div`
+const CatalogDesignStyles = styled.div`
   padding: 5rem 0;
   .container {
     align-items: center;
@@ -53,6 +53,9 @@ const MagazineDesignStyles = styled.div`
       border: 0.5px solid var(--gray-2);
     }
   }
+  span {
+    font-weight: 600;
+  }
 
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
@@ -74,43 +77,36 @@ const MagazineDesignStyles = styled.div`
   }
 `;
 
-export default function MagazineDesign() {
+export default function CatalogDesign() {
   return (
-    <MagazineDesignStyles id="magazineDesign">
+    <CatalogDesignStyles id="catalogDesign">
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Magazine Design</h2>
-            <h4 className="works__subheading">
-              The Magazine Association of Nail Artists and Food Magazine
-            </h4>
+            <h2 className="webSection__heading">Catalog Design</h2>
+            <h4 className="works__subheading">Product Catalogs</h4>
             <div className="works__info">
-              <PText>
-                In charge of cover art and page design in the Nail artists
-                magazine. Designed page layout in food magazine.
-              </PText>
+              <PText>Did photoshoot and designed product pages.</PText>
               <div className="works__infoDetail-2line">
                 <div className="works__infoDetail">
-                  <br /> Client: Japan Nailist Association
-                  <br /> Date: 04/2017 <br /> Work: Art Direction, Design <br />
-                  Software: Photoshop, InDesign
+                  <br /> Client: Mercedes-Benz <br /> Date: 08/2013 <br />
+                  Work: Design <br /> Software: Photoshop, InDesign
                 </div>
                 <div className="works__infoDetail">
-                  <br /> Client: Hitosara <br /> Date: 02/2014 <br />
-                  Work: Design <br />
-                  Software: Photoshop, InDesign
+                  <br /> Client: Fujitsu <br /> Date: 07/2013 <br />
+                  Work: Design <br /> software: Photoshop, Illustorator
                 </div>
               </div>
             </div>
           </div>
           <div className="workItem__img">
-            <img src={WorkImg1} alt="work img" />
-            <img src={WorkImg3} alt="work img" />
             <img src={WorkImg2} alt="work img" />
+            <img src={WorkImg1} alt="work img" />
             <img src={WorkImg4} alt="work img" />
+            <img src={WorkImg3} alt="work img" />
           </div>
         </div>
       </div>
-    </MagazineDesignStyles>
+    </CatalogDesignStyles>
   );
 }

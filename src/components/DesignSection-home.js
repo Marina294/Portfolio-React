@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
-import SectionTitle from './SectionTitle';
-import Button from './Button';
+import SectionTitle from './common/SectionTitle';
+import Button from './common/Button';
 import WorkImg1 from '../assets/images/l-webdesign.webp';
 import WorkImg2 from '../assets/images/l-onlineads.webp';
 import WorkImg3 from '../assets/images/l-catalogdesign.webp';

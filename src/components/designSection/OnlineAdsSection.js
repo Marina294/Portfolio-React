@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from './PText';
-import WorkImg1 from '../assets/images/w-oa-1.webp';
-import WorkImg2 from '../assets/images/w-oa-2.webp';
-import WorkImg3 from '../assets/images/w-oa-3.webp';
-import WorkImg4 from '../assets/images/w-oa-4.webp';
+import PText from '../common/PText';
+import WorkImg1 from '../../assets/images/w-oa-1.webp';
+import WorkImg2 from '../../assets/images/w-oa-2.webp';
+import WorkImg3 from '../../assets/images/w-oa-3.webp';
+import WorkImg4 from '../../assets/images/w-oa-4.webp';
 
 const OnlineAdsStyles = styled.div`
   padding: 5rem 0;

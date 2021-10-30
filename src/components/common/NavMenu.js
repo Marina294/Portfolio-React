@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { ImLinkedin, ImGithub } from 'react-icons/im';
-// import Button from './Button';
+// import Button from './common/Button';
 
 const NavStyles = styled.nav`
   position: fixed;
