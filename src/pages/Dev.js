@@ -7,7 +7,7 @@ import DevItem from '../components/DevItem';
 import ContactBanner from '../components/ContactBanner';
 
 const DevStyle = styled.div`
-  padding: 10rem 0;
+  padding: 12rem 0 0 0;
   img {
     width: 100%;
     height: auto;
@@ -43,6 +43,7 @@ const DevStyle = styled.div`
     color: var(--gray-1);
   }
   @media only screen and (max-width: 768px) {
+    padding: 8rem 0 0 0;
     .works__searchBar,
     .works__searchBar form,
     .works__searchBar input {

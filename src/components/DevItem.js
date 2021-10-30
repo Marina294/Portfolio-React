@@ -10,7 +10,6 @@ const DevItemStyles = styled.div`
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
-    box-shadow: 5px 10px #888888;
     img {
       height: 100%;
     }

@@ -10,7 +10,7 @@ const dev = [
     id: uuidv4(),
     name: 'Drawing Time!',
     desc:
-      'An app to draw illustration. You can change Pen size and color, also easy to erase. Built with Canvas, Desktop Only.',
+      'An app to draw illustration. You can change Pen size, color, and easy to erase. Built with Canvas.',
     link: 'https://drawing-time.netlify.app/',
     img: DrawingTimeImg,
     gitLink: 'https://github.com/Marina294/Drawing-APP',
@@ -36,7 +36,8 @@ const dev = [
   {
     id: uuidv4(),
     name: 'Rock Paper Meow',
-    desc: 'Rock paper scissors game with cat paws. Built with ReactJS.',
+    desc:
+      'An app to play rock paper scissors game with cat paws. Responsive design. Built with ReactJS.',
     link: 'https://rock-paper-meow.netlify.app/',
     img: RockPaperMeowImg,
     gitLink: 'https://github.com/Marina294/Rock-Paper-Scissors-app',
@@ -45,7 +46,7 @@ const dev = [
     id: uuidv4(),
     name: 'Check World Time',
     desc:
-      'A world clcok app to search city name and time zones. Built with ReactJS.',
+      'A world clcok app to search city name and time zones. Responsive design. Built with ReactJS.',
     link: 'https://check-world-time.netlify.app/',
     img: CheckWorldTimeImg,
     gitLink: 'https://github.com/Marina294/World-clock-react',

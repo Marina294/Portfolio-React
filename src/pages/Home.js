@@ -14,7 +14,7 @@ export default function Home() {
       <SkillsSection />
       <DesignSectionHome />
       <DevSection />
-      <ContactBanner />
+      <ContactBanner id="contact" />
     </div>
   );
 }

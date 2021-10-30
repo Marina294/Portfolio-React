@@ -34,7 +34,7 @@ const ContactBannerStyles = styled.div`
 
 export default function ContactBanner() {
   return (
-    <ContactBannerStyles>
+    <ContactBannerStyles id="contact">
       <div className="container">
         <div className="contactBanner__wrapper">
           <h3 className="contactBanner__heading">Contact Me</h3>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const SectionTitleStyle = styled.div`
   text-align: center;
   h1 {
-    margin-top: 2rem;
+    margin-top: 0;
     margin-bottom: 5rem;
   }
   @media only screen and (max-width: 768px) {

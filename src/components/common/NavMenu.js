@@ -12,13 +12,12 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--bg);
+  background-color: var(--bg);
   ul {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
-
     li {
       display: inline-block;
       border-radius: 8px;
@@ -57,11 +56,13 @@ const NavStyles = styled.nav`
     width: 13rem;
   }
   @media only screen and (max-width: 768px) {
-    padding: 0;
+    padding: 3.1rem;
+    background-color: rgba(255, 255, 255, 0.5);
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));
     }
     .mobile-menu-icon {
+      margin: 0.5rem;
       display: block;
     }
     .navItems {
@@ -97,100 +98,112 @@ export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
   return (
     <NavStyles>
-      <div
-        className="mobile-menu-icon"
-        onClick={() => setShowNav(!showNav)}
-        role="button"
-        onKeyDown={() => setShowNav(!showNav)}
-        tabIndex={0}
-      >
-        <MdMenu />
-      </div>
-
-      <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+      <div className="container">
         <div
-          className="closeNavIcon"
+          className="mobile-menu-icon"
           onClick={() => setShowNav(!showNav)}
           role="button"
           onKeyDown={() => setShowNav(!showNav)}
           tabIndex={0}
         >
-          <MdClose />
+          <MdMenu />
         </div>
-        <li>
-          <NavLink
-            to="/"
-            exact
+        <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+          <div
+            className="closeNavIcon"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            HOME
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/about"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            ABOUT
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/design"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            DESIGN
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/dev"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            DEV
-          </NavLink>
-        </li>
-        <li>
-          <div>
-            <a
-              className="sns-icon"
-              href="https://www.linkedin.com/in/marina-yamamoto-558276128"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ImLinkedin style={{ fill: 'var(--additional)' }} />
-            </a>
-            <a
-              className="sns-icon"
-              href="https://github.com/Marina294"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ImGithub style={{ fill: 'var(--additional)' }} />
-            </a>
-            {/* <a>
-              <Button
-                className="nav-button"
-                btnText="Download CV"
-                btnLink="/about"
-                outline
-              />
-            </a> */}
+            <MdClose />
           </div>
-        </li>
-      </ul>
+          <li>
+            <NavLink
+              to="/"
+              exact
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              HOME
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              ABOUT
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/design"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              DESIGN
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/dev"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              DEV
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              CONTACT
+            </NavLink>
+          </li>
+          <li>
+            <div>
+              <a
+                className="sns-icon"
+                href="https://www.linkedin.com/in/marina-yamamoto-558276128"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImLinkedin style={{ fill: 'var(--additional)' }} />
+              </a>
+              <a
+                className="sns-icon"
+                href="https://github.com/Marina294"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImGithub style={{ fill: 'var(--additional)' }} />
+              </a>
+              {/* <a>
+                <Button
+                  className="nav-button"
+                  btnText="Download CV"
+                  btnLink="/about"
+                  outline
+                />
+              </a> */}
+            </div>
+          </li>
+        </ul>
+      </div>
     </NavStyles>
   );
 }

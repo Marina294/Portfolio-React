@@ -6,8 +6,7 @@ import ContactBanner from '../components/ContactBanner';
 import SkillsSection from '../components/SkillsSection';
 
 const AboutPageStyles = styled.div`
-  padding: 12rem 0;
-
+  padding: 12rem 0 0 0;
   .top-section {
     display: flex;
     align-items: center;
@@ -39,7 +38,7 @@ const AboutPageStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10rem 0;
+    padding: 8rem 0 0 0;
     .top-section {
       flex-direction: column;
       gap: 5rem;
@@ -62,7 +61,7 @@ export default function About() {
             <div className="left">
               <h1 className="about__heading">Marina Yamamoto</h1>
               <h4 className="about__subheading">
-                Graphic Designer / Frontend Developer
+                Designer / Frontend Developer
               </h4>
               <div className="about__info">
                 <PText>

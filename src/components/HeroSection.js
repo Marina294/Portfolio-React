@@ -15,7 +15,6 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     margin-top: 5rem;
-    // margin-right: -50rem;
     position: relative;
     text-align: center;
   }
@@ -51,7 +50,6 @@ const HeroStyles = styled.div`
     width: 85%;
     align-items: start;
     margin-top: 5rem;
-    // filter: grayscale(100%) contrast(125%);
   }
   .hero__scrollDown {
     text-align: center;
@@ -110,7 +108,8 @@ export default function HeroSection() {
               <div className="hero__heading">
                 <div className="hero__name">Marina Yamamoto</div>
                 <div className="hero__title">
-                  Graphic Designer / Frontend Developer
+                  I'm a Designer / Frontend Developer, <br /> based in
+                  Vancouver, Canada
                 </div>
                 {/* <Button
                   btnText="Download CV"

@@ -11,7 +11,7 @@ import PromotionalSection from '../components/designSection/PromotionalSection';
 import ContactBanner from '../components/ContactBanner';
 
 const DesignStyle = styled.div`
-  padding: 10rem 0;
+  padding: 12rem 0 0 0;
   img {
     width: 100%;
     height: auto;
@@ -23,6 +23,9 @@ const DesignStyle = styled.div`
     gap: 2.5rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 8rem 0 0 0;
   }
 `;
 export default function Design() {
