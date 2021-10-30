@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { ImLinkedin, ImGithub } from 'react-icons/im';
-import Button from './Button';
+// import Button from './Button';
 
 const NavStyles = styled.nav`
   position: fixed;
@@ -163,17 +163,6 @@ export default function NavMenu() {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/contact"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            CONTACT
-          </NavLink>
-        </li>
-        <li>
           <div>
             <a
               className="sns-icon"
@@ -191,14 +180,14 @@ export default function NavMenu() {
             >
               <ImGithub style={{ fill: 'var(--additional)' }} />
             </a>
-            <a>
+            {/* <a>
               <Button
                 className="nav-button"
                 btnText="Download CV"
                 btnLink="/about"
                 outline
               />
-            </a>
+            </a> */}
           </div>
         </li>
       </ul>

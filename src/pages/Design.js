@@ -8,6 +8,7 @@ import OnlineAdsSection from '../components/OnlineAdsSection';
 import CatalogDesignSection from '../components/CatalogDesignSection';
 import MagazineDesignSection from '../components/MagazineDesignSection';
 import PromotionalSection from '../components/PromotionalSection';
+import ContactBanner from '../components/ContactBanner';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
@@ -46,6 +47,7 @@ export default function Design() {
       <CatalogDesignSection />
       <MagazineDesignSection />
       <PromotionalSection />
+      <ContactBanner />
     </DesignStyle>
   );
 }

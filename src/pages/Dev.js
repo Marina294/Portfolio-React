@@ -4,6 +4,7 @@ import { MdSearch } from 'react-icons/md';
 import SectionTitle from '../components/SectionTitle';
 import DevInfo from '../assets/data/dev';
 import DevItem from '../components/DevItem';
+import ContactBanner from '../components/ContactBanner';
 
 const DevStyle = styled.div`
   padding: 10rem 0;
@@ -96,6 +97,7 @@ export default function Dev() {
           ))}
         </div>
       </div>
+      <ContactBanner />
     </DevStyle>
   );
 }

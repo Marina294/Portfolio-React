@@ -38,12 +38,6 @@ const WebDesignStyles = styled.div`
   .webSection__heading {
     margin-bottom: 3rem;
   }
-  .works__allItems {
-    // display: flex;
-    // grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    // gap: 2rem;
-    // margin-top: 5rem;
-  }
   .workItem__img {
     display: flex;
     flex-wrap: wrap;

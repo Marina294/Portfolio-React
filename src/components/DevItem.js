@@ -41,16 +41,11 @@ const DevItemStyles = styled.div`
   .workItem__git {
     display: flex;
     margin-top: 1rem;
-    // align-items: center;
     justify-content: flex-end;
   }
   .git-icon {
     width: 2.2rem;
   }
-  // .workItem__gitLink {
-  //   font-size: 1.4rem;
-  //   font-weight: 600;
-  // }
 `;
 
 export default function DevItem({

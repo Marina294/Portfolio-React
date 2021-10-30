@@ -66,11 +66,11 @@ export default function About() {
               </h4>
               <div className="about__info">
                 <PText>
-                  Hello! I like take stary cat photos. I've worked as a graphic
-                  designer for 9+ years and currently working as a web designer
-                  and front end developer for 2+ years. I have experience
-                  collaborating with external teams such as marketing, product
-                  and management to plan, strategize and execute features.
+                  Hello! I've worked as a graphic designer for 9+ years and
+                  currently working as a web designer and front end developer
+                  for 2+ years. I have experience collaborating with external
+                  teams such as marketing, product and management to plan,
+                  strategize and execute features.
                   <br /> <br />I was in charge of planning and producing
                   advertisements, magazines, and general promotional materials.
                 </PText>
