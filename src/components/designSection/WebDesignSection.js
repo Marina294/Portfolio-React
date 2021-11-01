@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../common/PText';
-import WorkImg1 from '../../assets/images/w-web1.jpg';
-import WorkImg2 from '../../assets/images/w-web2.jpg';
-import WorkImg5 from '../../assets/images/w-web3.jpg';
-import WorkImg6 from '../../assets/images/w-web4.jpg';
+import WorkImg1 from '../../assets/images/w-web1.webp';
+import WorkImg2 from '../../assets/images/w-web2.webp';
+import WorkImg5 from '../../assets/images/w-web3.webp';
+import WorkImg6 from '../../assets/images/w-web4.webp';
 import WorkImg3 from '../../assets/images/w-paidy-website1.webp';
 import WorkImg4 from '../../assets/images/w-paidy-website2.webp';
 

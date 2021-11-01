@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { HashLink } from 'react-router-hash-link';
 import SectionTitle from './common/SectionTitle';
 import Button from './common/Button';
-import WorkImg1 from '../assets/images/w-home1.png';
-import WorkImg2 from '../assets/images/w-home2.png';
+import WorkImg1 from '../assets/images/w-home1.webp';
+import WorkImg2 from '../assets/images/w-home2.webp';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;

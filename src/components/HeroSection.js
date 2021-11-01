@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { CgArrowLongDown } from 'react-icons/cg';
-import AboutImg from '../assets/images/about2.png';
+import AboutImg from '../assets/images/about2.webp';
 
 const HeroStyles = styled.div`
   .hero {

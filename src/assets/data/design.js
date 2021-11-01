@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import OnlineAdsImg from '../images/l-onlineads.webp';
-import WebDesignImg from '../images/l-website.jpg';
+import WebDesignImg from '../images/l-webdesign.webp';
 import CatalogImg from '../images/l-catalogdesign.webp';
 import MagazineImg from '../images/l-magazinedesign.webp';
 import PromotionalImg from '../images/l-promotional.webp';
