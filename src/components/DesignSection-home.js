@@ -37,7 +37,7 @@ const DesignStyle = styled.div`
       justify-content: space-around;
       img {
         width: 100%;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         border: 0.5px solid var(--gray-2);
       }
     }
