@@ -45,8 +45,8 @@ export default function Design() {
           ))}
         </div>
       </div>
-      <OnlineAdsSection />
       <WebDesignSection />
+      <OnlineAdsSection />
       <CatalogDesignSection />
       <MagazineDesignSection />
       <PromotionalSection />
