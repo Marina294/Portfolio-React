@@ -6,7 +6,6 @@ const FooterStyle = styled.div`
     background-color: var(--bg);
     text-align: center;
     padding: 2rem 0;
-    margin-top: 2rem;
     font-size: 1.4rem;
   }
   @media only screen and (max-width: 768px) {

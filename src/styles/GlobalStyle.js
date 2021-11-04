@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
   :root{
-    --bg: #F9F9F9;
+    --bg: #F8F8F8;
     --gray-1: #5D534A;
     --gray-2: #e0ddda;
     --additional: #9a86e3;

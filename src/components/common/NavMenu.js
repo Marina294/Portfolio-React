@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { ImLinkedin, ImGithub } from 'react-icons/im';
-// import Button from './common/Button';
+// import Cv from '../../assets/images/w-catalog4.jpg';
+// import Button from './Button';
 
 const NavStyles = styled.nav`
   position: fixed;
@@ -192,13 +193,8 @@ export default function NavMenu() {
               >
                 <ImGithub style={{ fill: 'var(--additional)' }} />
               </a>
-              {/* <a>
-                <Button
-                  className="nav-button"
-                  btnText="Download CV"
-                  btnLink="/about"
-                  outline
-                />
+              {/* <a className="nav-button" btnText="Download CV" href={Cv} outline>
+                Test
               </a> */}
             </div>
           </li>
