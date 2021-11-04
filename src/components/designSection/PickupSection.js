@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import PText from '../common/PText';
 import WorkImg1 from '../../assets/images/w-web1.jpg';
 import WorkImg2 from '../../assets/images/w-web2.jpg';
-import Zoom from './zoom/ZoomWeb1';
 // import WorkImg5 from '../../assets/images/w-web3.webp';
 // import WorkImg6 from '../../assets/images/w-web4.webp';
 // import WorkImg3 from '../../assets/images/w-paidy-website1.webp';
