@@ -170,10 +170,10 @@ export default function Pickup() {
             <h4>Logo Guide Line</h4>
           </div>
           <div className="workItem__img__3line">
-            <a href={LogoImg2} target="_blank" rel="noreferrer">
+            <a href={LogoImg1} target="_blank" rel="noreferrer">
               <img src={LogoImg1} alt="work img" />
             </a>
-            <a href={LogoImg3} target="_blank" rel="noreferrer">
+            <a href={LogoImg2} target="_blank" rel="noreferrer">
               <img src={LogoImg2} alt="work img" />
             </a>
             <a href={LogoImg3} target="_blank" rel="noreferrer">
