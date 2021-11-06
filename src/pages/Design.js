@@ -19,8 +19,8 @@ const DesignStyle = styled.div`
     object-fit: cover;
   }
   .white__section {
-    margin-top: 5rem;
-    padding: 2rem 0 2rem 0;
+    margin: 10rem 0 0 0;
+    padding: 5rem 0 5rem 0;
     background-color: var(--white);
   }
   .section__heading {

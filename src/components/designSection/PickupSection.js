@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BsPlusCircle } from 'react-icons/bs';
+import PText from '../common/PText';
 import MainImg from '../../assets/images/w-web-sc-top.png';
 import WorkImg1 from '../../assets/images/w-web1.jpg';
 import WorkImg2 from '../../assets/images/w-web2.jpg';
 import WorkImg3 from '../../assets/images/w-web1-2.jpg';
 import WorkImg4 from '../../assets/images/w-web2-2.jpg';
 import SiteMap from '../../assets/images/w-web-sc-sitemap.jpg';
-import WireFrameImg1 from '../../assets/images/w-web-sc-wire1.png';
-import WireFrameImg2 from '../../assets/images/w-web-sc-wire2.png';
+import WireFrameImg from '../../assets/images/w-web-sc-wire1.png';
 import LogoImg1 from '../../assets/images/w-web-sc-logo1.jpg';
 import LogoImg2 from '../../assets/images/w-web-sc-logo2.jpg';
 import LogoImg3 from '../../assets/images/w-web-sc-logo3.jpg';
@@ -55,16 +54,6 @@ const PickupStyles = styled.div`
   .right__sitemap {
     flex: 2;
   }
-  .zoom__box {
-    position: relative;
-  }
-  .zoom {
-    width: 2rem;
-    display: flex;
-    position: absolute;
-    bottom: 4%;
-    right: 2%;
-  }
   .works__subheading {
     margin-bottom: 2rem;
     span {
@@ -93,7 +82,6 @@ const PickupStyles = styled.div`
   .workItem__img__3line {
     display: inline-block;
     text-align: center;
-    position: relative;
     img {
       margin: 0 1rem 0 1rem;
       width: 30%;
@@ -164,11 +152,11 @@ export default function Pickup() {
               Redesign the Corprate website / Company Branding
             </h4>
             <div className="works__info">
-              <p>
+              <PText>
                 Designed the corporate website. In charged of branding and
                 design. Created internal company brand guide to unify brand
                 awareness.
-              </p>
+              </PText>
               <div className="works__infoDetail">
                 <br /> Client: Symply Cubed Co., Ltd. <br /> Date: 5/2021 <br />
                 Work: Concept, Design, branding <br /> Software: Sketch
@@ -176,16 +164,22 @@ export default function Pickup() {
             </div>
           </div>
         </div>
-        <div className="secound-section">
+        <div className="workItem__title">
+          <h4>Sitemap / Wireframe</h4>
+        </div>
+        <div className="workItem__img__3line">
+          <a href={SiteMap} target="_blank" rel="noreferrer">
+            <img src={SiteMap} alt="work img" />
+          </a>
+          <a href={WireFrameImg} target="_blank" rel="noreferrer">
+            <img src={WireFrameImg} alt="work img" />
+          </a>
+        </div>
+        {/* <div className="secound-section">
           <div className="left__sitemap">
-            <div className="zoom__box">
-              <a href={SiteMap} target="_blank" rel="noreferrer">
-                <img className="works__Img" src={SiteMap} alt="work img" />
-                <div className="zoom">
-                  <BsPlusCircle style={{ fill: 'var(--additional)' }} />
-                </div>
-              </a>
-            </div>
+            <a href={SiteMap} target="_blank" rel="noreferrer">
+              <img className="works__Img" src={SiteMap} alt="work img" />
+            </a>
           </div>
           <div className="right__sitemap">
             <div className="works__info">
@@ -196,22 +190,8 @@ export default function Pickup() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="secound-section">
-          <div className="left__sitemap">
-            <div className="zoom__box">
-              <a href={WireFrameImg2} target="_blank" rel="noreferrer">
-                <img
-                  className="works__Img"
-                  src={WireFrameImg1}
-                  alt="work img"
-                />
-                <div className="zoom">
-                  <BsPlusCircle style={{ fill: 'var(--additional)' }} />
-                </div>
-              </a>
-            </div>
-          </div>
           <div className="right__sitemap">
             <div className="works__info">
               {/* <p>
@@ -224,7 +204,7 @@ export default function Pickup() {
         </div>
         <div>
           <div className="workItem__title">
-            <h4>Logo guide line</h4>
+            <h4>Logo Guide Line</h4>
           </div>
           <div className="workItem__img__3line">
             <a href={LogoImg2} target="_blank" rel="noreferrer">
@@ -238,7 +218,7 @@ export default function Pickup() {
             </a>
           </div>
           <div className="workItem__title">
-            <h4>Final design</h4>
+            <h4>Final Design</h4>
           </div>
           <div className="workItem__img__2line">
             <a href={WorkImg3} target="_blank" rel="noreferrer">
