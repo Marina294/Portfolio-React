@@ -53,7 +53,7 @@ export default function AboutSection() {
               currently working as a web designer and front end developer for 2+
               years. I have experience collaborating with external teams such as
               marketing, product and management to plan, strategize and execute
-              features.
+              feature products.
             </PText>
           </div>
           <div className="aboutSection__buttons">
