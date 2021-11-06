@@ -62,7 +62,7 @@ const Typography = createGlobalStyle`
     font-family: Caveat;
     font-weight: 500;
   }
-  h1 {
+  h1{
     font-size: 5.3rem;
   }
   h2{
@@ -75,13 +75,19 @@ const Typography = createGlobalStyle`
     font-size: 2rem;
     font-weight: 600;
   }
+  p{
+    font-size: 1.6rem;
+    line-height: 1.6em;
+    letter-spacing: 0.05rem;
+  }
 
   @media only screen and (max-width: 768px) {
     text-align: center;
-    h1 {
+    h1{
       font-size: 4.5rem;
+      line-height: 1em;
     }
-    h2 {
+    h2{
       font-size: 3.8rem;
     }
     h3{
@@ -89,14 +95,8 @@ const Typography = createGlobalStyle`
     }
     h4{
       font-size: 2rem;
+      line-height: 1.4em;
     }
-  }
-  p{
-    font-size: 1.6rem;
-    line-height: 1.6em;
-    letter-spacing: 0.05rem;
-    @media only screen and (max-width: 768px) {
-      font-size: 1.7rem;
   }
 `;
 

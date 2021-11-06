@@ -4,20 +4,6 @@ import { CgArrowLongDown } from 'react-icons/cg';
 import AboutImg from '../assets/images/about2.webp';
 
 const HeroStyles = styled.div`
-  .hero {
-    height: 100vh;
-    min-height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .hero__heading {
-    margin-top: 5rem;
-    position: relative;
-    text-align: center;
-  }
   .top-section {
     display: flex;
     align-items: center;
@@ -25,39 +11,56 @@ const HeroStyles = styled.div`
     justify-content: center;
     gap: 0rem;
   }
+  .hero {
+    & {
+      height: 100vh;
+      min-height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    &__heading {
+      margin-top: 5rem;
+      position: relative;
+      text-align: center;
+    }
+    &__name {
+      font-family: 'Caveat';
+      font-weight: 500;
+      font-size: 7rem;
+      line-height: 0.8em;
+      margin-bottom: 3rem;
+      color: var(--gray-1);
+    }
+    &__title {
+      font-family: 'Caveat';
+      font-weight: 400;
+      font-size: 2.5rem;
+      color: var(--gray-1);
+      margin-bottom: 3rem;
+    }
+    &__img {
+      width: 85%;
+      align-items: start;
+      margin-top: 5rem;
+    }
+    &__scrollDown {
+      text-align: center;
+      svg {
+        color: var(--gray-1);
+        margin-top: 5rem;
+        width: 2.5rem;
+      }
+    }
+  }
+
   .left {
     flex: 3;
   }
   .right {
     flex: 2;
-  }
-  .hero__name {
-    font-family: 'Caveat';
-    font-weight: 500;
-    font-size: 7rem;
-    line-height: 0.8em;
-    margin-bottom: 3rem;
-    color: var(--gray-1);
-  }
-  .hero__title {
-    font-family: 'Caveat';
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: var(--gray-1);
-    margin-bottom: 3rem;
-  }
-  .hero__img {
-    width: 85%;
-    align-items: start;
-    margin-top: 5rem;
-  }
-  .hero__scrollDown {
-    text-align: center;
-    svg {
-      color: var(--gray-1);
-      margin-top: 5rem;
-      width: 2.5rem;
-    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -65,36 +68,32 @@ const HeroStyles = styled.div`
       flex-direction: column;
       gap: 0.5rem;
     }
-    .top-section {
-      margin-top: 1rem;
-    }
-    .left{
-      float: none;
-    }
-    .hero__heading {
-      font-size: 1.45rem;
-      margin-top: 20rem;
-      margin-right: 0rem;
-      position: relative;
-      margin-top: 0rem;
-      margin-bottom: 3rem;
-      .hero__name {
+    .hero {
+      &__heading {
+        font-size: 1.45rem;
+        margin-top: 20rem;
+        margin-right: 0rem;
+        position: relative;
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+      }
+      &__name {
         font-size: 4.5rem;
       }
-      .hero__title {
+      &__title {
         font-size: 2.1rem;
         margin-top: 1rem;
       }
-    }
-    .hero__img {
-      width: 70%;
-      margin-top: 0;
-    }
-    .hero__scrollDown {
-      svg {
-        margin-top: 5
-        rem;
+      &__img {
+        width: 70%;
+        margin-top: 0;
       }
+      &__scrollDown {
+        svg {
+          margin-top: 5rem;
+        }
+      }
+    }
   }
 `;
 
@@ -124,9 +123,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="hero__scrollDown">
-            <a className="hero__scrollDown">
-              <CgArrowLongDown />
-            </a>
+            <CgArrowLongDown />
           </div>
         </div>
       </div>

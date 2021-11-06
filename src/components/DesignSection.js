@@ -8,9 +8,6 @@ import WorkImg2 from '../assets/images/w-home2.webp';
 
 const DesignStyle = styled.div`
   padding: 10rem 0;
-  h4 {
-    font-weight: 600;
-  }
   .container {
     align-items: center;
     justify-content: flex-start;
@@ -35,7 +32,14 @@ const DesignStyle = styled.div`
       img {
         width: 100%;
         margin-bottom: 2rem;
-        filter: drop-shadow(0px 0px 4px rgba(154, 134, 227, 0.2));
+      }
+    }
+    .worksSection__button {
+      margin-top: 1rem;
+      .button-wrapper,
+      a {
+        width: 100%;
+        text-align: center;
       }
     }
   }

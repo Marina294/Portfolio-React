@@ -5,21 +5,18 @@ import SectionTitle from '../components/common/SectionTitle';
 
 const ContactSectionStyle = styled.div`
   padding: 12rem 0;
-  height: 100vh;
+  height: 90vh;
   min-height: 100px;
-  .contactBanner__wrapper {
-    text-align: center;
-  }
-  .contactBanner__heading {
-    font-size: 3.8rem;
-    margin-bottom: 4rem;
-  }
-  .contactBanner__p {
-    font-size: 2.2rem;
-    margin-bottom: 4.5rem;
+  .contactBanner {
+    &__wrapper {
+      text-align: center;
+    }
+    &__p {
+      font-size: 2.2rem;
+      margin-bottom: 4.5rem;
+    }
   }
   .sns-icon {
-    color: var(--white);
     padding: 1.8rem;
     align-items: center;
   }
@@ -27,12 +24,14 @@ const ContactSectionStyle = styled.div`
     width: 3rem;
   }
   @media only screen and (max-width: 768px) {
-    .contactBanner__heading {
-      font-size: 2.8rem;
-    }
-    .contactBanner__p {
-      font-size: 1.8rem;
-      margin-bottom: 4.5rem;
+    .contactBanner {
+      &__heading {
+        font-size: 2.8rem;
+      }
+      &__p {
+        margin-bottom: 4.5rem;
+        font-size: 1.8rem;
+      }
     }
   }
 `;

@@ -9,14 +9,14 @@ import { ImLinkedin, ImGithub } from 'react-icons/im';
 const NavStyles = styled.nav`
   position: fixed;
   z-index: 100;
+  padding: 1rem 0;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 0;
   background-color: var(--bg);
   ul {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
     width: 90%;
     text-align: center;
     li {
@@ -25,11 +25,11 @@ const NavStyles = styled.nav`
     }
     a {
       display: inline-block;
-      font-family: 'Urbanist';
       padding: 1rem 2rem;
+      outline: none;
+      font-family: 'Urbanist';
       font-size: 1.7rem;
       color: var(--gray-1);
-      outline: none;
     }
     .active {
       color: var(--additional);
@@ -37,12 +37,12 @@ const NavStyles = styled.nav`
     }
   }
   .mobile-menu-icon {
+    display: none;
     position: absolute;
     right: 1rem;
     top: 1rem;
     width: 4rem;
     cursor: pointer;
-    display: none;
     outline: none;
     * {
       pointer-events: none;
@@ -52,9 +52,9 @@ const NavStyles = styled.nav`
     display: none;
   }
   .button {
-    font-size: 1.2rem;
     margin-top: 0;
     width: 13rem;
+    font-size: 1.2rem;
   }
   @media only screen and (max-width: 768px) {
     padding: 3.1rem;
@@ -63,21 +63,21 @@ const NavStyles = styled.nav`
       transform: translateY(calc(-100% - var(--top)));
     }
     .mobile-menu-icon {
-      margin: 0.5rem;
       display: block;
+      margin: 0.5rem;
     }
     .navItems {
       --top: 1rem;
+      position: absolute;
       transition: 0.3s ease transform;
-      background-color: var(--white);
       padding: 2rem;
       width: 90%;
       max-width: 300px;
+      right: 1rem;
       border-radius: 1rem;
       box-shadow: 0 8px 10px 0px rgba(150, 150, 150, 0.1);
-      position: absolute;
-      right: 1rem;
       top: var(--top);
+      background-color: var(--white);
       .closeNavIcon {
         display: block;
         width: 3rem;

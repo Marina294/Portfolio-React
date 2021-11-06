@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 const FooterStyle = styled.div`
   .copyright {
-    background-color: var(--bg);
     text-align: center;
     padding: 2rem 0;
     font-size: 1.4rem;
+    background-color: var(--bg);
   }
   @media only screen and (max-width: 768px) {
     .copyright {

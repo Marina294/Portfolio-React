@@ -61,7 +61,7 @@ const PickupStyles = styled.div`
       }
     }
     &__infoDetail {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 1.8em;
     }
     &__info__item {

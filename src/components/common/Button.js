@@ -5,14 +5,14 @@ import styled from 'styled-components';
 const ButtonStyle = styled.div`
   margin-top: 2rem;
   .button {
+    display: inline-block;
+    padding: 0.7em 2em;
+    border: 2px solid var(--additional);
+    border-radius: 100px;
     font-size: 1.8rem;
     letter-spacing: 0.05rem;
     background-color: ${(props) =>
       props.outline ? 'transperant' : 'var(--additional)'};
-    padding: 0.7em 2em;
-    border: 2px solid var(--additional);
-    border-radius: 100px;
-    display: inline-block;
     color: ${(props) => (props.outline ? 'var(--additional)' : 'white')};
   }
   @media only screen and (max-width: 768px) {

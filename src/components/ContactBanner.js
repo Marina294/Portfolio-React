@@ -5,17 +5,19 @@ import { ImLinkedin, ImGithub } from 'react-icons/im';
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
   background-color: var(--white);
-  .contactBanner__wrapper {
-    background-color: var(--white);
-    padding: 5rem 0rem;
-    text-align: center;
-  }
-  .contactBanner__heading {
-    margin-bottom: 4rem;
-  }
-  .contactBanner__p {
-    font-size: 2rem;
-    margin-bottom: 4.5rem;
+  .contactBanner {
+    &__wrapper {
+      padding: 5rem 0rem;
+      text-align: center;
+      background-color: var(--white);
+    }
+    &__heading {
+      margin-bottom: 4rem;
+    }
+    &__p {
+      margin-bottom: 4.5rem;
+      font-size: 2rem;
+    }
   }
   .sns-icon {
     padding: 1.8rem;
@@ -26,8 +28,8 @@ const ContactBannerStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .contactBanner__p {
-      font-size: 1.8rem;
       margin-bottom: 4.5rem;
+      font-size: 1.8rem;
     }
   }
 `;

@@ -14,31 +14,33 @@ const DevSectionStyle = styled.div`
   padding: 10rem 0;
   .works__allItems {
     display: flex;
+    margin-top: -5rem;
     gap: 3rem;
   }
-  .swiper-container {
-    padding-top: 10rem;
-    max-width: 100%;
+  .swiper {
+    &-container {
+      padding-top: 10rem;
+      max-width: 100%;
+    }
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background: var(--additional);
-    z-index: 10;
-    top: 0;
-    transform: translateY(50%);
-    color: var(--white);
-    border-radius: 100px;
-    margin: auto;
-  }
-  .swiper-button-next {
-    margin: auto;
-  }
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 2rem;
+  .swiper-button {
+    &-prev,
+    &-next {
+      position: absolute;
+      z-index: 10;
+      transform: translateY(50%);
+      border-radius: 100px;
+      margin: auto;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      background: var(--additional);
+      color: var(--white);
+    }
+    &-prev::after,
+    &-next::after {
+      font-size: 2rem;
+    }
   }
   .worksSection__button {
     display: flex;
@@ -47,15 +49,13 @@ const DevSectionStyle = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
-  .works__allItems {
-    margin-top: -5rem;
-  }
+
   @media only screen and (max-width: 768px) {
+    padding: 5rem 0;
     .Works__allItems {
       flex-direction: column;
       max-width: 400px;
       margin: 0 auto;
-      margin-top: 3rem;
       gap: 5rem;
       .workItem__img {
         width: 100%;

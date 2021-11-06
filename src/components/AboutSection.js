@@ -10,20 +10,6 @@ const AboutSectionStyles = styled.div`
     align-items: center;
     text-align: center;
   }
-  .aboutSection {
-    flex: 1;
-  }
-  .section-title {
-    text-align: center;
-  }
-  .ptext__allItems {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-  .para {
-    margin-top: 2rem;
-    margin-center: 0;
-  }
   .aboutSection__buttons {
     display: flex;
     align-items: center;
@@ -31,36 +17,25 @@ const AboutSectionStyles = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
-  @media only screen and (max-width: 950px) {
-    .aboutSection {
-      flex: 4;
-    }
-  }
+
   @media only screen and (max-width: 768px) {
+    padding: 5rem 0;
     .container {
       flex-direction: column;
       text-align: center;
     }
     .aboutSection {
-      width: 100%;
-    }
-    .section-title {
-      text-align: center;
-    }
-    .ptext__allItems {
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-    }
-    .para {
-      margin: 0 auto;
-    }
-    .aboutSection__buttons {
-      flex-direction: column;
-      gap: 0rem;
-      .button-wrapper,
-      a {
+      & {
         width: 100%;
-        text-align: center;
+      }
+      &__buttons {
+        flex-direction: column;
+        gap: 0rem;
+        .button-wrapper,
+        a {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
   }

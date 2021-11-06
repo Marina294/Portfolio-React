@@ -19,35 +19,37 @@ const AboutPageStyles = styled.div`
   .right {
     flex: 1;
   }
-  .about__subheading {
-    margin-bottom: 2rem;
-    span {
-      background-color: var(--additional);
-      padding: 0.5rem;
-      border-radius: 8px;
+  .about {
+    &__heading {
+      margin-bottom: 2rem;
+    }
+    &__subheading {
+      margin-bottom: 2rem;
+    }
+    &__info {
+      margin-bottom: 4rem;
+      .para {
+        max-width: 100%;
+      }
     }
   }
-  .about__heading {
-    margin-bottom: 2rem;
-  }
-  .about__info {
-    margin-bottom: 4rem;
-    .para {
-      max-width: 100%;
-    }
-  }
+  
 
   @media only screen and (max-width: 768px) {
-    padding: 8rem 0 0 0;
+    padding: 5rem 0 0 0;
     .top-section {
       flex-direction: column;
-      gap: 5rem;
+      gap: 2rem;
     }
-    .about__subheading {
-      font-size: 1.9rem;
-    }
-    .about__info__heading {
-      font-size: 3rem;
+    .about {
+      &__subheading {
+        font-size: 1.9rem;
+      }
+      &__info {
+        margin-bottom: 4rem;
+        .para {
+          max-width: 100%;
+        }
     }
   }
 `;

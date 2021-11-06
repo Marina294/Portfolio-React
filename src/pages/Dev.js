@@ -9,46 +9,51 @@ import ContactBanner from '../components/ContactBanner';
 const DevStyle = styled.div`
   padding: 12rem 0 0 0;
   img {
+    object-fit: cover;
     width: 100%;
     height: auto;
-    object-fit: cover;
   }
-  .works__allItems {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  .works {
+    &__allItems {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 5rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    &__searchBar {
+      position: relative;
+      width: 600px;
+      margin-top: 5rem;
+      margin: auto;
+    }
+    &__searchBar input {
+      padding: 1rem 2rem;
+      border-radius: 100px;
+      width: 100%;
+      outline: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--gray-1);
+    }
+    &__searchBar .searchIcon {
+      position: absolute;
+      width: 2rem;
+      right: 1rem;
+    }
+    &__searchBar .searchIcon path {
+      color: var(--gray-1);
+    }
   }
-  .works__searchBar {
-    position: relative;
-    width: 600px;
-    margin-top: 5rem;
-    margin: auto;
-  }
-  .works__searchBar input {
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    color: var(--gray-1);
-    border-radius: 100px;
-    outline: none;
-    border: none;
-  }
-  .works__searchBar .searchIcon {
-    position: absolute;
-    width: 2rem;
-    right: 1rem;
-  }
-  .works__searchBar .searchIcon path {
-    color: var(--gray-1);
-  }
+
   @media only screen and (max-width: 768px) {
     padding: 8rem 0 0 0;
-    .works__searchBar,
-    .works__searchBar form,
-    .works__searchBar input {
-      width: 100%;
+    .works {
+      &__searchBar,
+      &__searchBar form,
+      &__searchBar input {
+        width: 100%;
+      }
     }
   }
 `;

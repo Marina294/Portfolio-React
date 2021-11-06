@@ -19,8 +19,8 @@ const DesignStyle = styled.div`
     object-fit: cover;
   }
   .white__section {
-    margin: 10rem 0 0 0;
     padding: 5rem 0 5rem 0;
+    margin: 10rem 0 0 0;
     background-color: var(--white);
   }
   .section__heading {
@@ -36,8 +36,8 @@ const DesignStyle = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 8rem 0 0 0;
     .white__section {
-      margin: 2rem 0 2rem 0;
       padding: 2rem 0 4rem 0;
+      margin: 2rem 0 2rem 0;
       background-color: var(--white);
     }
   }

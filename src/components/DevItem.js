@@ -4,42 +4,45 @@ import { ImGithub } from 'react-icons/im';
 import WorkImg from '../assets/images/dev-calculator.webp';
 
 const DevItemStyles = styled.div`
-  .workItem__img {
-    width: 100%;
-    img {
-      height: 100%;
-    }
-    @media only screen and (max-width: 768px) {
-      .workItem__img {
-        height: 350px;
+  .workItem {
+    &__img {
+      width: 100%;
+      img {
+        height: 100%;
+      }
+      @media only screen and (max-width: 768px) {
+        &__img {
+          height: 350px;
+        }
       }
     }
+    &__Shadow {
+      filter: drop-shadow(5px 5px 5px rgba(154, 134, 227, 0.5));
+    }
+    &__info {
+      margin-top: 1rem;
+      background-color: var(--white);
+      padding: 2rem;
+    }
+    &__link {
+      color: var(--gray-1);
+      font-weight: 600;
+    }
+    &__title {
+      font-weight: 600;
+      color: var(--additional);
+      margin-bottom: 1rem;
+    }
+    &__desc {
+      margin-top: 1rem;
+    }
+    &__git {
+      display: flex;
+      margin-top: 1rem;
+      justify-content: flex-end;
+    }
   }
-  .workItem__Shadow {
-    filter: drop-shadow(5px 5px 5px rgba(154, 134, 227, 0.5));
-  }
-  .workItem__link {
-    color: var(--gray-1);
-    font-weight: 600;
-  }
-  .workItem__title {
-    font-weight: 600;
-    color: var(--additional);
-    margin-bottom: 1rem;
-  }
-  .workItem__info {
-    margin-top: 1rem;
-    background-color: var(--white);
-    padding: 2rem;
-  }
-  .workItem__desc {
-    margin-top: 1rem;
-  }
-  .workItem__git {
-    display: flex;
-    margin-top: 1rem;
-    justify-content: flex-end;
-  }
+
   .git-icon {
     width: 2.2rem;
   }
