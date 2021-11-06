@@ -7,41 +7,33 @@ import WorkImg3 from '../../assets/images/w-magazine3.webp';
 import WorkImg4 from '../../assets/images/w-magazine4.webp';
 
 const MagazineDesignStyles = styled.div`
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
   .container {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
   }
-  .works__subheading {
-    margin-bottom: 2rem;
-    span {
-      background-color: var(--additional);
-      border-radius: 8px;
-    }
-  }
-  .works__heading {
-    margin-bottom: 1rem;
-  }
-  .works__info {
-    margin-bottom: 2rem;
-    .para {
-      max-width: 600px;
-    }
-  }
-  .works__infoDetail-2line {
-    display: flex;
-    justify-content: space-around;
-  }
-  .works__infoDetail {
-    font-size: 1.4rem;
-    line-height: 1.8em;
-  }
-  .works__info__item {
-    margin-bottom: 10rem;
-  }
-  .webSection__heading {
+  .section__heading {
     margin-bottom: 3rem;
+  }
+  .works {
+    &__subheading {
+      margin-bottom: 2rem;
+    }
+    &__info {
+      margin-bottom: 2rem;
+      .para {
+        max-width: 600px;
+      }
+    }
+    &__infoDetail-2line {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__infoDetail {
+      font-size: 1.4rem;
+      line-height: 1.8em;
+    }
   }
   .workItem__img {
     display: flex;
@@ -56,12 +48,14 @@ const MagazineDesignStyles = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 5rem 0;
-    .works__infoDetail-2line {
-      display: block;
-      justify-content: space-around;
-    }
-    .works__infoDetail {
-      padding: 0rem;
+    .works {
+      &__infoDetail-2line {
+        display: block;
+        justify-content: space-around;
+      }
+      &__infoDetail {
+        padding: 0rem;
+      }
     }
     .workItem__img {
       display: flex;
@@ -80,7 +74,7 @@ export default function MagazineDesign() {
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Magazine Design</h2>
+            <h2 className="section__heading">Magazine Design</h2>
             <h4 className="works__subheading">
               The Magazine Association of Nail Artists and Food Magazine
             </h4>

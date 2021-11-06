@@ -5,41 +5,29 @@ import WorkImg3 from '../../assets/images/w-paidy-website1.webp';
 import WorkImg4 from '../../assets/images/w-paidy-website2.webp';
 
 const WebDesignStyles = styled.div`
-  padding: 5rem 0;
+  padding: 10rem 0 0 0;
   .container {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
   }
-  .works__2ndwork {
-    margin-top: 5rem;
-  }
-  .works__subheading {
-    margin-bottom: 2rem;
-    span {
-      background-color: var(--additional);
-      padding: 0.5rem;
-      border-radius: 8px;
-    }
-  }
-  .works__heading {
-    margin-bottom: 1rem;
-  }
-  .works__info {
-    margin-bottom: 2rem;
-    .para {
-      max-width: 600px;
-    }
-  }
-  .works__infoDetail {
-    font-size: 1.4rem;
-    line-height: 1.8em;
-  }
-  .works__info__item {
-    margin-bottom: 10rem;
-  }
-  .webSection__heading {
+  .section__heading {
     margin-bottom: 3rem;
+  }
+  .works {
+    &__subheading {
+      margin-bottom: 2rem;
+    }
+    &__info {
+      margin-bottom: 2rem;
+      .para {
+        max-width: 600px;
+      }
+    }
+    &__infoDetail {
+      font-size: 1.4rem;
+      line-height: 1.8em;
+    }
   }
   .workItem__img {
     display: flex;
@@ -54,9 +42,7 @@ const WebDesignStyles = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 2.5rem 0;
-    .works__2ndwork {
-      margin-top: 3rem;
-    }
+
     .workItem__img {
       display: flex;
       flex-wrap: wrap;
@@ -74,7 +60,7 @@ export default function WebDesign() {
       <div className="container">
         <div>
           <div>
-            <h2 className="webSection__heading">Web Design</h2>
+            <h2 className="section__heading">Web Design</h2>
             <h4 className="works__subheading">
               Redesign the Corprate website / Company Branding
             </h4>

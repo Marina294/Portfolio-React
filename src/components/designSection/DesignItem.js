@@ -4,21 +4,24 @@ import { HashLink } from 'react-router-hash-link';
 import WorkImg from '../../assets/images/l-promotional.jpg';
 
 const DesignItemStyles = styled.div`
-  .workItem__img {
-    filter: drop-shadow(0px 0px 8px rgba(154, 134, 227, 0.5));
+  .workItem {
+    &__img {
+      filter: drop-shadow(0px 0px 8px rgba(154, 134, 227, 0.5));
+    }
+    &__title {
+      color: var(--additional);
+      font-weight: 600;
+    }
+    &__info {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    &__link {
+      color: var(--gray-2);
+      font-weight: 600;
+    }
   }
-  .workItem__title {
-    color: var(--additional);
-    font-weight: 600;
-  }
-  .workItem__info {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  .workItem__link {
-    color: var(--gray-2);
-    font-weight: 600;
-  }
+
   @media only screen and (max-width: 768px) {
     .workItem__desc {
       font-size: 1.7rem;

@@ -26,7 +26,6 @@ const DesignStyle = styled.div`
   .section__heading {
     margin-top: 2rem;
     text-align: center;
-    font-weight: 600;
   }
   .works__allItems {
     display: grid;

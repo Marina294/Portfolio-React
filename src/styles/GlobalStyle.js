@@ -5,18 +5,6 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    ::selection {
-      color: rgba(93, 83, 74, 0.8);
-      background-color: rgba(165, 147, 239, 0.4);
-    }
-    ::-moz-selection {
-      color: rgba(93, 83, 74, 0.8);
-      background-color: rgba(165, 147, 239, 0.4);
-    }
-    -webkit-tap-highlight-color:rgba(165, 147, 239, 0.4);
-    tap-highlight-color:rgba(165, 147, 239, 0.4);
-
   }
   :root{
     --bg: #F8F8F8;

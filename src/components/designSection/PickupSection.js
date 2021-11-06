@@ -1,25 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../common/PText';
-import MainImg from '../../assets/images/w-web-sc-top.png';
-import WorkImg1 from '../../assets/images/w-web1.jpg';
-import WorkImg2 from '../../assets/images/w-web2.jpg';
-import WorkImg3 from '../../assets/images/w-web1-2.jpg';
-import WorkImg4 from '../../assets/images/w-web2-2.jpg';
-import SiteMap from '../../assets/images/w-web-sc-sitemap.jpg';
-import WireFrameImg from '../../assets/images/w-web-sc-wire1.png';
-import LogoImg1 from '../../assets/images/w-web-sc-logo1.jpg';
-import LogoImg2 from '../../assets/images/w-web-sc-logo2.jpg';
-import LogoImg3 from '../../assets/images/w-web-sc-logo3.jpg';
+import MainImg from '../../assets/images/w-web-sc-top.webp';
+import WorkImg1 from '../../assets/images/w-web1.webp';
+import WorkImg2 from '../../assets/images/w-web2.webp';
+import WorkImg3 from '../../assets/images/w-web1-2.webp';
+import WorkImg4 from '../../assets/images/w-web2-2.webp';
+import SiteMap from '../../assets/images/w-web-sc-sitemap.webp';
+import WireFrameImg from '../../assets/images/w-web-sc-wire1.webp';
+import LogoImg1 from '../../assets/images/w-web-sc-logo1.webp';
+import LogoImg2 from '../../assets/images/w-web-sc-logo2.webp';
+import LogoImg3 from '../../assets/images/w-web-sc-logo3.webp';
 
 const PickupStyles = styled.div`
   padding: 0;
   img {
     filter: drop-shadow(0px 0px 4px rgba(154, 134, 227, 0.2));
-  }
-  .workItem__title {
-    margin: 5rem 0 3rem 0;
-    text-align: center;
   }
   .container {
     align-items: left;
@@ -48,61 +44,57 @@ const PickupStyles = styled.div`
   .right {
     flex: 2;
   }
-  .left__sitemap {
-    flex: 2;
-  }
-  .right__sitemap {
-    flex: 2;
-  }
-  .works__subheading {
-    margin-bottom: 2rem;
-    span {
-      background-color: var(--additional);
-      padding: 0.5rem;
+  .works {
+    &__subheading {
+      margin-bottom: 2rem;
+      span {
+        padding: 0.5rem;
+        background-color: var(--additional);
+      }
+    }
+    &__heading {
+      margin-bottom: 1rem;
+    }
+    &__info {
+      .para {
+        max-width: 600px;
+      }
+    }
+    &__infoDetail {
+      font-size: 1.4rem;
+      line-height: 1.8em;
+    }
+    &__info__item {
+      margin-bottom: 10rem;
     }
   }
-  .works__heading {
-    margin-bottom: 1rem;
-  }
-  .works__info {
-    .para {
-      max-width: 600px;
+
+  .workItem {
+    &__title {
+      text-align: center;
+      margin: 5rem 0 3rem 0;
     }
-  }
-  .works__infoDetail {
-    font-size: 1.4rem;
-    line-height: 1.8em;
-  }
-  .works__info__item {
-    margin-bottom: 10rem;
-  }
-  .webSection__heading {
-    margin-bottom: 3rem;
-  }
-  .workItem__img__3line {
-    display: inline-block;
-    text-align: center;
-    img {
-      margin: 0 1rem 0 1rem;
-      width: 30%;
+    &__img__3line {
+      display: inline-block;
+      text-align: center;
+      img {
+        margin: 0 1rem 0 1rem;
+        width: 30%;
+      }
     }
-  }
-  .workItem__img__2line {
-    display: inline-block;
-    text-align: center;
-    img {
-      margin: 0 1.3rem 0 1.3rem;
-      width: 46%;
+    &__img__2line {
+      display: inline-block;
+      text-align: center;
+      img {
+        margin: 0 1.3rem 0 1.3rem;
+        width: 46%;
+      }
     }
   }
 
   @media only screen and (max-width: 768px) {
     padding: 0;
     .container {
-      text-align: center;
-    }
-    .workItem__title {
-      margin: 2rem 0 1rem 0;
       text-align: center;
     }
     .top-section {
@@ -114,27 +106,25 @@ const PickupStyles = styled.div`
       gap: 1rem;
       margin-top: 2rem;
     }
-    .workItem__img__3line {
-      text-align: center;
-      img {
-        margin-bottom: 2rem;
-        margin: 0 0 2rem 0;
-        width: 100%;
+    .workItem {
+      &__title {
+        margin: 2rem 0 1rem 0;
+        text-align: center;
       }
-    }
-    .workItem__img__2line {
-      text-align: center;
-      img {
-        margin-bottom: 2rem;
-        margin: 0 0 2rem 0;
-        width: 100%;
+      &__img__3line {
+        text-align: center;
+        img {
+          margin: 0 0 2rem 0;
+          width: 100%;
+        }
       }
-    }
-    .left__sitemap {
-      margin-left: 0rem;
-    }
-    .zoom {
-      width: 1.3rem;
+      &__img__2line {
+        text-align: center;
+        img {
+          margin: 0 0 2rem 0;
+          width: 100%;
+        }
+      }
     }
   }
 `;
@@ -175,33 +165,6 @@ export default function Pickup() {
             <img src={WireFrameImg} alt="work img" />
           </a>
         </div>
-        {/* <div className="secound-section">
-          <div className="left__sitemap">
-            <a href={SiteMap} target="_blank" rel="noreferrer">
-              <img className="works__Img" src={SiteMap} alt="work img" />
-            </a>
-          </div>
-          <div className="right__sitemap">
-            <div className="works__info">
-              <p>
-                Designed the corporate website. In charged of branding and
-                design. Created internal company brand guide to unify brand
-                awareness.
-              </p>
-            </div>
-          </div>
-        </div> */}
-        <div className="secound-section">
-          <div className="right__sitemap">
-            <div className="works__info">
-              {/* <p>
-                Designed the corporate website. In charged of branding and
-                design. Created internal company brand guide to unify brand
-                awareness.
-              </p> */}
-            </div>
-          </div>
-        </div>
         <div>
           <div className="workItem__title">
             <h4>Logo Guide Line</h4>
@@ -217,6 +180,8 @@ export default function Pickup() {
               <img src={LogoImg3} alt="work img" />
             </a>
           </div>
+        </div>
+        <div>
           <div className="workItem__title">
             <h4>Final Design</h4>
           </div>
