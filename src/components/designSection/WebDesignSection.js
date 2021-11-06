@@ -48,7 +48,7 @@ const WebDesignStyles = styled.div`
     img {
       width: 45%;
       margin-bottom: 5rem;
-      border: 0.5px solid var(--gray-2);
+      border: 0.1px solid var(--gray-2);
     }
   }
 

@@ -6,10 +6,6 @@ import WorkImg from '../assets/images/dev-calculator.webp';
 const DevItemStyles = styled.div`
   .workItem__img {
     width: 100%;
-    height: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-    display: inline-block;
     img {
       height: 100%;
     }
@@ -18,6 +14,9 @@ const DevItemStyles = styled.div`
         height: 350px;
       }
     }
+  }
+  .workItem__Shadow {
+    filter: drop-shadow(5px 5px 5px rgba(154, 134, 227, 0.5));
   }
   .workItem__link {
     color: var(--gray-1);
@@ -32,7 +31,6 @@ const DevItemStyles = styled.div`
     margin-top: 1rem;
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 12px;
   }
   .workItem__desc {
     margin-top: 1rem;
@@ -55,34 +53,38 @@ export default function DevItem({
   gitLink = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
-    <DevItemStyles className="workItem__img">
-      <a
-        href={link}
-        rel="noreferrer"
-        target="_blank"
-        className="workItem__link"
-      >
-        <img src={img} alt="work img" />
-      </a>
-      <div className="workItem__info">
-        <a
-          href={link}
-          rel="noreferrer"
-          target="_blank"
-          className="workItem__link"
-        >
-          <h4 className="workItem__title">{title}</h4>
-        </a>
-        <p className="workItem__desc">{desc}</p>
-        <div className="workItem__git">
+    <DevItemStyles>
+      <div className="workItem__img">
+        <div className="workItem__Shadow">
           <a
-            className="git-icon"
-            href={gitLink}
-            target="_blank"
+            href={link}
             rel="noreferrer"
+            target="_blank"
+            className="workItem__link"
           >
-            <ImGithub style={{ fill: 'var(--gray-1)' }} />
+            <img src={img} alt="work img" />
           </a>
+        </div>
+        <div className="workItem__info">
+          <a
+            href={link}
+            rel="noreferrer"
+            target="_blank"
+            className="workItem__link"
+          >
+            <h4 className="workItem__title">{title}</h4>
+          </a>
+          <p className="workItem__desc">{desc}</p>
+          <div className="workItem__git">
+            <a
+              className="git-icon"
+              href={gitLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ImGithub style={{ fill: 'var(--gray-1)' }} />
+            </a>
+          </div>
         </div>
       </div>
     </DevItemStyles>

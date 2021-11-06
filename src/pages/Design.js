@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../components/common/SectionTitle';
 import DesignInfo from '../assets/data/design';
-import DesignItem from '../components/DesignItem';
+import DesignItem from '../components/designSection/DesignItem';
 import WebDesignSection from '../components/designSection/WebDesignSection';
 import OnlineAdsSection from '../components/designSection/OnlineAdsSection';
 import CatalogDesignSection from '../components/designSection/CatalogDesignSection';
@@ -19,9 +19,8 @@ const DesignStyle = styled.div`
     object-fit: cover;
   }
   .white__section {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 5rem;
+    padding: 2rem 0 2rem 0;
     background-color: var(--white);
   }
   .section__heading {
@@ -37,6 +36,11 @@ const DesignStyle = styled.div`
   }
   @media only screen and (max-width: 768px) {
     padding: 8rem 0 0 0;
+    .white__section {
+      margin: 2rem 0 2rem 0;
+      padding: 2rem 0 4rem 0;
+      background-color: var(--white);
+    }
   }
 `;
 export default function Design() {

@@ -23,10 +23,7 @@ const DesignStyle = styled.div`
     img {
       width: 45%;
       margin-bottom: 5rem;
-      border: 0.5px solid var(--gray-2);
-    }
-    .workItem__noneLine {
-      border: none;
+      filter: drop-shadow(0px 0px 4px rgba(154, 134, 227, 0.2));
     }
   }
   @media only screen and (max-width: 768px) {
@@ -38,7 +35,7 @@ const DesignStyle = styled.div`
       img {
         width: 100%;
         margin-bottom: 2rem;
-        border: 0.5px solid var(--gray-2);
+        filter: drop-shadow(0px 0px 4px rgba(154, 134, 227, 0.2));
       }
     }
   }
@@ -52,7 +49,7 @@ export default function Design() {
         <HashLink to="/Design">
           <div className="workItem__img">
             <img src={WorkImg1} alt="work img" />
-            <img className="workItem__noneLine" src={WorkImg2} alt="work img" />
+            <img src={WorkImg2} alt="work img" />
           </div>
         </HashLink>
         <div className="worksSection__button">

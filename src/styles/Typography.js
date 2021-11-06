@@ -73,6 +73,7 @@ const Typography = createGlobalStyle`
   }
   h4{
     font-size: 2rem;
+    font-weight: 600;
   }
 
   @media only screen and (max-width: 768px) {
