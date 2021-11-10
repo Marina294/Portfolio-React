@@ -36,7 +36,7 @@ export default function SkillsSection() {
             icon={<MdComputer />}
             title="Web design"
             desc="I do UI design for websites, marketing e-mail and web advertising."
-            tools="[Figma, Sketch, Adobe XD]"
+            tools="[Figma, Sketch, Adobe XD, InVision]"
           />
           <SkillsItem
             icon={<MdImportContacts />}

@@ -71,7 +71,7 @@ export default function About() {
                   currently working as a web designer and front end developer
                   for 2+ years. I have experience collaborating with external
                   teams such as marketing, product and management to plan,
-                  strategize and execute features.
+                  strategize and execute feature products.
                   <br /> <br />I was in charge of planning and producing
                   advertisements, magazines, and general promotional materials.
                 </PText>
