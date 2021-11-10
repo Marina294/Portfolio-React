@@ -66,9 +66,9 @@ export default function WebDesign() {
             </h4>
             <div className="works__info">
               <PText>
-                Rebrand the corporate website. In charge of page composition,
-                corporate color proposals, illustration production. Also
-                developed E-mail magazine templates.
+                Rebrand deferred payment service's corporate website. In charge
+                of page composition, corporate color proposals, illustration
+                production. Also developed E-mail magazine templates.
               </PText>
               <div className="works__infoDetail">
                 <br /> Client: Paidy Co., Ltd. <br /> Date: 4/2019 <br /> Work:

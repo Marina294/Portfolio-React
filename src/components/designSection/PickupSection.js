@@ -143,9 +143,9 @@ export default function Pickup() {
             </h4>
             <div className="works__info">
               <PText>
-                Designed the corporate website. In charged of branding and
-                design. Created internal company brand guide to unify brand
-                awareness.
+                Designed IT security company's corporate website. In charged of
+                branding and design. Created internal company brand guide to
+                unify brand awareness.
               </PText>
               <div className="works__infoDetail">
                 <br /> Client: Symply Cubed Co., Ltd. <br /> Date: 5/2021 <br />
