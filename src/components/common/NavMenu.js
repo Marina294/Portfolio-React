@@ -164,7 +164,7 @@ export default function NavMenu() {
               DEV
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/contact"
               onClick={() => setShowNav(!showNav)}
@@ -174,7 +174,7 @@ export default function NavMenu() {
             >
               CONTACT
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <div>
               <a
