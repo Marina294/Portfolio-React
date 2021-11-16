@@ -14,6 +14,9 @@ const GlobalStyles = createGlobalStyle`
     --white: #ffffff;
     --black: #000000;
   }
+  ::selection {
+    background-color: rgba(154, 134, 227, 0.4);
+}
   html{
     font-size: 11px;
     font-family: 'Urbanist';
