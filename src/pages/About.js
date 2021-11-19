@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/common/PText';
-import AboutImg from '../assets/images/about.webp';
+import AboutImg from '../assets/images/about1.webp';
 import ContactBanner from '../components/ContactBanner';
 import SkillsSection from '../components/SkillsSection';
 
