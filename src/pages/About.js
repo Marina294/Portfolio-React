@@ -67,13 +67,14 @@ export default function About() {
               </h4>
               <div className="about__info">
                 <PText>
-                  Hello! I've worked as a graphic designer for 7+ years and as a
-                  web designer for 2 years currently working as UIUX Designer.
-                  experience collaborating with external teams such as
-                  marketing, product and management to plan, strategize and
-                  execute feature products.
-                  <br /> <br />I was in charge of planning and producing
-                  advertisements, magazines, and general promotional materials.
+                  Hello! I’m working as a web designer for 2+ years and I've
+                  worked as a graphic designer for 7+ years. I have experience
+                  collaborating with external teams such as marketing, product
+                  and management to plan, strategize and execute feature
+                  products.
+                  <br /> <br />I was in charge of planning and designing
+                  corporate sites, landing pages, advertisements, prints, and
+                  general promotional materials.
                 </PText>
               </div>
             </div>
