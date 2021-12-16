@@ -107,8 +107,7 @@ export default function HeroSection() {
               <div className="hero__heading">
                 <div className="hero__name">Marina Yamamoto</div>
                 <div className="hero__title">
-                  I'm a Designer / Frontend Developer, <br /> based in
-                  Vancouver, Canada
+                  I'm a Graphic/Web Designer, <br /> based in Vancouver, Canada
                 </div>
                 {/* <Button
                   btnText="Download CV"

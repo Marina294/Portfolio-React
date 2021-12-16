@@ -49,14 +49,6 @@ export default function ContactBanner() {
           >
             <ImLinkedin style={{ fill: 'var(--additional)' }} />
           </a>
-          <a
-            className="sns-icon"
-            href="https://github.com/Marina294"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <ImGithub style={{ fill: 'var(--additional)' }} />
-          </a>
         </div>
       </div>
     </ContactBannerStyles>
