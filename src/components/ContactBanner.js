@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ImLinkedin, ImGithub } from 'react-icons/im';
+import { ImLinkedin } from 'react-icons/im';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;

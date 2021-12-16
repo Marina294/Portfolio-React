@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
-import { ImLinkedin, ImGithub } from 'react-icons/im';
+import { ImLinkedin } from 'react-icons/im';
 // import Cv from '../../assets/images/w-catalog4.jpg';
 // import Button from './Button';
 
