@@ -49,7 +49,7 @@ export default function AboutSection() {
           <SectionTitle heading="About Me" />
           <div className="ptext__allItems">
             <PText>
-              Hello! I am working as a UI/UX designer for 2 years and I've
+              Hello! I am working as a UI/UX designer for 2 years and also I've
               worked as a web/graphic designer for 10 years.
             </PText>
           </div>

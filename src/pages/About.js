@@ -62,7 +62,7 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <h1 className="about__heading">Marina Yamamoto</h1>
-              <h4 className="about__subheading">UI/IX designer</h4>
+              <h4 className="about__subheading">UI/UX designer</h4>
               <div className="about__info">
                 <PText>
                   My strengths lie in my experience working on various projects,
