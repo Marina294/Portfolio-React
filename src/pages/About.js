@@ -66,7 +66,7 @@ export default function About() {
               <div className="about__info">
                 <PText>
                   My expertise lies in my experience across various projects,
-                  from print design to online services.
+                  from print design to online services.　
                   <br />
                   I’ve been working as a UI/UX designer for 2 years and am in
                   charge of creating a new SaaS product for HR management. Also,
