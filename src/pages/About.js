@@ -33,7 +33,6 @@ const AboutPageStyles = styled.div`
       }
     }
   }
-  
 
   @media only screen and (max-width: 768px) {
     padding: 5rem 0 0 0;
@@ -50,6 +49,7 @@ const AboutPageStyles = styled.div`
         .para {
           max-width: 100%;
         }
+      }
     }
   }
 `;
