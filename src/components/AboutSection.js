@@ -49,11 +49,8 @@ export default function AboutSection() {
           <SectionTitle heading="About Me" />
           <div className="ptext__allItems">
             <PText>
-              Hello! I’m working as a web designer for 2+ years and I've worked
-              as a graphic designer for 7+ years. I have experience
-              collaborating with external teams such as developers, marketing,
-              product and management to plan, strategize and execute feature
-              products.
+              Hello! I am working as a UI/UX designer for 2 years and I've
+              worked as a web/graphic designer for 10 years.
             </PText>
           </div>
           <div className="aboutSection__buttons">

@@ -62,19 +62,20 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <h1 className="about__heading">Marina Yamamoto</h1>
-              <h4 className="about__subheading">
-                Designer / Frontend Developer
-              </h4>
+              <h4 className="about__subheading">UI/IX designer</h4>
               <div className="about__info">
                 <PText>
-                  Hello! I’m working as a web designer for 2+ years and I've
-                  worked as a graphic designer for 7+ years. I have experience
-                  collaborating with external teams such as marketing, product
-                  and management to plan, strategize and execute feature
-                  products.
-                  <br /> <br />I was in charge of planning and designing
-                  corporate sites, landing pages, advertisements, prints, and
-                  general promotional materials.
+                  My strengths lie in my experience working on various projects,
+                  from print design to online services.
+                  <br />
+                  I’ve been working as a UI/UX designer for 2 years and am in
+                  charge of creating a new SaaS product for HR management. Also,
+                  I've worked as a web and graphic designer for 10 years in
+                  design agencies and a fintech company.
+                  <br />
+                  From that experience, I am good at capturing the client's
+                  intentions and smoothly cooperating with all teams regardless
+                  of department.
                 </PText>
               </div>
             </div>
