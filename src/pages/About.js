@@ -65,7 +65,7 @@ export default function About() {
               <h4 className="about__subheading">UI/UX designer</h4>
               <div className="about__info">
                 <PText>
-                  My strengths lie in my experience working on various projects,
+                  My expertise lies in my experience across various projects,
                   from print design to online services.
                   <br />
                   I’ve been working as a UI/UX designer for 2 years and am in
@@ -73,9 +73,9 @@ export default function About() {
                   I've worked as a web and graphic designer for 10 years in
                   design agencies and a fintech company.
                   <br />
-                  From that experience, I am good at capturing the client's
-                  intentions and smoothly cooperating with all teams regardless
-                  of department.
+                  From this experience, my key strength is my ability to
+                  seamlessly collaborate with cross-functional teams and capture
+                  clients' visions into the design.
                 </PText>
               </div>
             </div>
